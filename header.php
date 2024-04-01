@@ -114,7 +114,8 @@
           </div>
         </div>
         <div class="student d-none d-md-block">
-          <img src="img/happy-student-nobg.png" alt="" class="m-0 img-fluid" />
+          <img src="<?php echo get_theme_file_uri('/img/happy-student-nobg.png') ?>" alt="" class="m-0 img-fluid" />
+
         </div>
       </section>
       <!-- Shapes -->
