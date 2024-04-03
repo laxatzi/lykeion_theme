@@ -121,7 +121,7 @@
       <!-- Shapes -->
       <div class="shapes">
         <div class="shape-image shape-image-1">
-          <img src="img/shapes/Lykeion/geometric-3.png" alt="" />
+          <img src="<?php echo get_theme_file_uri('/img/shapes/geometric-3.png') ?>" />
         </div>
         <div class="shape-image shape-image-2">
           <img src="<?php echo get_theme_file_uri('/img/shapes/memphis-shape2-big.png') ?>" alt="" />
