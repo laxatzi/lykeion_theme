@@ -127,7 +127,7 @@
           <img src="<?php echo get_theme_file_uri('/img/shapes/memphis-shape2-big.png') ?>" alt="" />
         </div>
         <div class="shape-image shape-image-3">
-          <img src="img/shapes/Lykeion/geo-shape-transparent-15.png" alt="" />
+          <img src="<?php echo get_theme_file_uri('/img/shapes/geo-shape-transparent-15.png') ?>" alt="" />
         </div>
       </div>
     </header>
