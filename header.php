@@ -104,7 +104,7 @@
           </small>
           <div id="hero-lower" class="mb-sm-3 mb-5">
             <div class="hero-arrow mt-xl-0 mt-5 d-none d-lg-block">
-              <img src="img/icons/arrow.png" alt="" />
+              <img src="<?php echo get_theme_file_uri('/img/icons/arrow.png') ?>" alt="" />
             </div>
             <div class="read-more mt-5 btn btn-lg mb-sm-3 mb-5">
               <a href="leveltest.html" class="link-btn d-flex"
