@@ -19,22 +19,22 @@
             <div class="social-icons d-flex mt-4 gap-2">
               <div class="social-icon">
                 <a href="facebook.com"
-                  ><img src="img/icons/icons8-facebook-50.png" alt=""
+                  ><img src="<?php echo get_theme_file_uri('/img/icons/icons8-facebook-50.png') ?>" alt=""
                 /></a>
               </div>
               <div class="social-icon">
                 <a href="twitter.com"
-                  ><img src="img/icons/icons8-twitterx-50.png" alt=""
+                  ><img src="<?php echo get_theme_file_uri('/img/icons/icons8-twitterx-50.png') ?>" alt=""
                 /></a>
               </div>
               <div class="social-icon">
                 <a href="linkedin.com"
-                  ><img src="img/icons/icons8-linkedin-50.png" alt=""
+                  ><img src="<?php echo get_theme_file_uri('/img/icons/icons8-linkedin-50.png') ?>" alt=""
                 /></a>
               </div>
               <div class="social-icon">
                 <a href="youtube.com"
-                  ><img src="img/icons/icons8-youtube-50.png" alt=""
+                  ><img src="<?php echo get_theme_file_uri('/img/icons/icons8-youtube-50.png') ?>"  alt=""
                 /></a>
               </div>
             </div>
