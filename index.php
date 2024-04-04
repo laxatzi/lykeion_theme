@@ -616,7 +616,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="me-1 img-fluid"
-                      src="img/linkedin-sales-thumb.jpg"
+                      src="<?php echo get_theme_file_uri('/img/linkedin-sales-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">John Newman</h4>
@@ -649,7 +649,7 @@
               <div class="card-img-container">
                 <div class="card-img-container">
                   <img
-                    src="img/shipman-portrait.jpg"
+                    src="<?php echo get_theme_file_uri('/img/shipman-portrait.jpg') ?>"
                     class="card-img-top img-fluid"
                     alt=""
                   />
@@ -682,7 +682,7 @@
                   <div class="info-list-level fw-bold d-flex">
                     <img
                       class="me-2"
-                      src="img/icons/level-chart-thumb-16.png"
+                      src="<?php echo get_theme_file_uri('/img/icons/level-chart-thumb-16.png') ?>"
                       alt=""
                     />
                     <span>Beginner</span>
@@ -706,7 +706,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="me-1 img-fluid"
-                      src="img/usman-thumb.jpg"
+                      src="<?php echo get_theme_file_uri('/img/usman-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">John Katsimatides</h4>
@@ -739,7 +739,7 @@
             <div class="card p-4">
               <div class="card-img-container">
                 <img
-                  src="img/secretary-portrait.jpg"
+                  src="<?php echo get_theme_file_uri('/img/secretary-portrait.jpg') ?>"
                   class="card-img-top img-fluid"
                   alt=""
                 />
@@ -775,7 +775,7 @@
                   <div class="info-list-level fw-bold d-flex">
                     <img
                       class="me-2 img-fluid"
-                      src="img/icons/level-chart-thumb-16.png"
+                      src="<?php echo get_theme_file_uri('/img/icons/level-chart-thumb-16.png') ?>"
                       alt=""
                     />
                     <span>Advanced</span>
@@ -797,7 +797,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="me-1 img-fluid"
-                      src="img/sigmund-thumb.jpg"
+                      src="<?php echo get_theme_file_uri('/img/sigmund-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">Daniel Gerard</h4>
@@ -864,12 +864,15 @@
                   <div class="event-thumbnail me-sm-2">
                     <div class="img-wrapper-event--wide d-none d-sm-block">
                       <a href="event-details.html"
-                        ><img src="img/pen-thumbnail-145.png" alt=""
+                        ><img
+                        src="<?php echo get_theme_file_uri('/img/pen-thumbnail-145.png') ?>"
                       /></a>
                     </div>
                     <div class="img-wrapper-event--mobile d-block d-sm-none">
                       <a href="event-details.html"
-                        ><img src="img/pen-thumbnail-400.png" alt=""
+                        ><img
+                        src="<?php echo get_theme_file_uri('/img/pen-thumbnail-400.png') ?>"
+                        alt=""
                       /></a>
                     </div>
                     <div class="attribution-wrapper">
