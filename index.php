@@ -76,8 +76,11 @@
             </p>
           </div>
           <div class="col-lg topic p-5 rounded">
-            <img class="mb-3 primary" src="img/icons/evening.png" alt="" />
-            <img class="mb-3 white" src="img/icons/evening-white.png" alt="" />
+            <img class="mb-3 primary"
+            src="<?php echo get_theme_file_uri('/img/icons/evening.png') ?>"
+            alt="" />
+            <img class="mb-3 white" src="<?php echo get_theme_file_uri('/img/icons/evening-white.png') ?>"
+            alt="" />
             <h3 class="fw-bold">Evening Classes</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -88,16 +91,19 @@
       </div>
       <div class="shapes">
         <div class="shape-image shape-image-4">
-          <img src="img/shapes/Lykeion/geo-shape-transparent-9.png" alt="" />
+          <img src="<?php echo get_theme_file_uri('/img/shapes/geo-shape-transparent-9.png') ?>"
+           alt="" />
         </div>
         <div class="shape-image shape-image-5">
           <img
-            src="img/shapes/Lykeion/geo-shape-transparent-4-primary.png"
+            src="<?php echo get_theme_file_uri('/img/shapes/geo-shape-transparent-4-primary.png') ?>"
             alt=""
           />
         </div>
         <div class="shape-image shape-image-6">
-          <img src="img/shapes/Lykeion/geo-shape-transparent-7.png" alt="" />
+          <img
+          src="<?php echo get_theme_file_uri('/img/shapes/geo-shape-transparent-7.png') ?>"
+           alt="" />
         </div>
       </div>
     </section>
