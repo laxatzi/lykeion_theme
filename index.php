@@ -1371,11 +1371,13 @@
       </div>
       <div class="shapes">
         <div class="shape-image shape-image-25">
-          <img src="img/shapes/Lykeion/memphis-shape2-primary.png" alt="" />
+          <img
+          src="<?php echo get_theme_file_uri('/img/shapes/memphis-shape2-primary.png') ?>"
+          alt="" />
         </div>
         <div class="shape-image shape-image-26">
           <img
-            src="img/shapes/Lykeion/olympic-circles-two-primary.png"
+            src="<?php echo get_theme_file_uri('/img/shapes/olympic-circles-two-primary.png') ?>"
             alt=""
           />
         </div>
@@ -1400,7 +1402,7 @@
             <div class="blogpost-img">
               <a href="blogpost-page.html">
                 <img
-                  src="img/restaurant-workers.jpg"
+                  src="<?php echo get_theme_file_uri('/img/restaurant-workers.jpg') ?>"
                   alt=""
                   class="img-fluid"
                 />
@@ -1425,7 +1427,7 @@
               </div>
               <div class="author-profile d-flex mt-2 mb-3">
                 <img
-                  src="img/sigmund-thumb.jpg"
+                  src="<?php echo get_theme_file_uri('/img/thumbs/sigmund-thumb.jpg') ?>"
                   alt="teacher's profile"
                   class="img-fluid"
                 />
@@ -1457,7 +1459,7 @@
             <div class="blogpost-img">
               <a href="blogpost-page.html">
                 <img
-                  src="img/back-to-school-opt.jpg"
+                  src="<?php echo get_theme_file_uri('/img/back-to-school-opt.jpg') ?>"
                   alt=""
                   class="img-fluid"
                 />
@@ -1479,7 +1481,7 @@
               <div class="author-profile d-flex mt-2 mb-3">
                 <img
                   class="me-2 img-fluid"
-                  src="img/usman-thumb.jpg"
+                  src="<?php echo get_theme_file_uri('/img/thumbs/usman-thumb.jpg') ?>"
                   alt="teacher's profile"
                 />
                 <h4 class="fw-bold pt-2">John Katsimatides</h4>
@@ -1509,7 +1511,7 @@
             <div class="blogpost-img">
               <a href="blogpost-page.html">
                 <img
-                  src="img/restaurant-workers.jpg"
+                  src="<?php echo get_theme_file_uri('/img/restauran-workers.jpg') ?>"
                   alt=""
                   class="img-fluid"
                 />
@@ -1534,7 +1536,7 @@
               </div>
               <div class="author-profile d-flex mt-2 mb-3">
                 <img
-                  src="img/sigmund-thumb.jpg"
+                  src="<?php echo get_theme_file_uri('/img/thumbs/sigmund-thumb.jpg') ?>"
                   alt="teacher's profile"
                   class="img-fluid"
                 />
@@ -1566,13 +1568,19 @@
       </div>
       <div class="shapes">
         <div class="shape-image shape-image-27">
-          <img src="img/shapes/Lykeion/geometric-1.png" alt="" />
+          <img
+            src="<?php echo get_theme_file_uri('/img/shapes/geometric-1.png') ?>"
+            alt="" />
         </div>
         <div class="shape-image shape-image-28">
-          <img src="img/shapes/Lykeion/geometric-3-dark.png" alt="" />
+          <img
+            src="<?php echo get_theme_file_uri('/img/shapes/geometric-3-dark.png') ?>"
+            alt="" />
         </div>
         <div class="shape-image shape-image-29">
-          <img src="img/shapes/Lykeion/shape-circles-dark.png" alt="" />
+          <img
+            src="<?php echo get_theme_file_uri('/img/shapes/shape-circles-dark.png') ?>"
+            alt="" />
         </div>
       </div>
     </section>
