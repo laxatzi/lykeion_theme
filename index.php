@@ -11,12 +11,12 @@
           <div class="col-lg topic rounded p-5">
             <img
               class="mb-3 primary"
-              src="img/icons/generic-public.png"
+              src="<?php echo get_theme_file_uri('/img/icons/generic-public.png') ?>"
               alt=""
             />
             <img
               class="mb-3 white"
-              src="img/icons/generic-public-white.png"
+              src="<?php echo get_theme_file_uri('/img/icons/generic-public-white.png') ?>"
               alt=""
             />
             <h3 class="fw-bold">General English</h3>
@@ -26,10 +26,11 @@
             </p>
           </div>
           <div class="col-lg topic rounded p-5">
-            <img class="mb-3 primary" src="img/icons/briefcase.png" alt="" />
+            <img class="mb-3 primary" src="<?php echo get_theme_file_uri('/img/icons/briefcase.png') ?>"
+            alt="" />
             <img
               class="mb-3 white"
-              src="img/icons/briefcase-white.png"
+              src="<?php echo get_theme_file_uri('/img/icons/briefcase-white.png') ?>"
               alt=""
             />
             <h3 class="fw-bold">Business English</h3>
@@ -39,8 +40,10 @@
             </p>
           </div>
           <div class="col-lg topic rounded p-5">
-            <img class="mb-3 primary" src="img/icons/children.png" alt="" />
-            <img class="mb-3 white" src="img/icons/children-white.png" alt="" />
+            <img class="mb-3 primary" src="<?php echo get_theme_file_uri('/img/icons/children.png') ?>"
+             alt="" />
+            <img class="mb-3 white" src="<?php echo get_theme_file_uri('/img/icons/children-white.png') ?>"
+             alt="" />
             <h3 class="fw-bold">Junior English</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -50,8 +53,11 @@
         </div>
         <div class="row gap-4 mb-sm-4 mb-3">
           <div class="col-lg topic rounded p-5">
-            <img class="mb-3 primary" src="img/icons/exams.png" alt="" />
-            <img class="mb-3 white" src="img/icons/exams-white.png" alt="" />
+            <img class="mb-3 primary"
+            src="<?php echo get_theme_file_uri('/img/icons/exams.png') ?>"
+             alt="" />
+            <img class="mb-3 white" src="<?php echo get_theme_file_uri('/img/icons/exams-white.png') ?>"
+            alt="" />
             <h3 class="fw-bold">Exam preparation</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -59,8 +65,10 @@
             </p>
           </div>
           <div class="col-lg topic p-5 rounded">
-            <img class="mb-3 primary" src="img/icons/vclass.png" alt="" />
-            <img class="mb-3 white" src="img/icons/vclass-white.png" alt="" />
+            <img class="mb-3 primary" src="<?php echo get_theme_file_uri('/img/icons/vclass.png') ?>"
+            alt="" />
+            <img class="mb-3 white" src="<?php echo get_theme_file_uri('/img/icons/vclass-white.png') ?>"
+            alt="" />
             <h3 class="fw-bold">Virtual Classes</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
