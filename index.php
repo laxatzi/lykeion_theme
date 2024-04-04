@@ -195,7 +195,7 @@
                 <div class="icon">
                   <span
                     ><img
-                      src="img/icons/chalkboard-icon-purple.png"
+                      src="<?php echo get_theme_file_uri('/img/icons/chalkboard-icon-purple.png') ?>"
                       alt=""
                       class="img-fluid"
                   /></span>
@@ -213,6 +213,7 @@
                   <span
                     ><img
                       src="img/icons/livechat-icon-purple.png"
+                      src="<?php echo get_theme_file_uri('/img/icons/livechat-icon-purple.png') ?>"
                       alt=""
                       class="img-fluid"
                   /></span>
@@ -237,17 +238,23 @@
       </div>
       <div class="shapes">
         <div class="shape-image shape-image-7">
-          <img src="img/shapes/Lykeion/geometric-6.png" alt="" />
+          <img
+          src="<?php echo get_theme_file_uri('/img/shapes/geometric-6.png') ?>"
+          alt="" />
         </div>
         <div class="shape-image shape-image-8">
-          <img src="img/shapes/Lykeion/geometric-2.png" alt="" />
+          <img
+          src="<?php echo get_theme_file_uri('/img/shapes/geometric-2.png') ?>"
+          alt="" />
         </div>
         <div class="shape-image shape-image-9">
-          <img src="img/shapes/Lykeion/geometric-5.png" alt="" />
+          <img
+            src="<?php echo get_theme_file_uri('/img/shapes/geometric-5.png') ?>"
+            alt="" />
         </div>
         <div class="shape-image shape-image-10">
           <img
-            src="img/shapes/Lykeion/geo-shape-transparent-4-pink.png"
+            src="<?php echo get_theme_file_uri('/img/shapes/geo-shape-transparent-4-pink.png') ?>"
             alt=""
           />
         </div>
