@@ -118,7 +118,7 @@
           <!-- Gallery -->
           <div class="gallery-image">
             <img
-              src="img/students-in-class.png"
+              src="<?php echo get_theme_file_uri('/img/students-in-class.png') ?>"
               class="shadow-1-strong rounded me-2 img-fluid"
               alt="teacher and students discussing a topic in the class"
               title="students in class"
@@ -139,7 +139,7 @@
 
           <div class="gallery-image">
             <img
-              src="img/empty-classroom.jpg"
+              src="<?php echo get_theme_file_uri('/img/empty-classroom.jpg') ?>"
               class="shadow-1-strong rounded img-fluid"
               alt="An empty classroom ready to welcome students"
               title="empty classroom"
@@ -155,7 +155,7 @@
 
           <div class="gallery-image">
             <img
-              src="img/girl-in-classroom3.jpg"
+              src="<?php echo get_theme_file_uri('/img/girl-in-classroom3.jpg') ?>"
               class="shadow-1-strong rounded img-fluid"
               alt="A girl arriving on her class"
               title="standing girl"
