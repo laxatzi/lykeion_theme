@@ -286,7 +286,7 @@
             <div class="card p-4">
               <div class="card-img-container">
                 <img
-                  src="img/restaurant-workers.jpg"
+                  src="<?php echo get_theme_file_uri('/img/restaurant-workers.jpg') ?>"
                   class="card-img-top img-fluid"
                   alt=""
                 />
@@ -322,7 +322,7 @@
                   <div class="info-list-level fw-bold d-flex">
                     <img
                       class="me-2 img-fluid"
-                      src="img/icons/level-chart-thumb-16.png"
+                      src="<?php echo get_theme_file_uri('/img/icons/level-chart-thumb-16.png') ?>"
                       alt=""
                     />
                     <span>Beginner</span>
@@ -345,7 +345,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="img-fluid me-1"
-                      src="img/sigmund-thumb.jpg"
+                      src="<?php echo get_theme_file_uri('/img/sigmund-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">Daniel Gerard</h4>
@@ -378,7 +378,7 @@
             <div class="card p-4">
               <div class="card-img-container">
                 <img
-                  src="img/back-to-school-opt.jpg"
+                  src="<?php echo get_theme_file_uri('/img/back-to-school-opt.jpg') ?>"
                   class="card-img-top img-fluid"
                   alt=""
                 />
@@ -409,7 +409,7 @@
                   <div class="info-list-level fw-bold d-flex">
                     <img
                       class="me-2"
-                      src="img/icons/level-chart-thumb-16.png"
+                      src="<?php echo get_theme_file_uri('/img/icons/level-chart-thumb-16.png') ?>"
                       alt=""
                     />
                     <span>Beginner</span>
@@ -433,7 +433,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="me-1 img-fluid"
-                      src="img/usman-thumb.jpg"
+                      src="<?php echo get_theme_file_uri('/img/usman-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">John Katsimatides</h4>
@@ -465,7 +465,7 @@
             <div class="card p-4">
               <div class="card-img-container">
                 <img
-                  src="img/girl-in-class-portrait.jpg"
+                  src="<?php echo get_theme_file_uri('/img/girl-in-class-portrait.jpg') ?>"
                   class="card-img-top img-fluid"
                   alt=""
                 />
@@ -501,7 +501,7 @@
                   <div class="info-list-level fw-bold d-flex">
                     <img
                       class="me-2"
-                      src="img/icons/level-chart-thumb-16.png"
+                      src="<?php echo get_theme_file_uri('/img/icons/level-chart-thumb-16.png') ?>"
                       alt=""
                     />
 
@@ -525,7 +525,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="me-1 img-fluid"
-                      src="img/linkedin-sales-thumb.jpg"
+                      src="<?php echo get_theme_file_uri('/img/linkedin-sales-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">John Newman</h4>
@@ -557,7 +557,7 @@
             <div class="card p-4">
               <div class="card-img-container">
                 <img
-                  src="img/class-portrait.jpg"
+                  src="<?php echo get_theme_file_uri('/img/class-portrait.jpg') ?>"
                   class="card-img-top img-fluid"
                   alt=""
                 />
@@ -594,7 +594,7 @@
                   <div class="info-list-level fw-bold d-flex">
                     <img
                       class="me-2 img-fluid"
-                      src="img/icons/level-chart-thumb-16.png"
+                      src="<?php echo get_theme_file_uri('/img/icons/level-chart-thumb-16.png') ?>"
                       alt=""
                     />
                     <span>Intermediate</span>
