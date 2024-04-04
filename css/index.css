@@ -86,10 +86,6 @@ h6 {
   hyphens: auto;
 }
 
-h3 {
-  color: #303030;
-}
-
 a {
   color: var(--cc-primary);
   text-decoration: none;
