@@ -433,7 +433,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="me-1 img-fluid"
-                      src="<?php echo get_theme_file_uri('/img/thumb/usman-thumb.jpg') ?>"
+                      src="<?php echo get_theme_file_uri('/img/thumbs/usman-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">John Katsimatides</h4>
@@ -706,7 +706,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="me-1 img-fluid"
-                      src="<?php echo get_theme_file_uri('/img/thumb/usman-thumb.jpg') ?>"
+                      src="<?php echo get_theme_file_uri('/img/thumbs/usman-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">John Katsimatides</h4>
@@ -797,7 +797,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="me-1 img-fluid"
-                      src="<?php echo get_theme_file_uri('/img/thumb/sigmund-thumb.jpg') ?>"
+                      src="<?php echo get_theme_file_uri('/img/thumbs/sigmund-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">Daniel Gerard</h4>
@@ -837,7 +837,9 @@
               class="video-play-btn"
               target="_blank"
             >
-              <img src="img/icons/youtube-orange.png" alt="" />
+              <img
+              src="<?php echo get_theme_file_uri('/img/icons/youtube-orange.png') ?>"
+              src="img/icons/youtube-orange.png" alt="" />
             </a>
           </div>
           <small class="attribute mb-3 text-center">
@@ -865,13 +867,13 @@
                     <div class="img-wrapper-event--wide d-none d-sm-block">
                       <a href="event-details.html"
                         ><img
-                        src="<?php echo get_theme_file_uri('/img/thumb/pen-thumbnail-145.png') ?>"
+                        src="<?php echo get_theme_file_uri('/img/thumbs/pen-thumbnail-145.png') ?>"
                       /></a>
                     </div>
                     <div class="img-wrapper-event--mobile d-block d-sm-none">
                       <a href="event-details.html"
                         ><img
-                        src="<?php echo get_theme_file_uri('/img/thumb/pen-thumbnail-400.png') ?>"
+                        src="<?php echo get_theme_file_uri('/img/thumbs/pen-thumbnail-400.png') ?>"
                         alt=""
                       /></a>
                     </div>
@@ -931,14 +933,14 @@
                     <div class="img-wrapper-event--wide d-none d-sm-block">
                       <a href="event-details.html"
                         ><img
-                        src="<?php echo get_theme_file_uri('/img/thumb/halloween-thumbnail.png') ?>"
+                        src="<?php echo get_theme_file_uri('/img/thumbs/halloween-thumbnail.png') ?>"
                         alt=""
                       /></a>
                     </div>
                     <div class="img-wrapper-event--mobile d-block d-sm-none">
                       <a href="event-details.html"
                         ><img
-                        src="<?php echo get_theme_file_uri('/img/thumb/pen-thumbnail-400.png') ?>"
+                        src="<?php echo get_theme_file_uri('/img/thumbs/pen-thumbnail-400.png') ?>"
                         alt=""
                       /></a>
                     </div>
@@ -990,14 +992,14 @@
                     <div class="img-wrapper-event--wide d-none d-sm-block">
                       <a href="event-details.html"
                         ><img
-                        src="<?php echo get_theme_file_uri('/img/thumb/london-bridge-thumbnail-145.png') ?>"
+                        src="<?php echo get_theme_file_uri('/img/thumbs/london-bridge-thumbnail-145.png') ?>"
                         alt=""
                       /></a>
                     </div>
                     <div class="img-wrapper-event--mobile d-block d-sm-none">
                       <a href="event-details.html"
                         ><img
-                        src="<?php echo get_theme_file_uri('/img/thumb/london-bridge-thumbnail-400.png') ?>"
+                        src="<?php echo get_theme_file_uri('/img/thumbs/london-bridge-thumbnail-400.png') ?>"
                         alt=""
                       /></a>
                     </div>
@@ -1195,7 +1197,7 @@
             >
               <div class="student-info d-flex">
                 <img
-                  src="<?php echo get_theme_file_uri('/img/thumbs/happy-studengirl-thumbnail-55.png') ?>"
+                  src="<?php echo get_theme_file_uri('/img/thumbs/happy-studentgirl-thumbnail-55.png') ?>"
                   alt=""
                   class="img-fluid"
                 />
@@ -1511,7 +1513,7 @@
             <div class="blogpost-img">
               <a href="blogpost-page.html">
                 <img
-                  src="<?php echo get_theme_file_uri('/img/restauran-workers.jpg') ?>"
+                  src="<?php echo get_theme_file_uri('/img/restaurant-workers.jpg') ?>"
                   alt=""
                   class="img-fluid"
                 />
