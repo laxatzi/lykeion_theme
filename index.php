@@ -345,7 +345,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="img-fluid me-1"
-                      src="<?php echo get_theme_file_uri('/img/sigmund-thumb.jpg') ?>"
+                      src="<?php echo get_theme_file_uri('/img/thumbs/sigmund-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">Daniel Gerard</h4>
@@ -433,7 +433,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="me-1 img-fluid"
-                      src="<?php echo get_theme_file_uri('/img/usman-thumb.jpg') ?>"
+                      src="<?php echo get_theme_file_uri('/img/thumb/usman-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">John Katsimatides</h4>
@@ -525,7 +525,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="me-1 img-fluid"
-                      src="<?php echo get_theme_file_uri('/img/linkedin-sales-thumb.jpg') ?>"
+                      src="<?php echo get_theme_file_uri('/img/thumbs/linkedin-sales-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">John Newman</h4>
@@ -616,7 +616,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="me-1 img-fluid"
-                      src="<?php echo get_theme_file_uri('/img/linkedin-sales-thumb.jpg') ?>"
+                      src="<?php echo get_theme_file_uri('/img/thumbs/linkedin-sales-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">John Newman</h4>
@@ -706,7 +706,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="me-1 img-fluid"
-                      src="<?php echo get_theme_file_uri('/img/usman-thumb.jpg') ?>"
+                      src="<?php echo get_theme_file_uri('/img/thumb/usman-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">John Katsimatides</h4>
@@ -797,7 +797,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="me-1 img-fluid"
-                      src="<?php echo get_theme_file_uri('/img/sigmund-thumb.jpg') ?>"
+                      src="<?php echo get_theme_file_uri('/img/thumb/sigmund-thumb.jpg') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2">Daniel Gerard</h4>
@@ -865,13 +865,13 @@
                     <div class="img-wrapper-event--wide d-none d-sm-block">
                       <a href="event-details.html"
                         ><img
-                        src="<?php echo get_theme_file_uri('/img/pen-thumbnail-145.png') ?>"
+                        src="<?php echo get_theme_file_uri('/img/thumb/pen-thumbnail-145.png') ?>"
                       /></a>
                     </div>
                     <div class="img-wrapper-event--mobile d-block d-sm-none">
                       <a href="event-details.html"
                         ><img
-                        src="<?php echo get_theme_file_uri('/img/pen-thumbnail-400.png') ?>"
+                        src="<?php echo get_theme_file_uri('/img/thumb/pen-thumbnail-400.png') ?>"
                         alt=""
                       /></a>
                     </div>
@@ -930,12 +930,16 @@
                   <div class="event-thumbnail me-sm-2">
                     <div class="img-wrapper-event--wide d-none d-sm-block">
                       <a href="event-details.html"
-                        ><img src="img/halloween-thumbnail.png" alt=""
+                        ><img
+                        src="<?php echo get_theme_file_uri('/img/thumb/halloween-thumbnail.png') ?>"
+                        alt=""
                       /></a>
                     </div>
                     <div class="img-wrapper-event--mobile d-block d-sm-none">
                       <a href="event-details.html"
-                        ><img src="img/halloween-thumbnail-400.png" alt=""
+                        ><img
+                        src="<?php echo get_theme_file_uri('/img/thumb/pen-thumbnail-400.png') ?>"
+                        alt=""
                       /></a>
                     </div>
                     <div class="attribution-wrapper">
@@ -985,12 +989,16 @@
                   <div class="event-thumbnail me-sm-2">
                     <div class="img-wrapper-event--wide d-none d-sm-block">
                       <a href="event-details.html"
-                        ><img src="img/london-bridge-thumbnail-145.png" alt=""
+                        ><img
+                        src="<?php echo get_theme_file_uri('/img/thumb/london-bridge-thumbnail-145.png') ?>"
+                        alt=""
                       /></a>
                     </div>
                     <div class="img-wrapper-event--mobile d-block d-sm-none">
                       <a href="event-details.html"
-                        ><img src="img/london-bridge-thumbnail-400.png" alt=""
+                        ><img
+                        src="<?php echo get_theme_file_uri('/img/thumb/london-bridge-thumbnail-400.png') ?>"
+                        alt=""
                       /></a>
                     </div>
                     <div class="attribution-wrapper">
@@ -1046,19 +1054,29 @@
       </div>
       <div class="shapes">
         <div class="shape-image shape-image-14">
-          <img src="img/shapes/Lykeion/geometric-20.png" alt="" />
+          <img
+          src="<?php echo get_theme_file_uri('/img/shapes/geometric-20.png') ?>"
+          src="img/shapes/Lykeion/geometric-20.png" alt="" />
         </div>
         <div class="shape-image shape-image-15">
-          <img src="img/shapes/Lykeion/geo-shape-transparent-15.png" alt="" />
+          <img
+          src="<?php echo get_theme_file_uri('/img/shapes/geo-shape-transparent-15.png') ?>"
+          src="img/shapes/Lykeion/geo-shape-transparent-15.png" alt="" />
         </div>
         <div class="shape-image shape-image-16">
-          <img src="img/shapes/Lykeion/geo-shape-transparent-16.png" alt="" />
+          <img
+          src="<?php echo get_theme_file_uri('/img/shapes/geo-shape-transparent-16.png') ?>"
+          alt="" />
         </div>
         <div class="shape-image shape-image-17">
-          <img src="img/shapes/Lykeion/geo-shape-transparent-17.png" alt="" />
+          <img
+          src="<?php echo get_theme_file_uri('/img/shapes/geo-shape-transparent-17.png') ?>"
+          alt="" />
         </div>
         <div class="shape-image shape-image-18">
-          <img src="img/shapes/Lykeion/rectangleStripped-primary.png" alt="" />
+          <img
+          src="<?php echo get_theme_file_uri('/img/shapes/rectangleStripped-primary.png') ?>"
+          alt="" />
         </div>
       </div>
     </section>
@@ -1082,7 +1100,9 @@
           <div class="tutor-tab">
             <div class="thumbnail">
               <a href="tutor-profile.html">
-                <img src="img/usman-thumbnail-265.jpg" alt="" />
+                <img
+                src="<?php echo get_theme_file_uri('/img/thumbs/usman-thumbnail-265.jpg') ?>"
+                alt="" />
               </a>
             </div>
             <div class="tutor-info p-2">
@@ -1096,7 +1116,7 @@
             <div class="thumbnail">
               <a href="tutor-profile.html">
                 <img
-                  src="img/john-newman-thumbnail-265.jpg"
+                  src="<?php echo get_theme_file_uri('/img/thumbs/john-newman-thumbnail-265.jpg') ?>"
                   alt=""
                   class="img-fluid"
                 />
@@ -1113,7 +1133,7 @@
             <div class="thumbnail">
               <a href="tutor-profile.html">
                 <img
-                  src="img/sigmund-thumbnail-265.jpg"
+                  src="<?php echo get_theme_file_uri('/img/thumbs/sigmund-thumbnail-265.jpg') ?>"
                   alt=""
                   class="img-fluid"
                 />
@@ -1131,27 +1151,28 @@
       <div class="shapes">
         <div class="shape-image shape-image-19">
           <img
-            src="img/shapes/Lykeion/geometric-22.png"
+            src="<?php echo get_theme_file_uri('/img/shapes/geometric-22.png') ?>"
             alt=""
             class="img-fluid"
           />
         </div>
         <div class="shape-image shape-image-20">
           <img
-            src="img/shapes/Lykeion/geometric-21.png"
+            src="<?php echo get_theme_file_uri('/img/shapes/geometric-21.png') ?>"
             alt=""
             class="img-fluid"
           />
         </div>
         <div class="shape-image shape-image-21">
           <img
-            src="img/shapes/Lykeion/geo-shape-transparent-18.png"
+            src="<?php echo get_theme_file_uri('/img/shapes/geo-shape-transparent-18.png') ?>"
             alt=""
             class="img-fluid"
           />
         </div>
       </div>
     </section>
+
     <section id="testimonials-section" class="container-fluid">
       <div class="container">
         <div
@@ -1174,7 +1195,7 @@
             >
               <div class="student-info d-flex">
                 <img
-                  src="img/happy-studentgirl-thumbnail-55.png"
+                  src="<?php echo get_theme_file_uri('/img/thumbs/happy-studengirl-thumbnail-55.png') ?>"
                   alt=""
                   class="img-fluid"
                 />
@@ -1207,7 +1228,7 @@
             >
               <div class="student-info d-flex">
                 <img
-                  src="img/happy-student-thumbnail.png"
+                  src="<?php echo get_theme_file_uri('/img/thumbs/happy-student-thumbnail.png') ?>"
                   alt=""
                   class="img-fluid"
                 />
@@ -1238,7 +1259,7 @@
             <div class="testimonial-card testimonial-card-3 p-4">
               <div class="student-info d-flex">
                 <img
-                  src="img/usman-thumbnail-55.png "
+                  src="<?php echo get_theme_file_uri('/img/thumbs/usman-thumbnail-55.png') ?>"
                   alt=""
                   class="img-fluid"
                 />
@@ -1294,13 +1315,19 @@
       </div>
       <div class="shapes">
         <div class="shape-image shape-image-22">
-          <img src="img/shapes/Lykeion/shape-circles.png" alt="" />
+          <img
+          src="<?php echo get_theme_file_uri('/img/shapes/shape-circles.png') ?>"
+          alt="" />
         </div>
         <div class="shape-image shape-image-23">
-          <img src="img/shapes/Lykeion/abstract2-3.png" alt="" />
+          <img
+          src="<?php echo get_theme_file_uri('/img/shapes/abstract2-3.png') ?>"
+          src="img/shapes/Lykeion/abstract2-3.png" alt="" />
         </div>
         <div class="shape-image shape-image-24">
-          <img src="img/shapes/Lykeion/geometric-7.png" alt="" />
+          <img
+          src="<?php echo get_theme_file_uri('/img/shapes/geometric-7.png') ?>"
+          alt="" />
         </div>
       </div>
     </section>
