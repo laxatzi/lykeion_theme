@@ -7,7 +7,12 @@
     <title>Edutheme Template</title>
      <?php wp_head(); ?>
   </head>
-  <body>    <header class="container-fluid">
+  <body>
+    <a class="back-to-top hidden" href="#" id="js--back-to-top" title="Go to top">
+      <span class="vicon-back-to-top"></span>
+      <span class="sr-only">Back to top</span>
+    </a>
+    <header class="container-fluid">
       <nav class="navbar navbar-expand-lg text-primary container p-3 ps-0">
         <div class="container-fluid">
           <a class="navbar-brand me-3 d-flex" href="index.html"
