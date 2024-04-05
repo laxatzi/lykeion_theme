@@ -5,7 +5,7 @@
     wp_enqueue_style('edutheme_bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
     wp_enqueue_style('edutheme_main_styles', get_theme_file_uri('/css/index.css'));
     wp_enqueue_style('edutheme_vicon_styles', get_theme_file_uri('/css/vicons.css'));
-    wp_enqueue_script('main js file', get_theme_file_uri("/js/index.js"), array('jquery'), '1.0.0', true );
+    wp_enqueue_script('main-js-file', get_theme_file_uri("/js/index.js"), array('jquery'), '1.0.0', true );
   }
 
   add_action('wp_enqueue_scripts', 'edutheme_files');
