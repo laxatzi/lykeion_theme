@@ -29,13 +29,26 @@
             <span class="navbar-toggler-icon toggle-menu"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="courses.html">Courses</a>
+              <li <?php
+                if(is_page('courses')) {
+                  echo 'class="current-menu-item nav-item"';
+                }else {
+                  echo 'class="nav-item"';
+                } ?> >
+                <a class="nav-link" href="<?php echo site_url('/courses') ?>">Courses</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+
+              <li <?php
+                if(is_page('about-us')) {
+                  echo 'class="current-menu-item nav-item"';
+                }else {
+                  echo 'class="nav-item"';
+                } ?>>
+                <a class="nav-link" href="<?php echo site_url('/about-us') ?>">About</a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
               </li>
