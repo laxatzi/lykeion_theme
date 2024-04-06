@@ -32,7 +32,7 @@
 
             <ul class="navbar-nav ms-auto">
               <li <?php
-                if(is_page('courses')) {
+                if(is_page('courses') || wp_get_post_parent_id(0) == 24) {
                   echo 'class="current-menu-item nav-item"';
                 }else {
                   echo 'class="nav-item"';
