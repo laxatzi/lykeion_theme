@@ -1,5 +1,6 @@
 <?php
   get_header();
+  get_template_part('template-parts/hero-section');
   ?>
     <section id="topics">
       <div class="container">
