@@ -64,3 +64,6 @@ add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
 
 // Next function...
 
+
+
+
