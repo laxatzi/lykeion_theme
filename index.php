@@ -170,7 +170,9 @@
           <main class="col-xl-7 me-4" >
           <?php
             while(have_posts()) {
-              the_post(); ?>
+              the_post();
+
+          ?>
 
           <div class="the-blogPost"  >
           <!-- image -->
@@ -184,15 +186,27 @@
             <div class="blogPost-meta px-4 pt-sm-3 d-sm-flex align-items-center justify-content-between my-4">
               <div class="blogPost-views d-flex align-items-center">
                 <span class="vicon-views"></span>
-                <h5> 123 Views</h5>
+                <h5>
+                  <?php
+                    gt_set_post_view();
+                    echo gt_get_post_view();
+                  ?>
+                </h5>
               </div>
               <div class="blogPost-comments d-flex align-items-center">
                 <span class="vicon-comment"></span>
-                <h5>07 Comments</h5>
+                <h5>
+                 <?php echo $post->comment_count ?>
+                </h5>
               </div>
               <div class="blogPost-date d-flex align-items-center">
                 <span class="vicon-calendar"></span>
-                <h5>12 December, 2023</h5>
+                <h5>
+                  <?php
+                    $publish_date = get_the_date('j F, Y');
+                   echo $publish_date;
+                  ?>
+                </h5>
               </div>
             </div>
             <!-- title -->
