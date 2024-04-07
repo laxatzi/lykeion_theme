@@ -29,7 +29,7 @@
               <div class="latest-post-item d-flex py-4">
                 <div class="latest-post-img">
                   <img
-                  <?php echo get_theme_file_uri('/img/pen-small-70.jpg') ?>
+                  src="<?php echo get_theme_file_uri('/img/pen-small-70.jpg') ?>"
                   alt="">
                 </div>
                 <div class="latest-post-info">
