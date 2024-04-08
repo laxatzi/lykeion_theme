@@ -13,9 +13,16 @@
 // Theme Features
   function lykeion_features() {
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails', array(
+    'post',
+    'page',
+    'custom-post-type-name',
+    ));
   }
 
   add_action('after_setup_theme', 'lykeion_features');
+
+
 
 // Show views
   function gt_get_post_view() {
@@ -23,7 +30,6 @@
     $count = get_post_meta( get_the_ID(), 'post_views_count', true );
 
     return "$count views";
-
 }
 
   function gt_set_post_view() {
@@ -61,9 +67,5 @@
 add_filter( 'manage_posts_columns', 'gt_posts_column_views' );
 
 add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
-
-// Next function...
-
-
 
 

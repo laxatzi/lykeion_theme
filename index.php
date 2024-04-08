@@ -1,6 +1,6 @@
 <?php
    get_header();
-   get_template('template-parts/page-banner.php');
+    get_template_part('template-parts/page-banner');
 ?>
    <main class="container-fluid">
       <div class="py-5 pe-5 container" >
@@ -48,7 +48,7 @@
               <div class="latest-post-item d-flex py-4">
                 <div class="latest-post-img">
                   <img
-                    src="<?php echo get_theme_file_uri('/img/woman-talking-on-phone-post.jpg') ?>" alt="">
+                    src="<?php  echo get_theme_file_uri('/img/woman-talking-on-phone-post.jpg') ?>" alt="">
                 </div>
                 <div class="latest-post-info">
                   <div class="latest-post-date">
@@ -171,10 +171,8 @@
           <?php
             while(have_posts()) {
               the_post();
-
-          ?>
-
-          <div class="the-blogPost"  >
+            ?>
+            <div class="the-blogPost"  >
           <!-- image -->
             <div class="blogPost-image">
               <img
@@ -203,7 +201,7 @@
                 <span class="vicon-calendar"></span>
                 <h5>
                   <?php
-                    $publish_date = get_the_date('j F, Y');
+                    $publish_date = get_the_time('j F, Y');
                    echo $publish_date;
                   ?>
                 </h5>
@@ -215,7 +213,7 @@
               <h2 class="fw-bold"><?php the_title(); ?></h2>
             </a>
            </div>
-              <div class="blogPost-content px-4 pb-4">
+           <div class="blogPost-content px-4 pb-4">
              <?php the_excerpt(); ?>
               <div class="read-more mt-3 mb-3 btn btn-lg col-md-4 col-sm-12">
                 <a href="blog-details.html" class="link-btn">Read More</a>
@@ -226,6 +224,13 @@
           <?php
             }
           ?>
+
+<?php the_posts_pagination( array(
+    'mid_size'  => 2,
+    'prev_text' => __( 'Back', 'textdomain' ),
+    'next_text' => __( 'Onward', 'textdomain' ),
+) ); ?>
+
           </main>
         </div>
       </div>
@@ -233,3 +238,4 @@
 <?php
   get_footer();
 ?>
+
