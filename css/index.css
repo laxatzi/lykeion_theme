@@ -1361,7 +1361,7 @@ header.container-fluid {
 .pagination {
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 .pagination .page,
@@ -2158,20 +2158,20 @@ a.lost::after {
   display: none;
 } */
 
-/* .events-pagination {
+.events-pagination {
   justify-content: center;
   align-items: center;
-  margin: 70px 0;
+  margin: 10px 0 40px;
 }
 
-.events-pagination .page,
+.events-pagination .page-numbers,
 .events-pagination .prev,
 .events-pagination .next {
   font-size: 1rem;
   font-weight: bold;
   background-color: var(--cc-grey-lighter);
   border: 1px solid var(--cc-grey-lighter);
-  border-radius: 100%;
+  border-radius: 10%;
   width: 40px;
   height: 40px;
   display: inline-block;
@@ -2185,7 +2185,7 @@ a.lost::after {
 .events-pagination .prev:hover,
 .events-pagination .next:hover,
 .events-pagination .page:hover {
-  background-color: var(--cc-primary-bg);
+  background-color: var(--cc-primary-light);
   cursor: pointer;
   border-bottom: 1px solid var(--cc-white-sugar);
 }
@@ -2194,7 +2194,7 @@ a.lost::after {
 .events-pagination .next a::after,
 .events-pagination .page a::after {
   background-color: transparent;
-} */
+}
 
 .event-sidebar {
   background-color: var(--cc-white-sugar);
