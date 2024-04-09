@@ -22,7 +22,7 @@
 
           <div class="aside-div latest-posts p-4 my-4">
             <div class="aside-title py-3">
-              <h3>Latest Posts</h3>
+              <h3>Popular Posts</h3>
             </div>
             <div class="aside-content ">
 
