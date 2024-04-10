@@ -87,10 +87,6 @@
 
           <div class="aside-div blog-categories p-4 my-4">
             <div class="blog-categories-item">
-            <!-- aside title -->
-              <!-- <div class="aside-title py-3">
-                <h3>Categories</h3>
-              </div> -->
              <!-- aside content -->
               <div class="aside-content py-4">
                 <div class="categories">
@@ -100,38 +96,27 @@
                     'hide_empty' => 1,
                   ) );
                   ?>
-
-
                  </div>
                </div>
              </div>
            </div>
 
           <div class="aside-div blog-tags p-4 my-4">
-            <div class="aside-title py-3">
+            <!-- <div class="aside-title py-3">
               <h3>Tags</h3>
-            </div>
+            </div> -->
             <div class="aside-content py-4">
               <div class="tag-wrapper d-flex flex-wrap">
-                <div class="the-tag p-2 m-2">
-                  <a href="">Phrasal Verbs</a>
-                </div>
-                 <div class="the-tag p-2 m-2">
-                  <a href="">Grammar</a>
-                </div>
-                <div class="the-tag p-2 m-2">
-                  <a href="">Modal Verbs</a>
-                </div>
-                <div class="the-tag p-2 m-2">
-                  <a href="">IELTS</a>
-                </div>
-                <div class="the-tag p-2 m-2">
-                  <a href="">Exams</a>
-                </div>
-                <div class="the-tag p-2 m-2">
-                  <a href="">Daily Practice</a>
-                </div>
-
+                <?php
+                  $tags = get_tags(array(
+                    'hide_empty' => false
+                  ));
+                  echo '<div class="the-tag p-2 m-2">';
+                  foreach ($tags as $tag) {
+                    echo '<a href="">' . $tag->name . '</a>';
+                  }
+                  echo '</div>';
+                  ?>
               </div>
             </div>
           </div>
