@@ -2742,6 +2742,31 @@ h5 {
   flex: 3;
 }
 
+li.categories ul {
+  padding-left: 0;
+  padding-top: 20px;
+  border-top: 2px solid var(--cc-grey-lighter);
+}
+
+li.categories {
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+li.categories li.cat-item {
+  list-style: none;
+  background-color: var(--cc-white);
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+li.cat-item a {
+  padding-right: 10%;
+  border-right: 2px solid var(--cc-grey-lighter);
+}
+
 .the-tag {
   background-color: white;
 }
