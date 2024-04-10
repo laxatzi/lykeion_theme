@@ -2767,8 +2767,10 @@ li.cat-item a {
   border-right: 2px solid var(--cc-grey-lighter);
 }
 
-.the-tag {
-  background-color: white;
+.the-tag a {
+  background-color: var(--cc-white);
+  padding: 10px;
+  margin: 5px;
 }
 
 .blogPost-image {
