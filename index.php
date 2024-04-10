@@ -216,7 +216,7 @@
            <div class="blogPost-content px-4 pb-4">
              <?php the_excerpt(); ?>
               <div class="read-more mt-3 mb-3 btn btn-lg col-md-4 col-sm-12">
-                <a href="blog-details.html" class="link-btn">Read More</a>
+                <a href="<?php the_permalink(); ?>" class="link-btn">Read More</a>
                 <span class="vicon-arrow--right"></span>
               </div>
             </div>
