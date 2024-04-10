@@ -88,37 +88,20 @@
           <div class="aside-div blog-categories p-4 my-4">
             <div class="blog-categories-item">
             <!-- aside title -->
-              <div class="aside-title py-3">
+              <!-- <div class="aside-title py-3">
                 <h3>Categories</h3>
-              </div>
+              </div> -->
              <!-- aside content -->
               <div class="aside-content py-4">
                 <div class="categories">
-              <!-- the category -->
-                <a class="the-category d-flex px-3 py-2 mb-3">
-                  <div class="category-name p-2">Exams</div>
-                  <div class="category-sub-number p-2">(5)</div>
-                </a>
-              <!-- the category -->
-                <a class="the-category d-flex px-3 py-2 my-3">
-                    <div class="category-name p-2">Grammar</div>
-                    <div class="category-sub-number p-2">(3)</div>
-                </a>
-              <!-- the category -->
-                 <a class="the-category d-flex px-3 py-2 my-3">
-                   <div class="category-name p-2">Learning</div>
-                   <div class="category-sub-number p-2">(4)</div>
-                 </a>
-              <!-- the category -->
-                 <a class="the-category d-flex px-3 py-2 my-3">
-                   <div class="category-name p-2">Practice</div>
-                   <div class="category-sub-number p-2">(2)</div>
-                 </a>
-              <!-- the category -->
-                 <a class="the-category d-flex px-3 py-2 mt-3">
-                   <div class="category-name p-2">Miscellaneous</div>
-                   <div class="category-sub-number p-2">(1)</div>
-                 </a>
+                  	<?php wp_list_categories( array(
+                    'orderby'    => 'name',
+                    'show_count' => true,
+                    'hide_empty' => 1,
+                  ) );
+                  ?>
+
+
                  </div>
                </div>
              </div>
@@ -241,3 +224,23 @@
   get_footer();
 ?>
 
+              <!-- the category
+                <a class="the-category d-flex px-3 py-2 my-3">
+                    <div class="category-name p-2">Grammar</div>
+                    <div class="category-sub-number p-2">(3)</div>
+                </a>
+              the category
+                 <a class="the-category d-flex px-3 py-2 my-3">
+                   <div class="category-name p-2">Learning</div>
+                   <div class="category-sub-number p-2">(4)</div>
+                 </a>
+               the category
+                 <a class="the-category d-flex px-3 py-2 my-3">
+                   <div class="category-name p-2">Practice</div>
+                   <div class="category-sub-number p-2">(2)</div>
+                 </a>
+              the category
+                 <a class="the-category d-flex px-3 py-2 mt-3">
+                   <div class="category-name p-2">Miscellaneous</div>
+                   <div class="category-sub-number p-2">(1)</div>
+                 </a> -->
