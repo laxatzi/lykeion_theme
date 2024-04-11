@@ -25,13 +25,8 @@
               <h3>Popular Posts</h3>
             </div>
             <div class="aside-content ">
-
-              <div class="latest-post-item d-flex py-4">
-                <div class="latest-post-img">
-                  <img
-                  src="<?php echo get_theme_file_uri('/img/pen-small-70.jpg') ?>"
-                  alt="">
-                </div>
+              <?php wp_display_popular_posts(3); ?>
+              <!-- <div class="latest-post-item d-flex py-4">
                 <div class="latest-post-info">
                   <div class="latest-post-date">
                    <small>16 November 2023</small>
@@ -43,45 +38,7 @@
                   <small class="attribute">Photo by <a href="https://unsplash.com/@aaronburden?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aaron Burden</a> on <a href="https://unsplash.com/photos/fountain-pen-on-black-lined-paper-y02jEX_B0O0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
                   </small>
                 </div>
-              </div>
-            <!-- end of latest-post-item -->
-              <div class="latest-post-item d-flex py-4">
-                <div class="latest-post-img">
-                  <img
-                    src="<?php  echo get_theme_file_uri('/img/woman-talking-on-phone-post.jpg') ?>" alt="">
-                </div>
-                <div class="latest-post-info">
-                  <div class="latest-post-date">
-                   <small>12 November 2023</small>
-                  </div>
-                  <div class="latest-post-title">
-                    <a href="blog-details.html"><h5 class="fw-bold">
-                      How to improve your spoken English: 8 tips
-                    </h5></a>
-                  </div>
-                  <small class="attribute">Photo by <a href="https://unsplash.com/@joycebusola?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joyce Busola</a> on <a href="https://unsplash.com/photos/woman-in-white-dress-shirt-L9U5UUScnHY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-                  </small>
-                </div>
-              </div>
-            <!-- end of latest-post-item -->
-             <div class="latest-post-item d-flex py-4">
-                <div class="latest-post-img">
-                  <img src="<?php echo get_theme_file_uri('/img/girl-in-class-portrait-post.jpg') ?>" alt="">
-                </div>
-                <div class="latest-post-info">
-                  <div class="latest-post-date">
-                   <small>07 November 2023</small>
-                  </div>
-                  <div class="latest-post-title">
-                    <a href="blog-details.html"><h5 class="fw-bold">
-                      The Past Perfect Tense
-                    </h5></a>
-                  </div>
-                  <small class="attribute">Photo by <a href="https://unsplash.com/@javotrueba?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">javier trueba</a> on <a href="https://unsplash.com/photos/woman-carrying-white-and-green-textbook-iQPr1XkF5F0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-                  </small>
-                </div>
-              </div>
-            <!-- end of latest-post-item -->
+              </div> -->
             </div>
           </div>
 
@@ -167,7 +124,7 @@
               </div>
               <div class="blogPost-date d-flex align-items-center">
                 <span class="vicon-calendar"></span>
-                <h5>
+                <h5 style="font-style:italic">
                   <?php
                     $publish_date = get_the_time('j F, Y');
                    echo $publish_date;
@@ -208,24 +165,3 @@
 <?php
   get_footer();
 ?>
-
-              <!-- the category
-                <a class="the-category d-flex px-3 py-2 my-3">
-                    <div class="category-name p-2">Grammar</div>
-                    <div class="category-sub-number p-2">(3)</div>
-                </a>
-              the category
-                 <a class="the-category d-flex px-3 py-2 my-3">
-                   <div class="category-name p-2">Learning</div>
-                   <div class="category-sub-number p-2">(4)</div>
-                 </a>
-               the category
-                 <a class="the-category d-flex px-3 py-2 my-3">
-                   <div class="category-name p-2">Practice</div>
-                   <div class="category-sub-number p-2">(2)</div>
-                 </a>
-              the category
-                 <a class="the-category d-flex px-3 py-2 mt-3">
-                   <div class="category-name p-2">Miscellaneous</div>
-                   <div class="category-sub-number p-2">(1)</div>
-                 </a> -->
