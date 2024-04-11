@@ -17,7 +17,8 @@
               ?></a></div>
                 <div class="meta d-xl-flex justify-content-between">
                   <div class="author-meta mb-2 d-flex align-items-center">
-                    <img src="img/usman-thumb.jpg" alt="">
+                    <!-- <img src="img/usman-thumb.jpg" alt=""> -->
+                    <?php echo get_avatar( get_the_author_meta( 'ID' ), 40 ); ?>
                     <h5 class="ms-2 mt-1"><?php echo get_the_author_meta('nickname'); ?> </h5>
                   </div>
                   <div class="blogPost-date-meta d-flex align-items-center">
