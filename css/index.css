@@ -86,6 +86,10 @@ h6 {
   hyphens: auto;
 }
 
+h2.banner {
+  font-size: 52px;
+}
+
 a {
   color: var(--cc-primary);
   text-decoration: none;
@@ -285,7 +289,7 @@ h3.intro {
 }
 
 h1 {
-  font-size: 68px;
+  font-size: 52px;
   line-height: 1.24;
 }
 
