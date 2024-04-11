@@ -31,8 +31,10 @@
               <!-- end meta -->
               </div>
             </div>
-            <?php the_content(); ?>
-
+            <h1 class="fw-bold"><?php the_title();?></h1>
+            <?php
+            the_content();
+             ?>
           </div>
         </div>
       </div>
