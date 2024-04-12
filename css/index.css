@@ -233,6 +233,15 @@ section#blog-latest {
   display: flex;
 }
 
+#hero {
+  background-color: var(--cc-white-off);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--cc-bg-distinct-lighter),
+    var(--cc-bg-primary-lighter)
+  );
+}
+
 section#hero {
   padding-bottom: 0;
 }
