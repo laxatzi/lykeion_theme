@@ -84,6 +84,9 @@ function wp_display_popular_posts($num_posts) {
      while ($popular->have_posts()) {
          $popular->the_post();
          echo '<div class="latest-post-item d-flex py-4">
+                <div class="latest-post-img">'.
+                  get_the_post_thumbnail('', array(100, 100))
+                .'</div>
                 <div class="latest-post-info">
                   <div class="latest-post-date">
                    <small style="font-style:italic">'.$publish_date = get_the_time('j F, Y');
@@ -95,4 +98,6 @@ function wp_display_popular_posts($num_posts) {
  wp_reset_postdata();
 }
 
+
+add_theme_support( 'post-thumbnails' );
 
