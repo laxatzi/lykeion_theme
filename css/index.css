@@ -1446,7 +1446,7 @@ header.container-fluid {
   display: block;
 }
 
-.page:hover,
+/* .page:hover,
 .page:active {
   background-color: var(--cc-primary-bg);
 }
@@ -1454,7 +1454,7 @@ header.container-fluid {
 .page:hover a,
 .page:active a {
   color: var(--cc-white-sugar);
-}
+} */
 
 .courses .course-info-main main {
   flex: 3;
