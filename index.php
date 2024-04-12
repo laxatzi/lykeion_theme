@@ -45,7 +45,7 @@
           <div class="aside-div blog-categories p-4 my-4">
             <div class="blog-categories-item">
              <!-- aside content -->
-              <div class="aside-content py-4">
+              <div class="aside-content">
                 <div class="categories">
                   	<?php wp_list_categories( array(
                     'orderby'    => 'name',
@@ -59,9 +59,9 @@
            </div>
 
           <div class="aside-div blog-tags p-4 my-4">
-            <!-- <div class="aside-title py-3">
+            <div class="aside-title">
               <h3>Tags</h3>
-            </div> -->
+            </div>
             <div class="aside-content py-4">
               <div class="tag-wrapper d-flex flex-wrap">
                 <?php
