@@ -233,7 +233,8 @@ section#blog-latest {
   display: flex;
 }
 
-#hero {
+#hero,
+.wrapper {
   background-color: var(--cc-white-off);
   background-image: linear-gradient(
     to right bottom,
