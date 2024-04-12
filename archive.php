@@ -1,6 +1,6 @@
 <?php
    get_header();
-    get_template_part('template-parts/page-banner');
+    get_template_part('template-parts/archive-banner');
 ?>
    <main class="container-fluid">
       <div class="py-5 pe-5 container" >
