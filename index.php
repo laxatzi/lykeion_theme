@@ -68,7 +68,7 @@
                   $tags = get_tags(array(
                     'hide_empty' => false
                   ));
-                  echo '<div class="the-tag p-2 m-2">';
+                  echo '<div class="the-tag ">';
                   foreach ($tags as $tag) {
                     echo '<a href="">' . $tag->name . '</a>';
                   }
