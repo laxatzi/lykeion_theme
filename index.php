@@ -45,7 +45,7 @@
           <div class="aside-div blog-categories p-4 my-4">
             <div class="blog-categories-item">
              <!-- aside content -->
-              <div class="aside-content">
+              <div class="aside-content pb-4">
                 <div class="categories">
                   	<?php wp_list_categories( array(
                     'orderby'    => 'name',
