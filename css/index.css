@@ -133,7 +133,15 @@ a:focus::after {
   overflow: hidden;
 }
 
-header,
+header {
+  background-color: #f6e1d4;
+  background-image: linear-gradient(
+    to top right,
+    #f6e1d4,
+    var(--cc-bg-primary-lighter)
+  );
+}
+
 section#about,
 section#about-us {
   background-color: var(--cc-white-off);
