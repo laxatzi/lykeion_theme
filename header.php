@@ -13,7 +13,7 @@
     <header class="container-fluid">
       <nav class="navbar navbar-expand-lg text-primary container p-3 ps-0">
         <div class="container-fluid">
-          <a class="navbar-brand me-3 d-flex" href="index.html"
+          <a class="navbar-brand me-3 d-flex" href="<?php echo site_url(); ?>"
             ><span class="vicon-logo me-1"></span>
             <h4 class="fw-bold">edu_theme</h4></a
           >

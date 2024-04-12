@@ -144,6 +144,14 @@ section#about-us {
   );
 }
 
+header.header-inner {
+  background-color: var(--cc-white-sugar);
+  background-image: none;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.06);
+  position: fixed;
+  z-index: 99;
+}
+
 li {
   margin: 10px 0;
 }
