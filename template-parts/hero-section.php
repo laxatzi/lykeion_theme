@@ -1,4 +1,5 @@
-<section id="hero" class="container">
+<div class="wrapper container-fluid">
+<section id="hero" class="container pt-5 pb-5">
         <div
           class="intro ps-sm-0 p-sm-5 p-3 mt-sm-0 mt-5 text-sm-start text-center"
         >
@@ -37,6 +38,7 @@
 
         </div>
       </section>
+      </div>
       <!-- Shapes -->
       <div class="shapes">
         <div class="shape-image shape-image-1">
