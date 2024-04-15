@@ -26,19 +26,7 @@
             </div>
             <div class="aside-content ">
               <?php wp_display_popular_posts(3); ?>
-              <!-- <div class="latest-post-item d-flex py-4">
-                <div class="latest-post-info">
-                  <div class="latest-post-date">
-                   <small>16 November 2023</small>
-                  </div>
-                  <div class="latest-post-title">
-                    <a href="blog-details.html"><h5 class="fw-bold">Tips on How to Improve English Writing Skills
-                    </h5></a>
-                  </div>
-                  <small class="attribute">Photo by <a href="https://unsplash.com/@aaronburden?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aaron Burden</a> on <a href="https://unsplash.com/photos/fountain-pen-on-black-lined-paper-y02jEX_B0O0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-                  </small>
-                </div>
-              </div> -->
+
             </div>
           </div>
 
@@ -70,9 +58,10 @@
                   ));
                   echo '<div class="the-tag ">';
                   foreach ($tags as $tag) {
-                    echo '<a href="">' . $tag->name . '</a>';
+                    echo '<a href="<?php the_permalink(); ?>">' . $tag->name . '</a>';
                   }
                   echo '</div>';
+
                   ?>
               </div>
             </div>
