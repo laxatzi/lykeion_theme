@@ -59,9 +59,9 @@
            </div>
 
           <div class="aside-div blog-tags p-4 my-4">
-            <!-- <div class="aside-title py-3">
+            <div class="aside-title py-3">
               <h3>Tags</h3>
-            </div> -->
+            </div>
             <div class="aside-content py-4">
               <div class="tag-wrapper d-flex flex-wrap">
                 <?php
@@ -70,7 +70,7 @@
                   ));
                   echo '<div class="the-tag p-2 m-2">';
                   foreach ($tags as $tag) {
-                    echo '<a href="">' . $tag->name . '</a>';
+                    echo '<a href="<?php echo get_tag_link($tag->term_id); ?> title="{$tag->name}">' . $tag->name . '</a>';
                   }
                   echo '</div>';
                   ?>
