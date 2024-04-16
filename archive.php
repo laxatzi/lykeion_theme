@@ -52,12 +52,16 @@
             <div class="aside-content py-4">
               <div class="tag-wrapper d-flex flex-wrap">
                 <?php
+                 $this_tag = get_queried_object();
                   $tags = get_tags(array(
                     'hide_empty' => false
                   ));
                   echo '<div class="the-tag p-2 m-2">';
                   foreach ($tags as $tag) {
-                    echo '<a href="<?php echo site_url(\'/tag\') ?>"  title="<?php {$tag->name} />">' . $tag->name . '</a>';
+                    if ($this_tag->term_id == $tag->term_id ) {
+                       echo '<a href="<?php echo site_url(\'/tag/$this_tag->slug\') ?>"  title="<?php {$tag->name} />">' . $tag->name . '</a>';
+                    }
+
                   }
                   echo '</div>';
                   ?>
@@ -87,8 +91,7 @@
             <div class="the-blogPost"  >
           <!-- image -->
             <div class="blogPost-image">
-              <img
-              src="<?php echo get_the_post_thumbnail() ?>" alt="">
+              <?php echo get_the_post_thumbnail(); ?>
             </div>
             <small class="attribute">Image by <a href="https://www.freepik.com/free-photo/medium-shot-woman-reading-book_14960771.htm#page=2&query=school%20students%20in%20a%20bus&position=27&from_view=search&track=ais">Freepik</a>
             </small>
