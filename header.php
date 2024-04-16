@@ -58,7 +58,12 @@
                 <a class="nav-link" href="<?php echo site_url('/blog') ?>">Blog</a>
               </li>
 
-              <li class="nav-item dropdown">
+              <li <?php
+                if(is_page('became-a-student')) {
+                  echo 'class="current-menu-item nav-item dropdown"';
+                }else {
+                  echo 'class="nav-item dropdown"';
+                } ?>>
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -69,17 +74,35 @@
                   Became a Student
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
+                  <li <?php
+                    if(is_page('level-test')) {
+                      echo 'class="current-menu-item nav-item"';
+                    }else {
+                      echo 'class="nav-item"';
+                    } ?>>>
                     <a class="dropdown-item" href="leveltest.html"
                       >Level Test</a
                     >
                   </li>
-                  <li>
+                  <li <?php
+                      if(is_page('refer')) {
+                        echo 'class="current-menu-item nav-item"';
+                      }else {
+                        echo 'class="nav-item"';
+                      } ?>>
+                  >
                     <a class="dropdown-item" href="refer.html"
                       >Refer A Friend</a
                     >
                   </li>
-                  <li>
+                  <li
+                  <?php
+                    if(is_page('partner-program')) {
+                      echo 'class="current-menu-item nav-item"';
+                    }else {
+                      echo 'class="nav-item"';
+                    } ?>>
+                  >
                     <a class="dropdown-item" href="partners.html"
                       >Partner Program</a
                     >
