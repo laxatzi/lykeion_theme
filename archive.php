@@ -26,19 +26,6 @@
             </div>
             <div class="aside-content ">
               <?php wp_display_popular_posts(3); ?>
-              <!-- <div class="latest-post-item d-flex py-4">
-                <div class="latest-post-info">
-                  <div class="latest-post-date">
-                   <small>16 November 2023</small>
-                  </div>
-                  <div class="latest-post-title">
-                    <a href="blog-details.html"><h5 class="fw-bold">Tips on How to Improve English Writing Skills
-                    </h5></a>
-                  </div>
-                  <small class="attribute">Photo by <a href="https://unsplash.com/@aaronburden?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aaron Burden</a> on <a href="https://unsplash.com/photos/fountain-pen-on-black-lined-paper-y02jEX_B0O0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-                  </small>
-                </div>
-              </div> -->
             </div>
           </div>
 
@@ -70,7 +57,7 @@
                   ));
                   echo '<div class="the-tag p-2 m-2">';
                   foreach ($tags as $tag) {
-                    echo '<a href="<?php echo get_tag_link($tag->term_id); ?> title="{$tag->name}">' . $tag->name . '</a>';
+                    echo '<a href="<?php echo site_url(\'/tag\') ?>"  title="<?php {$tag->name} />">' . $tag->name . '</a>';
                   }
                   echo '</div>';
                   ?>
@@ -101,7 +88,7 @@
           <!-- image -->
             <div class="blogPost-image">
               <img
-              src="<?php echo get_theme_file_uri('/img/woman-reading-in-the-bus.jpg') ?>" alt="">
+              src="<?php echo get_the_post_thumbnail() ?>" alt="">
             </div>
             <small class="attribute">Image by <a href="https://www.freepik.com/free-photo/medium-shot-woman-reading-book_14960771.htm#page=2&query=school%20students%20in%20a%20bus&position=27&from_view=search&track=ais">Freepik</a>
             </small>

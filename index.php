@@ -53,12 +53,19 @@
             <div class="aside-content py-4">
               <div class="tag-wrapper d-flex flex-wrap">
                 <?php
-                  $tags = get_tags(array(
+                  // $tags = get_tags(array(
+                  //   'hide_empty' => false
+                  // ));
+                  global $post;
+                  $tags =  get_tags(array(
+                    $post->ID,
                     'hide_empty' => false
+
                   ));
                   echo '<div class="the-tag ">';
                   foreach ($tags as $tag) {
-                    echo '<a href="<?php the_permalink(); ?>">' . $tag->name . '</a>';
+
+                    echo '<a href="<?php get_tag_link($tag->term_id) ?>">' . $tag->name . '</a>';
                   }
                   echo '</div>';
 
@@ -89,8 +96,6 @@
             <div class="the-blogPost"  >
           <!-- image -->
             <div class="blogPost-image">
-              <!-- <img
-              src="<?php //echo get_theme_file_uri('/img/woman-reading-in-the-bus.jpg') ?>" alt=""> -->
                <?php echo get_the_post_thumbnail(); ?>
             </div>
             <small class="attribute">Image by <a href="https://www.freepik.com/free-photo/medium-shot-woman-reading-book_14960771.htm#page=2&query=school%20students%20in%20a%20bus&position=27&from_view=search&track=ais">Freepik</a>

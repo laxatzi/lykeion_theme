@@ -18,7 +18,6 @@
           <img
             class="img-fluid"
             src="<?php echo get_theme_file_uri('/img/icons/world_orange-small.png') ?>"
-            src="img/icons/world_orange-small.png"
             alt=""
           />
         </div>
