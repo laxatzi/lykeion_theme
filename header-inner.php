@@ -49,7 +49,12 @@
                 <a class="nav-link" href="<?php echo site_url('/about-us') ?>">About</a>
               </li>
 
-              <li class="nav-item">
+              <li <?php
+                if(get_post_type() == 'post') {
+                  echo 'class="current-menu-item nav-item"';
+                }else {
+                  echo 'class="nav-item"';
+                } ?>>
                 <a class="nav-link" href="<?php echo site_url('/blog') ?>">Blog</a>
               </li>
 
@@ -81,8 +86,15 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item me-2">
-                <a class="nav-link" href="contact.html">Contact</a>
+
+              <li <?php
+
+                if(is_page('contact')) {
+                  echo 'class="current-menu-item nav-item"';
+                }else {
+                  echo 'class="nav-item"';
+                } ?>>
+                <a class="nav-link" href="<?php echo site_url('/contact') ?>">Contact</a>
               </li>
             </ul>
           </div>

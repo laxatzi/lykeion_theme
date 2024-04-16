@@ -52,18 +52,19 @@
             <div class="aside-content py-4">
               <div class="tag-wrapper d-flex flex-wrap">
                 <?php
-                 $this_tag = get_queried_object();
-                  $tags = get_tags(array(
+                 global $post;
+                  $tags =  get_tags(array(
+                    $post->ID,
                     'hide_empty' => false
-                  ));
-                  echo '<div class="the-tag p-2 m-2">';
-                  foreach ($tags as $tag) {
-                    if ($this_tag->term_id == $tag->term_id ) {
-                       echo '<a href="<?php echo site_url(\'/tag/$this_tag->slug\') ?>"  title="<?php {$tag->name} />">' . $tag->name . '</a>';
-                    }
 
+                  ));
+                  echo '<div class="the-tag ">';
+                  foreach ($tags as $tag) {
+
+                    echo '<a href="<?php get_tag_link($tag->term_id) ?>">' . $tag->name . '</a>';
                   }
                   echo '</div>';
+
                   ?>
               </div>
             </div>

@@ -90,7 +90,10 @@ function wp_display_popular_posts($num_posts) {
                 <div class="latest-post-info">
                   <div class="latest-post-date">
                    <small style="font-style:italic">'.$publish_date = get_the_time('j F, Y').'</small>
-                  </div><div class="latest-post-title"><h6 class="fw-bold"><a href="'.get_permalink().'">'.get_the_title().'</a></h6></div></div></div>';
+                  </div>
+                  <div class="latest-post-title"><h6 class="fw-bold"><a href="'.get_permalink().'">'.get_the_title().'</a></h6></div>
+                </div>
+              </div>';
      }
  }
 
