@@ -1,7 +1,7 @@
 <?php
 
     get_header('inner');
-    get_template_part('template-parts/page-banner');
+    get_template_part('template-parts/banners/page-banner');
 
 
     while(have_posts()) {

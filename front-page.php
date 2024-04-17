@@ -1,6 +1,6 @@
 <?php
 get_header();
-  get_template_part('template-parts/hero-section');
+  get_template_part('template-parts/banners/hero-section');
 
   ?>
     <section id="topics">
