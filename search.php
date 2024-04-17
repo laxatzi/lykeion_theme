@@ -37,12 +37,14 @@
          </aside>
           <main class="col-xl-7 me-4" >
           <?php
-            while(have_posts()) {
-              the_post();
-              get_template_part('template-parts/content/content', get_post_type());
-            ?>
+            if (have_posts()) {
 
-          <?php
+              while(have_posts()) {
+                the_post();
+                get_template_part('template-parts/content/content', get_post_type());
+              }
+            } else {
+              echo "<h2>No Results Match Your Query!</h2>";
             }
           ?>
          <nav>
