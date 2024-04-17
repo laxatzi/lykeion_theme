@@ -21,58 +21,6 @@
               </div>
             </div>
           </div>
-
-          <div class="aside-div latest-posts p-4 my-4">
-            <div class="aside-title py-3">
-              <h3>Popular Posts</h3>
-            </div>
-            <div class="aside-content ">
-              <?php wp_display_popular_posts(3); ?>
-
-            </div>
-          </div>
-
-          <div class="aside-div blog-categories p-4 my-4">
-            <div class="blog-categories-item">
-             <!-- aside content -->
-              <div class="aside-content pb-4">
-                <div class="categories">
-                  	<?php wp_list_categories( array(
-                    'orderby'    => 'name',
-                    'show_count' => true,
-                    'hide_empty' => 1,
-                  ) );
-                  ?>
-                 </div>
-               </div>
-             </div>
-           </div>
-
-          <div class="aside-div blog-tags p-4 my-4">
-            <div class="aside-title">
-              <h3>Tags</h3>
-            </div>
-            <div class="aside-content py-4">
-              <div class="tag-wrapper d-flex flex-wrap">
-                <?php
-                  global $post;
-                  $tags =  get_tags(array(
-                    $post->ID,
-                    'hide_empty' => false
-
-                  ));
-                  echo '<div class="the-tag ">';
-                  foreach ($tags as $tag) {
-
-                    echo '<a href="<?php get_tag_link($tag->term_id) ?>">' . $tag->name . '</a>';
-                  }
-                  echo '</div>';
-
-                  ?>
-              </div>
-            </div>
-          </div>
-
           <div class="aside-div insta-feed p-4 mt-5">
             <div class="aside-title py-3">
               <h3>Instagram Feed</h3>
@@ -92,38 +40,7 @@
             while(have_posts()) {
               the_post();
             ?>
-            <div class="the-blogPost"  >
-          <!-- image -->
-            <div class="blogPost-image">
-               <?php echo get_the_post_thumbnail(); ?>
-            </div>
-          <!-- meta -->
-            <div class="blogPost-meta px-4 pt-sm-3 d-sm-flex align-items-center justify-content-between my-4">
-              <div class="blogPost-views d-flex align-items-center">
-                <span class="vicon-views"></span>
-                <h5>
-                  <?php
-                    gt_set_post_view();
-                    echo gt_get_post_view();
-                  ?>
-                </h5>
-              </div>
-              <div class="blogPost-comments d-flex align-items-center">
-                <span class="vicon-comment"></span>
-                <h5>
-                 <?php echo $post->comment_count ?>
-                </h5>
-              </div>
-              <div class="blogPost-date d-flex align-items-center">
-                <span class="vicon-calendar"></span>
-                <h5 style="font-style:italic">
-                  <?php
-                    $publish_date = get_the_time('j F, Y');
-                   echo $publish_date;
-                  ?>
-                </h5>
-              </div>
-            </div>
+            <div class="the-blogPost py-4"  >
             <!-- title -->
            <div class="blogPost-title px-4 mb-4">
             <a href="<?php the_permalink(); ?>">
