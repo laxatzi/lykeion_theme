@@ -5,18 +5,20 @@
    <main class="container-fluid">
       <div class="py-5 pe-5 container" >
         <div class="row mt-5">
-                 <aside class="col-xl-4">
+        <aside class="col-xl-4">
           <div class="aside-div blog-search p-4 mb-4">
             <div class="aside-title py-3">
               <h3>Search Post</h3>
             </div>
             <div class="aside-content py-4">
-            <div class="input-group mb-3 d-flex align-items-center">
-              <input type="search" class="form-control p-2" aria-label="Search keyword">
-              <div class="input-group-append">
-                <span class="input-group-search p-2 fw-bold">Search</span>
+              <div class="input-group mb-3 d-flex align-items-center">
+                <form class="search-form" method="get" action="<?php echo esc_url(site_url('')) ?>">
+                  <input type="search" name="s" class="form-control p-2" aria-label="Search keyword">
+                  <div class="input-group-append">
+                    <input class="input-group-search p-2 fw-bold" type="submit" value="Search">
+                  </div>
+                </form>
               </div>
-            </div>
             </div>
           </div>
 
@@ -53,9 +55,6 @@
             <div class="aside-content py-4">
               <div class="tag-wrapper d-flex flex-wrap">
                 <?php
-                  // $tags = get_tags(array(
-                  //   'hide_empty' => false
-                  // ));
                   global $post;
                   $tags =  get_tags(array(
                     $post->ID,
@@ -98,8 +97,6 @@
             <div class="blogPost-image">
                <?php echo get_the_post_thumbnail(); ?>
             </div>
-            <small class="attribute">Image by <a href="https://www.freepik.com/free-photo/medium-shot-woman-reading-book_14960771.htm#page=2&query=school%20students%20in%20a%20bus&position=27&from_view=search&track=ais">Freepik</a>
-            </small>
           <!-- meta -->
             <div class="blogPost-meta px-4 pt-sm-3 d-sm-flex align-items-center justify-content-between my-4">
               <div class="blogPost-views d-flex align-items-center">
