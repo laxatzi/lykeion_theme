@@ -120,10 +120,10 @@
             </ul>
           </div>
           <div class="nav-plus d-flex">
-            <button class="btn btn-outline btn-search" type="submit">
-              <span class="vicon-search"></span>
+            <a href="<?php echo esc_url(site_url('/search')); ?>" class="btn btn-outline btn-search" id="search-trigger js--search-trigger">
+              <span class="vicon-search" aria-hidden="true"></span>
               <!-- Search -->
-            </button>
+            </a>
             <a href="" ms-3><span class="vicon-user"></span></a>
           </div>
         </div>
