@@ -1,6 +1,6 @@
 <?php
    get_header('inner');
-    get_template_part('template-parts/search-banner');
+    get_template_part('template-parts/banners/search-banner');
 ?>
    <main class="container-fluid">
       <div class="py-5 pe-5 container" >
