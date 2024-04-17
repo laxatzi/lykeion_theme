@@ -2693,6 +2693,15 @@ h5 {
     0 1px 1px var(--cc-primary);
 }
 
+.search-form {
+  display: flex;
+}
+
+.search-form .form-control {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
 .input-group-search {
   border-right: none;
   margin-right: none;
