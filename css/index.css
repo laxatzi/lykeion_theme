@@ -2693,6 +2693,10 @@ h5 {
     0 1px 1px var(--cc-primary);
 }
 
+.search-query {
+  color: var(--cc-primary);
+}
+
 .search-form {
   display: flex;
 }
