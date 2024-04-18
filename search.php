@@ -21,18 +21,6 @@
               </div>
             </div>
           </div>
-          <div class="aside-div insta-feed p-4 mt-5">
-            <div class="aside-title py-3">
-              <h3>Instagram Feed</h3>
-            </div>
-            <div class="aside-content py-4">
-              <div class="img-wrapper d-flex justify-content-center align-items-center">
-                <img
-                src="<?php echo get_theme_file_uri('/img/insta-feed-thumbnail.jpg') ?>" alt="instagram feed">
-              </div>
-            </div>
-            <small class="attribute">Image by <a href="https://www.freepik.com/free-psd/flat-design-school-admission-instagram-posts_43373373.htm#query=instagram%20feed%20students&position=44&from_view=search&track=ais">Freepik</a></small>
-          </div>
 
          </aside>
           <main class="col-xl-7 me-4" >
