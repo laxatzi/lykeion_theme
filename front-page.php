@@ -859,7 +859,15 @@ get_header();
               <h2 class="mt-2 mb-3 fw-bold text-center">Upcoming Events!</h2>
             </div>
           </div>
-          <!-- event list -->
+          <?php
+            $home_events = new WP_Query(array(
+              'posts_per_page' => 3,
+              'post_type' => 'event'
+            ));
+
+            while($home_events->have_posts()) {
+              $home_events->the_post();?>
+         <!-- event list -->
           <div id="event-list" class="d-flex mb-sm-5 mt-3 container">
             <!-- event-item -->
             <div class="row">
@@ -927,133 +935,12 @@ get_header();
                 <!-- end event item -->
               </div>
             </div>
-            <!-- event-item -->
-            <div class="row">
-              <div class="event-item d-lg-flex mb-3 p-4">
-                <div class="info-wrapper d-sm-flex">
-                  <div class="event-thumbnail me-sm-2">
-                    <div class="img-wrapper-event--wide d-none d-sm-block">
-                      <a href="event-details.html"
-                        ><img
-                        src="<?php echo get_theme_file_uri('/img/thumbs/halloween-thumbnail.png') ?>"
-                        alt=""
-                      /></a>
-                    </div>
-                    <div class="img-wrapper-event--mobile d-block d-sm-none">
-                      <a href="event-details.html"
-                        ><img
-                        src="<?php echo get_theme_file_uri('/img/thumbs/pen-thumbnail-400.png') ?>"
-                        alt=""
-                      /></a>
-                    </div>
-                    <div class="attribution-wrapper">
-                      <small class="attribute">
-                        <a
-                          href="https://www.freepik.com/free-ai-image/halloween-background-with-scary-pumpkins-candles-bats-dark-forest-night_50609787.htm#fromView=search&term=halloween&page=1&position=2&track=ais_ai_generated&regularType=ai"
-                          >Image By chandlervid85</a
-                        >
-                      </small>
-                    </div>
-                  </div>
-                  <div class="event-info">
-                    <a href="event-details.html"
-                      ><h4 class="fw-bold mb-3">Halloween Event!</h4></a
-                    >
-
-                    <div class="events-meta d-xl-flex py-3">
-                      <div class="meta meta-date d-flex">
-                        <span class="event-vicon vicon-calendar me-2"></span>
-                        <p>4 November 2023</p>
-                      </div>
-                      <div class="meta meta-time d-flex">
-                        <span class="event-vicon vicon-time me-2"></span>
-                        <p>20:00</p>
-                      </div>
-                      <div class="meta meta-location d-flex">
-                        <span class="event-vicon vicon-geo-pin me-2"></span>
-                        <p>Main Premises, 21 Lincoln Str, Boston</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="event-book">
-                  <div class="read-more btn btn-lg col-lg-12 col-md-4 col-12">
-                    <a href="event-details.html" class="link-btn"
-                      >Book your seat</a
-                    >
-                    <span class="vicon-arrow--right"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- event-item -->
-            <div class="row">
-              <div class="event-item d-lg-flex mb-3 p-4">
-                <div class="info-wrapper d-sm-flex">
-                  <div class="event-thumbnail me-sm-2">
-                    <div class="img-wrapper-event--wide d-none d-sm-block">
-                      <a href="event-details.html"
-                        ><img
-                        src="<?php echo get_theme_file_uri('/img/thumbs/london-bridge-thumbnail-145.png') ?>"
-                        alt=""
-                      /></a>
-                    </div>
-                    <div class="img-wrapper-event--mobile d-block d-sm-none">
-                      <a href="event-details.html"
-                        ><img
-                        src="<?php echo get_theme_file_uri('/img/thumbs/london-bridge-thumbnail-400.png') ?>"
-                        alt=""
-                      /></a>
-                    </div>
-                    <div class="attribution-wrapper">
-                      <small class="attribute"
-                        ><a
-                          href="https://unsplash.com/@aaronburden?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                          >Aaron Burden</a
-                        >
-                        on
-                        <a
-                          href="https://unsplash.com/photos/fountain-pen-on-black-lined-paper-y02jEX_B0O0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                          >Unsplash</a
-                        >
-                      </small>
-                    </div>
-                  </div>
-                  <div class="event-info">
-                    <a href="event-details.html"
-                      ><h4 class="fw-bold mb-3">
-                        Trip to London guided by teachers
-                      </h4></a
-                    >
-                    <div class="events-meta d-xl-flex py-3">
-                      <div class="meta meta-date d-flex">
-                        <span class="event-vicon vicon-calendar me-2"></span>
-                        <p>15 November 2023</p>
-                      </div>
-                      <div class="meta meta-time d-flex">
-                        <span class="event-vicon vicon-time me-2"></span>
-
-                        <p>11:00</p>
-                      </div>
-                      <div class="meta meta-location d-flex">
-                        <span class="event-vicon vicon-geo-pin me-2"></span>
-                        <p>Waiting Lot Logan Airport Boston</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="event-book">
-                  <div class="read-more btn btn-lg col-lg-12 col-md-4 col-12">
-                    <a href="event-details.html" class="link-btn"
-                      >Book your seat</a
-                    >
-                    <span class="vicon-arrow--right"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
             <!-- end of event list -->
           </div>
+          <?php
+            }
+          ?>
+
         </div>
       </div>
       <div class="shapes">
