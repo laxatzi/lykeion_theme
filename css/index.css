@@ -1320,6 +1320,7 @@ header.container-fluid {
 .breadcrumb li {
   font-size: 16px;
   font-weight: bold;
+  margin-left: 5px;
 }
 
 .breadcrumb-item a::after {
