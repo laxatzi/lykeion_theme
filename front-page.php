@@ -904,17 +904,19 @@ get_header();
                   <!-- event info -->
                   <div class="event-info">
                     <a href="event-details.html"
-                      ><h4 class="fw-bold mb-3">Storytelling Week</h4></a
+                      ><h4 class="fw-bold mb-3"><?php the_title(); ?></h4></a
                     >
                     <!-- event-meta -->
                     <div class="events-meta d-xl-flex py-3">
                       <div class="meta meta-date d-flex">
                         <span class="event-vicon vicon-calendar me-2"></span>
-                        <p>30 October 2023</p>
+                        <p><?php $publish_date = get_the_time('j F, Y');
+                   echo $publish_date; ?></p>
                       </div>
                       <div class="meta meta-time d-flex">
                         <span class="event-vicon vicon-time me-2"></span>
-                        <p>20:00</p>
+                        <p><?php $publish_time = get_the_time();
+                        echo $publish_time; ?></p>
                       </div>
                       <div class="meta meta-location d-flex">
                         <span class="event-vicon vicon-geo-pin me-2"></span>
