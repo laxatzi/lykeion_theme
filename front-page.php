@@ -868,10 +868,10 @@ get_header();
             while($home_events->have_posts()) {
               $home_events->the_post();?>
          <!-- event list -->
-          <div id="event-list" class="d-flex mb-sm-5 mt-3 container">
+          <div id="event-list" class="d-flex mb-sm-3 mt-3 container">
             <!-- event-item -->
             <div class="row">
-              <div class="event-item d-lg-flex mb-3 p-4">
+              <div class="event-item d-lg-flex p-4">
                 <div class="info-wrapper d-sm-flex">
                   <div class="event-thumbnail me-sm-2">
                     <div class="img-wrapper-event--wide d-none d-sm-block">
