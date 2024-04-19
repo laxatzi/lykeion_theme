@@ -875,19 +875,15 @@ get_header();
                 <div class="info-wrapper d-sm-flex">
                   <div class="event-thumbnail me-sm-2">
                     <div class="img-wrapper-event--wide d-none d-sm-block">
-                      <a href="event-details.html"
-                        ><img
-                        src="<?php echo  get_the_post_thumbnail('', array(145, 145))  ?>"
-                      /></a>
+                      <a href="<?php echo get_the_permalink(); ?>">
+                        <?php echo get_the_post_thumbnail();  ?>
+                      </a>
                     </div>
                     <div class="img-wrapper-event--mobile d-block d-sm-none">
-                      <a href="event-details.html"
-                        ><img
-                        src="<?php echo get_the_post_thumbnail('', array(100, 100)) ?>"
-                        alt=""
-                      /></a>
+                      <a href="<?php echo get_the_permalink(); ?>">
+                        <?php echo get_the_post_thumbnail(); ?>
+                      </a>
                     </div>
-
                   </div>
                   <!-- event info -->
                   <div class="event-info">
