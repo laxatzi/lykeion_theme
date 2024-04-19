@@ -22,41 +22,11 @@
           <!-- main event content -->
             <div id="intro-page">
               <div class="main-event-content" id="intro">
-                <h4 class="mb-3">Contest Info</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolorem nisi provident necessitatibus, explicabo, velit voluptatum animi numquam praesentium blanditiis eius. Perferendis asperiores officiis assumenda sit minima voluptatem quae repudiandae id iusto.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nihil totam, eveniet laudantium vel itaque neque aspernatur rerum molestias dolore quis?</p>
-                <h4 class="mb-3 mt-4 pt-3">What You'll Learn From This Contest</h4>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quam nostrum facere a.</li>
-                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, voluptates sunt.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi quas maxime numquam illo sit!</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, inventore!</li>
-                </ul>
-                <div class="pics pt-4 d-md-flex gap-3">
-                  <img class="rounded mb-xl-0 mb-3" src="img/student-writes-small.jpg" alt="">
-
-                  <img class="rounded mb-xl-0 mb-3" src="img/pen-small.jpg" alt="">
-                </div>
-                <div class="attribution-wrapper">
-                  <small class="attribute">Photo by <a href="https://unsplash.com/@aaronburden?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aaron Burden</a> on <a href="https://unsplash.com/photos/fountain-pen-on-black-lined-paper-y02jEX_B0O0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-                  </small>
-                  <small class="attribution ms-2">Image by <a href="https://www.freepik.com/free-photo/top-view-adult-correcting-grammar-mistakes_38172100.htm#query=spelling&position=2&from_view=search&track=sph">Freepik</a></small>
-                </div>
-                <div class="how-to pt-4 mt-2">
-                  <h3 class="fw-bold ">How the contest works</h3>
-                  <ol>
-                    <li>Each speller taking part in the tournament is assigned a number that indicates their spelling order. A hat is used to randomly select the numbers.</li>
-                    <li>Spellers face the pronouncer and, if present, the audience while seated in numerical order. Each speller is called in turn to the front of the group, beginning with speller number one, and the pronouncer reads the word they are to spell.</li>
-                    <li>The speller has the option to request that the word be repeated, that it be defined, and that it be used in a sentence. The word is then spelled by the speller. After beginning to spell the word, the speller is free to stop and start over, but neither the letters already spelled nor the order in which they were spelled can be altered.
-                    </li>
-                  </ol>
-                </div>
+                <?php
+                  the_content();
+                ?>
               </div>
-
             </div>
-              <!-- <?php
-               // the_content();
-              ?> -->
       </main>
       <aside class="d-flex flex-column event-sidebar">
             <div class="event-title">
