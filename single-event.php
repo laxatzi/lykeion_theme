@@ -24,10 +24,11 @@
               ?>
 
           </div>
-        </div>
-
-
+<!-- end of course-info-main section -->
+      </div>
+<!-- end row -->
     </div>
+<!-- end of container -->
   </div>
 </main>
   <?php
