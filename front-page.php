@@ -877,29 +877,17 @@ get_header();
                     <div class="img-wrapper-event--wide d-none d-sm-block">
                       <a href="event-details.html"
                         ><img
-                        src="<?php echo get_theme_file_uri('/img/thumbs/pen-thumbnail-145.png') ?>"
+                        src="<?php echo  get_the_post_thumbnail('', array(145, 145))  ?>"
                       /></a>
                     </div>
                     <div class="img-wrapper-event--mobile d-block d-sm-none">
                       <a href="event-details.html"
                         ><img
-                        src="<?php echo get_theme_file_uri('/img/thumbs/pen-thumbnail-400.png') ?>"
+                        src="<?php echo get_the_post_thumbnail('', array(100, 100)) ?>"
                         alt=""
                       /></a>
                     </div>
-                    <div class="attribution-wrapper">
-                      <small class="attribute"
-                        ><a
-                          href="https://unsplash.com/@aaronburden?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                          >Aaron Burden</a
-                        >
-                        on
-                        <a
-                          href="https://unsplash.com/photos/fountain-pen-on-black-lined-paper-y02jEX_B0O0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                          >Unsplash</a
-                        >
-                      </small>
-                    </div>
+
                   </div>
                   <!-- event info -->
                   <div class="event-info">
@@ -928,7 +916,7 @@ get_header();
                 </div>
                 <div class="event-book">
                   <div class="read-more btn btn-lg col-lg-12 col-md-4 col-12">
-                    <a href="event-details.html" class="link-btn"
+                    <a href="<?php echo get_the_permalink(); ?>" class="link-btn"
                       >Book your seat</a
                     >
                     <span class="vicon-arrow--right"></span>
