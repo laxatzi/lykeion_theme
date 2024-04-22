@@ -90,10 +90,7 @@
               the_post();
             ?>
             <div class="the-blogPost"  >
-          <!-- image -->
-            <div class="blogPost-image">
-              <?php echo get_the_post_thumbnail(); ?>
-            </div>
+
           <!-- meta -->
             <div class="blogPost-meta px-4 pt-sm-3 d-sm-flex align-items-center justify-content-between my-4">
               <div class="blogPost-views d-flex align-items-center">
@@ -127,9 +124,13 @@
               <h2 class="fw-bold"><?php the_title(); ?></h2>
             </a>
            </div>
-           <div class="blogPost-content px-4 pb-4">
+           <div class="blogPost-content d-flex px-4 pb-4">
+                      <!-- image -->
+            <!-- <div class="blogPost-image">
+              <?php // echo get_the_post_thumbnail(null, 'medium'); ?>
+            </div> -->
              <?php the_excerpt(); ?>
-              <div class="read-more mt-3 mb-3 btn btn-lg col-md-4 col-sm-12">
+              <div class="read-more mt-3 mb-3 ms-3 btn btn-lg col-md-4 col-sm-12">
                 <a href="<?php the_permalink(); ?>" class="link-btn">Read More</a>
                 <span class="vicon-arrow--right"></span>
               </div>
