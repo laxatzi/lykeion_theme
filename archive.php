@@ -1,6 +1,6 @@
 <?php
    get_header('inner');
-    get_template_part('template-parts/archive-banner');
+    get_template_part('template-parts/banners/archive-banner');
 ?>
    <main class="container-fluid">
       <div class="py-5 pe-5 container" >
@@ -94,8 +94,6 @@
             <div class="blogPost-image">
               <?php echo get_the_post_thumbnail(); ?>
             </div>
-            <small class="attribute">Image by <a href="https://www.freepik.com/free-photo/medium-shot-woman-reading-book_14960771.htm#page=2&query=school%20students%20in%20a%20bus&position=27&from_view=search&track=ais">Freepik</a>
-            </small>
           <!-- meta -->
             <div class="blogPost-meta px-4 pt-sm-3 d-sm-flex align-items-center justify-content-between my-4">
               <div class="blogPost-views d-flex align-items-center">
