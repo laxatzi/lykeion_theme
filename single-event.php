@@ -115,10 +115,21 @@
                  </div>
                  <div class="share-event d-flex mt-5 align-items-start">
                     <h6 class="me-3">Share:</h6>
-                    <a href=""><span class="vicon-x me-2"></span></a>
-                    <a href=""><span class="vicon-facebook-square me-2"></span></a>
+                    <?php
+                     $get_url =  get_bloginfo( 'url' );
+                     // encode url
+                       $encode_the_url = urlencode( get_permalink() );
+                      // get_the_title and add space
+                      $title_with_space = str_replace( ' ', '%20', get_the_title());
+                      //sharing on social
+                      $twitter_url = 'https://twitter.com/intent/tweet?text='.$title_with_space.'&amp;url='.$encode_the_url.'&amp;via='.$get_url.'';
+                      $facebook_url = 'https://www.facebook.com/sharer/sharer.php?u='.$encode_the_url;
+                      $linkedIn_url = 'https://www.linkedin.com/shareArticle?mini=true&url='.$encode_the_url.'&amp;title='.$title_with_space;
+                    ?>
+                    <a href="<?php echo $twitter_url; ?>" target="_blank" rel="nofollow noopener"><span class="vicon-x me-2"></span></a>
+                    <a href="<?php echo $facebook_url; ?>" target="_blank" rel="nofollow noopener"><span class="vicon-facebook-square me-2"></span></a>
                     <!-- <a href=""><span class="vicon-youtube me-3"></span></a> -->
-                    <a href=""><span class="vicon-linkedin "></span></a>
+                    <a href="<?php echo $linkedIn_url; ?>" target="_blank" rel="nofollow noopener"><span class="vicon-linkedin "></span></a>
                   </div>
                 </div>
                </div>
