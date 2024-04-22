@@ -117,7 +117,7 @@
                     <h6 class="me-3">Share:</h6>
                     <a href=""><span class="vicon-x me-3"></span></a>
                     <a href=""><span class="vicon-facebook me-3"></span></a>
-                    <a href=""><span class="vicon-youtube me-3"></span></a>
+                    <!-- <a href=""><span class="vicon-youtube me-3"></span></a> -->
                     <a href=""><span class="vicon-linkedin "></span></a>
                   </div>
                 </div>
