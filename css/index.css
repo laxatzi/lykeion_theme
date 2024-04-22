@@ -2238,6 +2238,7 @@ a.lost::after {
 .event-sidebar {
   background-color: var(--cc-white-sugar);
   height: 1000px;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 7%);
 }
 
 .event-detailing .info-list {
