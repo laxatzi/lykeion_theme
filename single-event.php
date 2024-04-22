@@ -10,7 +10,7 @@
       <div class="pt-5 container" >
         <div class="row mt-5">
           <div class="main-img">
-            <img src="img/back-to-school-1300.jpg" alt="" class="rounded">
+            <img src="<?php echo get_theme_file_uri('img/back-to-school-1300.jpg') ?>" alt="" class="rounded">
           </div>
         </div>
         <div class="row">
