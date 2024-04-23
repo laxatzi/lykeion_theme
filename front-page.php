@@ -875,13 +875,8 @@ get_header();
                 <div class="info-wrapper d-sm-flex">
                   <div class="event-thumbnail me-sm-2">
                     <div class="img-wrapper-event--wide d-none d-sm-block">
-                      <a href="<?php echo get_the_permalink(); ?>">
-                        <?php echo get_the_post_thumbnail();  ?>
-                      </a>
-                    </div>
-                    <div class="img-wrapper-event--mobile d-block d-sm-none">
-                      <a href="<?php echo get_the_permalink(); ?>">
-                        <?php echo get_the_post_thumbnail(); ?>
+                      <a href="<?php  echo get_the_permalink(); ?>">
+                        <?php  echo get_the_post_thumbnail(null, array( 150, 150));  ?>
                       </a>
                     </div>
                   </div>
