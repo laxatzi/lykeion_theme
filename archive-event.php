@@ -90,7 +90,10 @@
               the_post();
             ?>
             <div class="the-blogPost"  >
-
+          <!-- image -->
+            <div class="blogPost-image">
+               <?php echo get_the_post_thumbnail(); ?>
+            </div>
           <!-- meta -->
             <div class="blogPost-meta px-4 pt-sm-3 d-sm-flex align-items-center justify-content-between mt-3 mb-4 mt-xl-0 ">
               <div class="blogPost-views d-flex align-items-center">
