@@ -3480,11 +3480,6 @@ span.brand.img-300 img {
     margin-bottom: 0px;
   }
 
-  .img-wrapper-event--mobile img {
-    max-height: 320px;
-    height: 320px;
-  }
-
   .video-presentation .thumbnail {
     max-width: 80%;
     min-width: 95px;
