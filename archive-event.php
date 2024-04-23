@@ -4,8 +4,8 @@
 ?>
    <main class="container-fluid">
       <div class="py-5 pe-5 container" >
-        <div class="row mt-5">
-                 <aside class="col-xl-4">
+        <div class="row mt-5 d-flex flex-column flex-lg-row ">
+         <aside class="col-xl-4 order-xl-first order-last">
           <div class="aside-div blog-search p-4 mb-4">
             <div class="aside-title py-3">
               <h3>Search Post</h3>
@@ -84,7 +84,7 @@
           </div>
 
          </aside>
-          <main class="col-xl-7 me-4" >
+          <main class="col-xl-7 me-4 order-xl-last order-first" >
           <?php
             while(have_posts()) {
               the_post();
@@ -92,7 +92,7 @@
             <div class="the-blogPost"  >
 
           <!-- meta -->
-            <div class="blogPost-meta px-4 pt-sm-3 d-sm-flex align-items-center justify-content-between my-4">
+            <div class="blogPost-meta px-4 pt-sm-3 d-sm-flex align-items-center justify-content-between mt-3 mb-4 mt-xl-0 ">
               <div class="blogPost-views d-flex align-items-center">
                 <span class="vicon-views"></span>
                 <h5>
