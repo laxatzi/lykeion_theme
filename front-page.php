@@ -882,7 +882,7 @@ get_header();
                   </div>
                   <!-- event info -->
                   <div class="event-info">
-                    <a href="event-details.html"
+                    <a href="<?php  echo get_the_permalink(); ?>"
                       ><h4 class="fw-bold mb-3"><?php the_title(); ?></h4></a
                     >
                     <!-- event-meta -->
