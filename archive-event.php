@@ -1,6 +1,6 @@
 <?php
    get_header('inner');
-    get_template_part('template-parts/banners/archive-banner');
+    get_template_part('template-parts/banners/events-all-banner');
 ?>
    <main class="container-fluid">
       <div class="py-5 pe-5 container" >
@@ -92,7 +92,7 @@
             <div class="the-blogPost"  >
           <!-- image -->
             <div class="blogPost-image">
-               <?php echo get_the_post_thumbnail(); ?>
+               <?php echo get_the_post_thumbnail(null, array( 760, 527)); ?>
             </div>
           <!-- meta -->
             <div class="blogPost-meta px-4 pt-sm-3 d-sm-flex align-items-center justify-content-between mt-3 mb-4 mt-xl-0 ">
