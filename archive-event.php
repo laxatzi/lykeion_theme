@@ -133,7 +133,7 @@
                if (has_excerpt()) {
                   the_excerpt();
                  } else {
-                  echo wp_trim_words(get_the_content(), 18);
+                  echo wp_trim_words(get_the_content(), 18,);
                } ?>
               <div class="read-more mt-3 mb-3 ms-3 btn btn-lg col-md-4 col-sm-12">
                 <a class="d-flex" href="<?php the_permalink(); ?>" class="link-btn">Read More<span class="vicon-arrow--right"></span></a>
