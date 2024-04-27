@@ -11,7 +11,9 @@
                     foreach($post_categories as $name){
                       echo $name;
                     }
-                } ?></li>
+                }else {
+                      echo '<a href="<?php echo site_url(); ?>">Home</a>';
+                    } ?></li>
                   <li class="separator">
                 <span class="vicon-double-right-arrow-black"></span>
               </li>
@@ -26,7 +28,6 @@
           <img
             class="img-fluid"
             src="<?php echo get_theme_file_uri('/img/icons/world_orange-small.png') ?>"
-            src="img/icons/world_orange-small.png"
             alt=""
           />
         </div>
