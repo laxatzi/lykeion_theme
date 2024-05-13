@@ -43,11 +43,11 @@
             <h4 class="fw-bold ms-1">Explore</h4>
             <div class="footer-link mt-4 d-flex">
               <span class="vicon-double-right-arrow"></span>
-              <a class="ms-1 fw-bold" href="blog.html">Blog</a>
+              <a class="ms-1 fw-bold" href="<?php  echo site_url('/blog') ?>">Blog</a>
             </div>
             <div class="footer-link mt-4 d-flex">
               <span class="vicon-double-right-arrow"></span>
-              <a class="ms-1 fw-bold" href="about.html">About Us</a>
+              <a class="ms-1 fw-bold" href="<?php  echo site_url('/about') ?>">About Us</a>
             </div>
             <div class="footer-link mt-4 d-flex">
               <span class="vicon-double-right-arrow"></span>
