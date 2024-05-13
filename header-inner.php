@@ -48,7 +48,14 @@
                 } ?>>
                 <a class="nav-link" href="<?php echo site_url('/about-us') ?>">About</a>
               </li>
-
+              <li <?php
+                if(get_post_type() == 'event') {
+                  echo 'class="current-menu-item nav-item"';
+                }else {
+                  echo 'class="nav-item"';
+                } ?>>
+                <a class="nav-link" href="<?php echo site_url('/events') ?>">Events</a>
+              </li>
               <li <?php
                 if(get_post_type() == 'post') {
                   echo 'class="current-menu-item nav-item"';
