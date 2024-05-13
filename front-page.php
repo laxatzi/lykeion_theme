@@ -889,17 +889,15 @@ get_header();
                     <div class="events-meta d-xl-flex py-3">
                       <div class="meta meta-date d-flex">
                         <span class="event-vicon vicon-calendar me-2"></span>
-                        <p><?php $publish_date = get_the_time('j F, Y');
-                   echo $publish_date; ?></p>
+                        <p><?php the_field('event-date'); ?></p>
                       </div>
                       <div class="meta meta-time d-flex">
                         <span class="event-vicon vicon-time me-2"></span>
-                        <p><?php $publish_time = get_the_time();
-                        echo $publish_time; ?></p>
+                        <p><?php the_field('event-time'); ?></p>
                       </div>
                       <div class="meta meta-location d-flex">
                         <span class="event-vicon vicon-geo-pin me-2"></span>
-                        <p>Main Premises, 21 Lincoln Str, Boston</p>
+                        <p><?php the_field('event-venue'); ?></p>
                       </div>
                     </div>
                     <!-- end event info -->
