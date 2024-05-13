@@ -17,7 +17,7 @@
       <!-- event-item -->
                 <?php
                  $event_page_events = new WP_Query(array(
-                  'posts_per_page' => 8,
+                  'posts_per_page' => 6,
                   'post_type' => 'event'
                 ));
 
@@ -70,16 +70,17 @@
             }
             ?>
     <!-- end of event list -->
-      </div>
-      <nav>
-        <div class="events-pagination d-flex gap-1 container">
-          <?php the_posts_pagination( array(
-                    'mid_size'  => 5,
+          <nav>
+            <div class="events-pagination d-flex gap-1 container">
+                <?php the_posts_pagination( array(
+                    'mid_size'  => 2,
                     'prev_text' => __( '<', 'textdomain' ),
                     'next_text' => __( '>', 'textdomain' ),
-          ) ); ?>
-        </div>
+                ) ); ?>
+            </div>
       </nav>
+      </div>
+
     </div>
    </main>
 <?php
