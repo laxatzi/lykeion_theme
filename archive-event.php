@@ -43,15 +43,15 @@
               <div class="events-meta d-xl-flex py-3">
                 <div class="meta meta-date d-flex">
                   <span class="event-vicon vicon-calendar me-2"></span>
-                  <p>30 October 2023</p>
+                  <p<?php the_field('event-date'); ?></p>
                 </div>
                 <div class="meta meta-time d-flex">
                   <span class="event-vicon vicon-time me-2"></span>
-                  <p>20:00</p>
+                  <p><?php the_field('event-time'); ?></p>
                 </div>
                 <div class="meta meta-location d-flex">
                   <span class="event-vicon vicon-geo-pin me-2"></span>
-                  <p>Main Premises, 21 Lincoln Str, Boston</p>
+                  <p><?php the_field('event-venue'); ?></p>
                 </div>
               </div>
             <!-- end event info -->
@@ -70,15 +70,7 @@
             }
             ?>
     <!-- end of event list -->
-          <nav>
-            <div class="events-pagination d-flex gap-1 container">
-                <?php the_posts_pagination( array(
-                    'mid_size'  => 2,
-                    'prev_text' => __( '<', 'textdomain' ),
-                    'next_text' => __( '>', 'textdomain' ),
-                ) ); ?>
-            </div>
-      </nav>
+
       </div>
 
     </div>
