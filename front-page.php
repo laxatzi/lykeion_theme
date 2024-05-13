@@ -860,9 +860,13 @@ get_header();
             </div>
           </div>
           <?php
+
             $home_events = new WP_Query(array(
               'posts_per_page' => 3,
-              'post_type' => 'event'
+              'post_type' => 'event',
+              'meta_key' => 'event-date',
+              'orderby' => 'meta_value_num',
+              'order' => 'ASC',
             ));
 
             while($home_events->have_posts()) {

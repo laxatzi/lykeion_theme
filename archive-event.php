@@ -17,8 +17,11 @@
       <!-- event-item -->
                 <?php
                  $event_page_events = new WP_Query(array(
-                  'posts_per_page' => 6,
-                  'post_type' => 'event'
+                  'posts_per_page' => -1,
+                  'post_type' => 'event',
+                  'meta_key' => 'event-date',
+                  'orderby' => 'meta_value_num',
+                  'order' => 'ASC',
                 ));
 
             while($event_page_events->have_posts()) {
@@ -43,7 +46,7 @@
               <div class="events-meta d-xl-flex py-3">
                 <div class="meta meta-date d-flex">
                   <span class="event-vicon vicon-calendar me-2"></span>
-                  <p<?php the_field('event-date'); ?></p>
+                  <p><?php the_field('event-date'); ?></p>
                 </div>
                 <div class="meta meta-time d-flex">
                   <span class="event-vicon vicon-time me-2"></span>
