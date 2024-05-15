@@ -10,7 +10,7 @@
       <div class="pt-5 container" >
         <div class="row mt-5">
           <div class="main-img">
-            <?php echo  get_the_post_thumbnail();  ?>
+            <?php echo  get_the_post_thumbnail(null, array(1400, 800));  ?>
           </div>
         </div>
         <div class="row">
