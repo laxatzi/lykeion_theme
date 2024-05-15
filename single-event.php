@@ -40,7 +40,7 @@
                     <span>Event Date</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
-                    <span>07/12/2023</span>
+                    <span><?php the_field('event-date'); ?></span>
                   </div>
                 </div>
               <!-- event duration -->
@@ -50,7 +50,7 @@
                     <span>Duration</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
-                    <span>3h 00m</span>
+                    <span><?php the_field('event-duration'); ?> 00m</span>
                   </div>
                 </div>
               <!-- enrolled users so far -->
@@ -61,7 +61,7 @@
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
 
-                    <span>72</span>
+                    <span><?php the_field('event-enrolled'); ?></span>
                   </div>
                 </div>
           <!-- Start Time -->
@@ -71,7 +71,7 @@
                     <span>Start Time</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
-                    <span>10:00</span>
+                    <span><?php the_field('start-time'); ?></span>
                   </div>
                 </div>
             <!-- End Time -->
@@ -82,7 +82,7 @@
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
 
-                    <span>13:30</span>
+                    <span><?php the_field('end-time'); ?></span>
                   </div>
                 </div>
             <!-- Location -->
@@ -93,7 +93,7 @@
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
 
-                    <span>City Center</span>
+                    <span style="font-size:.75rem;margin-right: -1rem;"><?php the_field('event-venue'); ?></span>
                   </div>
                 </div>
              <!-- Price -->
@@ -104,7 +104,7 @@
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
 
-                    <span>&euro; 29</span>
+                    <span>&euro; <?php the_field('price'); ?></span>
                   </div>
                 </div>
             <!-- book seat -->
