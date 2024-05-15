@@ -62,7 +62,7 @@
           </div>
           <div class="event-book">
             <div class="read-more btn btn-lg col-lg-12 col-md-4 col-12">
-                <a href="event-details.html" class="link-btn d-flex">Book your seat <span class="vicon-arrow--right"></span></a>
+                <a href="<?php echo get_the_permalink(); ?>" class="link-btn d-flex">Book your seat <span class="vicon-arrow--right"></span></a>
 
             </div>
           </div>
