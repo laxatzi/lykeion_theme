@@ -16,12 +16,21 @@
       <div id="event-list" class="d-flex mb-5 mt-3 container">
       <!-- event-item -->
                 <?php
+                 $today = date("F/j/Y");
                  $event_page_events = new WP_Query(array(
                   'posts_per_page' => -1,
                   'post_type' => 'event',
                   'meta_key' => 'event-date',
                   'orderby' => 'meta_value_num',
                   'order' => 'ASC',
+                  'meta_query' => array(
+                    array(
+                      'key' => 'event-date',
+                      'compare' =>  '>=',
+                      'value' => $today,
+                      'type' => 'numeric',
+                    )
+                  )
                 ));
 
             while($event_page_events->have_posts()) {
