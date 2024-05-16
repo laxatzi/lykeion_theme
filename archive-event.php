@@ -86,7 +86,11 @@
             }
             ?>
     <!-- end of event list -->
-
+            <div class="read-more btn btn-lg col-lg-3 col-md-4 col-8 my-5" style="margin: 0 auto;">
+              <a href="<?php //echo get_post_type_archive_link('event') ?>" class="link-btn d-flex"
+                      >View All Past Events <span class="vicon-arrow--right"></span>
+              </a>
+            </div>
       </div>
 
     </div>
