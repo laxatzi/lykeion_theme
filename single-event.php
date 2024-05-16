@@ -40,7 +40,10 @@
                     <span>Event Date</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
-                    <span><?php the_field('event-date'); ?></span>
+                    <span><?php
+                      $eventDate = new DateTime(get_field('event_date'));
+			                echo $eventDate->format('j').' '.$eventDate->format('F').' '. $eventDate->format('Y')
+                    ?></span>
                   </div>
                 </div>
               <!-- event duration -->
@@ -50,7 +53,7 @@
                     <span>Duration</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
-                    <span><?php the_field('event-duration'); ?> 00m</span>
+                    <span><?php the_field('event_duration'); ?> 00m</span>
                   </div>
                 </div>
               <!-- enrolled users so far -->
@@ -61,7 +64,7 @@
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
 
-                    <span><?php the_field('event-enrolled'); ?></span>
+                    <span><?php the_field('event_enrolled'); ?></span>
                   </div>
                 </div>
           <!-- Start Time -->
@@ -71,7 +74,7 @@
                     <span>Start Time</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
-                    <span><?php the_field('start-time'); ?></span>
+                    <span><?php the_field('start_time'); ?></span>
                   </div>
                 </div>
             <!-- End Time -->
@@ -82,7 +85,7 @@
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
 
-                    <span><?php the_field('end-time'); ?></span>
+                    <span><?php the_field('end_time'); ?></span>
                   </div>
                 </div>
             <!-- Location -->
@@ -93,7 +96,7 @@
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
 
-                    <span style="font-size:.75rem;margin-right: -1rem;"><?php the_field('event-venue'); ?></span>
+                    <span style="font-size:.75rem;margin-right: -1rem;"><?php the_field('event_venue'); ?></span>
                   </div>
                 </div>
              <!-- Price -->

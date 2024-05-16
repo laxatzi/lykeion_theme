@@ -16,16 +16,16 @@
       <div id="event-list" class="d-flex mb-5 mt-3 container">
       <!-- event-item -->
                 <?php
-                 $today = date("F/j/Y");
+                  $today = date("Ymd");
                  $event_page_events = new WP_Query(array(
                   'posts_per_page' => -1,
                   'post_type' => 'event',
-                  'meta_key' => 'event-date',
+                  'meta_key' => 'event_date',
                   'orderby' => 'meta_value_num',
                   'order' => 'ASC',
                   'meta_query' => array(
                     array(
-                      'key' => 'event-date',
+                      'key' => 'event_date',
                       'compare' =>  '>=',
                       'value' => $today,
                       'type' => 'numeric',
@@ -55,15 +55,19 @@
               <div class="events-meta d-xl-flex py-3">
                 <div class="meta meta-date d-flex">
                   <span class="event-vicon vicon-calendar me-2"></span>
-                  <p><?php the_field('event-date'); ?></p>
+                  <p><?php
+                    $eventDate = new DateTime(get_field('event_date'));
+			              echo $eventDate->format('j').' '.$eventDate->format('F').' '. $eventDate->format('Y');
+                    ?>
+                  </p>
                 </div>
                 <div class="meta meta-time d-flex">
                   <span class="event-vicon vicon-time me-2"></span>
-                  <p><?php the_field('event-time'); ?></p>
+                  <p><?php the_field('event_time'); ?></p>
                 </div>
                 <div class="meta meta-location d-flex">
                   <span class="event-vicon vicon-geo-pin me-2"></span>
-                  <p><?php the_field('event-venue'); ?></p>
+                  <p><?php the_field('event_venue'); ?></p>
                 </div>
               </div>
             <!-- end event info -->
