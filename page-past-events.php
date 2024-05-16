@@ -17,7 +17,7 @@
       <!-- event-item -->
                 <?php
                   $today = date("Ymd");
-                 $event_page_events = new WP_Query(array(
+                 $past_events = new WP_Query(array(
                   'posts_per_page' => -1,
                   'post_type' => 'event',
                   'meta_key' => 'event_date',
@@ -33,8 +33,8 @@
                   )
                 ));
 
-            while($event_page_events->have_posts()) {
-              $event_page_events->the_post();
+            while($past_events->have_posts()) {
+              $past_events->the_post();
               ?>
         <div class="row">
           <div class="event-item d-lg-flex mb-3 p-4">
