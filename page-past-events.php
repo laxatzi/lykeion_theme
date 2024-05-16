@@ -4,11 +4,11 @@
 ?>
    <main class="container-fluid">
       <div class="py-5 pe-5 container" id="events" >
-       <div class="row">
+       <div class="row" >
         <!-- events headings -->
           <div id="vclasses-headings" class="p-sm-5 ps-0 text-center">
             <h3 class="intro text-center">Learning can be fun!</h3>
-            <h2 class="mt-2 mb-3 fw-bold text-center">Upcoming Events!</h2>
+            <h2 class="mt-2 mb-3 fw-bold text-center">Past Events!</h2>
           </div>
         </div>
 
@@ -18,7 +18,8 @@
                 <?php
                   $today = date("Ymd");
                  $past_events = new WP_Query(array(
-                  'posts_per_page' => -1,
+                  'paged' => get_query_var('paged', 1),
+                  'posts_per_page' => 2,
                   'post_type' => 'event',
                   'meta_key' => 'event_date',
                   'orderby' => 'meta_value_num',
@@ -82,16 +83,29 @@
       <!-- end event item -->
         </div>
       </div>
-        <?php
-            }
-            ?>
-    <!-- end of event list -->
-            <div class="read-more btn btn-lg col-lg-3 col-md-4 col-8 my-5" style="margin: 0 auto;">
-              <a href="<?php echo get_post_type_archive_link('event') ?>" class="link-btn d-flex"
-                      >View All Future Events <span class="vicon-arrow--right"></span>
-              </a>
-            </div>
       </div>
+      <!-- end of event list -->
+
+
+          <?php
+            }
+          ?>
+          <div class="container mb-5" >
+            <div class="events-pagination d-flex gap-1 container" >
+              <?php
+                  echo paginate_links(array(
+                  'total' => $past_events->max_num_pages,
+                  'prev_text'    =>  __('«'),
+                  'next_text'    =>  __('»'),
+                ));
+              ?>
+            </div>
+            <div class="read-more btn btn-lg col-lg-4 col-md-5 col-8 my-5" style="margin: 0 auto;">
+              <a href="<?php echo get_post_type_archive_link('event') ?>" class="link-btn d-flex">
+                View All Future Events <span class="vicon-arrow--right"></span>
+              </a>
+          </div>
+        </div>
 
     </div>
    </main>
