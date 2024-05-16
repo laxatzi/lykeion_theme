@@ -2223,7 +2223,7 @@ a.lost::after {
 
 .events-pagination .prev:hover,
 .events-pagination .next:hover,
-.events-pagination .page:hover {
+.events-pagination .page-number:hover {
   background-color: var(--cc-primary-light);
   cursor: pointer;
   border-bottom: 1px solid var(--cc-white-sugar);
