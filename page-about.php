@@ -180,7 +180,10 @@
                     alt=""
                 /></span>
                 <span class="brand fw-bold img-300">
-                  <img class="img-fluid" src="img/icons/logo4-300.png" alt="" />
+                  <img
+                    class="img-fluid"
+                    src="<?php echo get_theme_file_uri('img/icons/logo4-300.png') ?>" alt=""
+                    alt="" />
                 </span>
                 <!-- logo 3 -->
                 <span class="brand ms-2 fw-bold img-100"
@@ -199,21 +202,27 @@
                 <span class="brand ms-2 fw-bold img-100"
                   ><img
                     class="img-fluid"
-                    src="img/icons/logo2-primary-thumb.png"
+                    src="<?php echo get_theme_file_uri('img/icons/logo2-primary-thumb.png') ?>" alt=""
                     alt=""
                 /></span>
                 <span class="brand fw-bold img-300">
-                  <img class="img-fluid" src="img/icons/logo2-300.png" alt="" />
+                  <img
+                    class="img-fluid"
+                    src="<?php echo get_theme_file_uri('img/icons/logo2-300.png') ?>" alt=""
+                    alt="" />
                 </span>
                 <!-- logo 1 -->
                 <span class="brand ms-2 fw-bold img-100"
                   ><img
                     class="img-fluid"
-                    src="img/icons/logo1-primary-thumb.png"
+                    src="<?php echo get_theme_file_uri('img/icons/logo1-primary-thumb.png') ?>" alt=""
                     alt=""
                 /></span>
                 <span class="brand fw-bold img-300">
-                  <img class="img-fluid" src="img/icons/logo1-300.png" alt="" />
+                  <img
+                    class="img-fluid"
+                    src="<?php echo get_theme_file_uri('img/icons/logo1-300.png') ?>" alt=""
+                    alt="" />
                 </span>
                 <!-- end of logotypes -->
               </div>
