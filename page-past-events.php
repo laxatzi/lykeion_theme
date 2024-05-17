@@ -2,7 +2,7 @@
    get_header('inner');
     get_template_part('template-parts/banners/events-all-banner');
 ?>
-   <main class="container-fluid">
+   <main class="container-fluid pb-5">
       <div class="py-5 pe-5 container" id="events" >
        <div class="row" >
         <!-- events headings -->
@@ -13,7 +13,7 @@
         </div>
 
          <!-- event list -->
-      <div id="event-list" class="d-flex mb-5 mt-3 container">
+      <div id="event-list" class="d-flex mb-2 mt-3 container" >
       <!-- event-item -->
                 <?php
                   $today = date("Ymd");
@@ -90,7 +90,7 @@
           <?php
             }
           ?>
-          <div class="container mb-5" >
+          <div class="container" >
             <div class="events-pagination d-flex gap-1 container" >
               <?php
                   echo paginate_links(array(
@@ -100,7 +100,7 @@
                 ));
               ?>
             </div>
-            <div class="read-more btn btn-lg col-lg-4 col-md-5 col-8 my-5" style="margin: 0 auto;">
+            <div class="read-more btn btn-lg col-xl-3 col-lg-4 col-md-5 col-8 my-5" style="margin: 0 auto;">
               <a href="<?php echo get_post_type_archive_link('event') ?>" class="link-btn d-flex">
                 View All Future Events <span class="vicon-arrow--right"></span>
               </a>
