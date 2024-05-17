@@ -276,12 +276,14 @@
                 <span
                   ><img
                     class="img-fluid pointing-arrow"
+                    src="<?php echo get_theme_file_uri('img/shapes/geometric-5.png') ?>"
                     src="img/icons/curved-arrow-1.png"
                     alt=""
                 /></span>
                 <span class="text-center">
                   <img
                     src="img/icons/down-arrow.png"
+                    src="<?php echo get_theme_file_uri('img/shapes/geometric-5.png') ?>"
                     class="img-fluid down-arrow-thumbnail"
                     alt=""
                   />
@@ -296,6 +298,7 @@
                 <span
                   ><img
                     class="img-fluid pointing-arrow"
+                    src="<?php echo get_theme_file_uri('img/shapes/geometric-5.png') ?>"
                     src="img/icons/curved-arrow-1.png"
                     alt=""
                   />
@@ -303,6 +306,7 @@
                 <span class="text-center">
                   <img
                     src="img/icons/down-arrow.png"
+                    src="<?php echo get_theme_file_uri('img/shapes/geometric-5.png') ?>"
                     class="img-fluid down-arrow-thumbnail"
                     alt=""
                   />
@@ -319,13 +323,13 @@
             <div class="shapes">
               <div class="shape-image shape-image-39">
                 <img
-                  src="img/shapes/Lykeion/geo-shape-transparent-5.png"
+                  src="<?php echo get_theme_file_uri('img/shapes/geo-shape-transparent-5.png') ?>"
                   alt=""
                 />
               </div>
               <div class="shape-image shape-image-40">
                 <img
-                  src="img/shapes/Lykeion/geo-shape-transparent-8-small.png"
+                  src="<?php echo get_theme_file_uri('img/shapes/geo-shape-transparent-8-small.png') ?>"
                   alt=""
                 />
               </div>
@@ -343,7 +347,7 @@
                     <a href="img/children-portrait.jpg" class="masonry-brick">
                       <div class="about-masonry-img">
                         <img
-                          src="img/children-portrait.jpg"
+                          src="<?php echo get_theme_file_uri('img/children-portrait.jpg') ?>"
                           class="rounded img-fluid"
                           alt="Children are playing"
                         />
@@ -352,7 +356,7 @@
                     <a class="masonry-brick" href="img/writter-400x700.png">
                       <div class="about-masonry-img">
                         <img
-                          src="img/writter-400x700.png"
+                          src="<?php echo get_theme_file_uri('img/writter-400x700.png') ?>"
                           class="rounded img-fluid"
                           alt="Pen on paper"
                         />
@@ -361,7 +365,7 @@
                     <a class="masonry-brick" href="img/class-portrait.jpg">
                       <div class="about-masonry-img">
                         <img
-                          src="img/class-portrait.jpg"
+                          src="<?php echo get_theme_file_uri('img/class-portrait.jpg') ?>"
                           class="rounded img-fluid"
                           alt="student group work"
                         />
@@ -370,7 +374,7 @@
                     <a class="masonry-brick" href="img/caimbridge-450x650.png">
                       <div class="about-masonry-img">
                         <img
-                          src="img/caimbridge-450x650.png"
+                          src="<?php echo get_theme_file_uri('img/caimbridge-450x650.png') ?>"
                           class="rounded img-fluid"
                           alt="cambridge university"
                         />
