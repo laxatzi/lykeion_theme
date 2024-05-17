@@ -41,7 +41,7 @@
               </li>
 
               <li <?php
-                if(is_page('about-us')) {
+                if(is_page('about')) {
                   echo 'class="current-menu-item nav-item"';
                 }else {
                   echo 'class="nav-item"';
