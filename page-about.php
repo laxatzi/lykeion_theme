@@ -398,7 +398,7 @@
                     >
                       <div class="about-masonry-img">
                         <img
-                          src="img/girl-in-class-portrait.jpg"
+                          src="<?php echo get_theme_file_uri('img/girl-in-class-portrait.jpg') ?>"
                           class="rounded img-fluid"
                           alt="Yosemite National Park"
                         />
@@ -407,7 +407,7 @@
                     <a class="masonry-brick" href="img/back-to-school-opt.jpg">
                       <div class="about-masonry-img">
                         <img
-                          src="img/back-to-school-opt.jpg"
+                          src="<?php echo get_theme_file_uri('img/back-to-school-opt.jpg') ?>"
                           class="rounded img-fluid"
                           alt="Students on classroom"
                         />
@@ -453,7 +453,7 @@
                   <div class="data-info text-center">
                     <img
                       class="img-fluid"
-                      src="img/icons/certificate-tumb-white.png"
+                      src="<?php echo get_theme_file_uri('img/icons/certificate-tumb-white.png') ?>"
                       alt=""
                     />
                     <h3 class="fw-bold">350+</h3>
@@ -464,6 +464,7 @@
                   <div class="data-info text-center">
                     <img
                       class="img-fluid"
+                      src="<?php echo get_theme_file_uri('img/icons/student-thumb.png') ?>"
                       src="img/icons/student-thumb.png"
                       alt=""
                     />
@@ -475,7 +476,7 @@
                   <div class="data-info text-center">
                     <img
                       class="img-fluid"
-                      src="img/icons/course-thumb-white-100.png"
+                      src="<?php echo get_theme_file_uri('img/icons/course-thumb-white-100.png') ?>"
                       alt=""
                     />
                     <h3 class="fw-bold">30+</h3>
@@ -486,7 +487,7 @@
                   <div class="data-info text-center">
                     <img
                       class="img-fluid"
-                      src="img/icons/review-thumb-white.png"
+                      src="<?php echo get_theme_file_uri('img/icons/review-thumb-white.png') ?>"
                       alt=""
                     />
                     <h3 class="fw-bold">300+</h3>
@@ -497,14 +498,18 @@
             </div>
             <div class="shapes">
               <div class="shape-image shape-image-43">
-                <img src="img/shapes/Lykeion/geometric-22.png" alt="" />
+                <img
+                  src="<?php echo get_theme_file_uri('img/shapes/geometric-22.png') ?>"
+                  alt="" />
               </div>
               <div class="shape-image shape-image-41">
-                <img src="img/shapes/Lykeion/geometric-21.png" alt="" />
+                <img
+                  src="<?php echo get_theme_file_uri('img/shapes/geometric-21.png') ?>"
+                  alt="" />
               </div>
               <div class="shape-image shape-image-42">
                 <img
-                  src="img/shapes/Lykeion/geo-shape-transparent-18.png"
+                  src="<?php echo get_theme_file_uri('img/shapes/geo-shape-transparent-18.png') ?>"
                   alt=""
                 />
               </div>
