@@ -214,7 +214,6 @@ get_header();
                 <div class="icon">
                   <span
                     ><img
-                      src="img/icons/livechat-icon-purple.png"
                       src="<?php echo get_theme_file_uri('/img/icons/livechat-icon-purple.png') ?>"
                       alt=""
                       class="img-fluid"
