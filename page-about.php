@@ -232,17 +232,24 @@
 
         <div class="shapes">
           <div class="shape-image shape-image-37">
-            <img src="img/shapes/Lykeion/geometric-6.png" alt="" />
+            <img
+              src="<?php echo get_theme_file_uri('img/shapes/geometric-6.png') ?>"
+              src="img/shapes/Lykeion/geometric-6.png"
+              alt="" />
           </div>
           <div class="shape-image shape-image-36">
-            <img src="img/shapes/Lykeion/geometric-2.png" alt="" />
+            <img
+              src="<?php echo get_theme_file_uri('img/shapes/geometric-2.png') ?>"
+              alt="" />
           </div>
           <div class="shape-image shape-image-9">
-            <img src="img/shapes/Lykeion/geometric-5.png" alt="" />
+            <img
+              src="<?php echo get_theme_file_uri('img/shapes/geometric-5.png') ?>"
+              alt="" />
           </div>
           <div class="shape-image shape-image-38">
             <img
-              src="img/shapes/Lykeion/geo-shape-transparent-4-pink.png"
+              src="<?php echo get_theme_file_uri('img/shapes/geo-shape-transparent-4-pink.png') ?>"
               alt=""
             />
           </div>
