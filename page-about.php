@@ -276,8 +276,7 @@
                 <span
                   ><img
                     class="img-fluid pointing-arrow"
-                    src="<?php echo get_theme_file_uri('img/shapes/geometric-5.png') ?>"
-                    src="img/icons/curved-arrow-1.png"
+                    src="<?php echo get_theme_file_uri('img/icons/curved-arrow-1.png') ?>"
                     alt=""
                 /></span>
                 <span class="text-center">
@@ -298,7 +297,7 @@
                 <span
                   ><img
                     class="img-fluid pointing-arrow"
-                    src="<?php echo get_theme_file_uri('img/shapes/geometric-5.png') ?>"
+                    src="<?php echo get_theme_file_uri('img/icons/curved-arrow-1.png') ?>"
                     src="img/icons/curved-arrow-1.png"
                     alt=""
                   />
