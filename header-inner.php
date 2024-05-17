@@ -46,7 +46,7 @@
                 }else {
                   echo 'class="nav-item"';
                 } ?>>
-                <a class="nav-link" href="<?php echo site_url('/about-us') ?>">About</a>
+                <a class="nav-link" href="<?php echo site_url('/about') ?>">About</a>
               </li>
               <li <?php
                 if(get_post_type() == 'event') {
