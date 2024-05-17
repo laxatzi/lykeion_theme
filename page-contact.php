@@ -56,7 +56,7 @@
                     <div class="card p-4">
                       <div class="card-body">
                         <img
-                          src="<?php echo get_theme_file_uri('/img/icons/email-thumb-50.phg') ?>"
+                          src="<?php echo get_theme_file_uri('/img/icons/email-thumb-50.png') ?>"
                           alt="" />
                         <h5 class="card-title text-center fw-bold py-3">
                           Email Us
