@@ -118,10 +118,11 @@
       async
     ></script>
     <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
-    <script src="countdown.js"></script>
+
     <script src="main.js"></script> -->
     <?php
     get_footer();
 ?>
+<script src="<?php echo get_theme_file_uri('js/countdown.js'); ?>"></script>
   </body>
 </html>
