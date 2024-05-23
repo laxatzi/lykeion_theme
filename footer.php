@@ -82,11 +82,11 @@
             </div>
             <div class="footer-link mt-4 d-flex">
               <span class="vicon-double-right-arrow"></span>
-              <a class="ms-1 fw-bold" href="tos.html">Terms of Use</a>
+              <a class="ms-1 fw-bold" href="<?php  echo site_url('/terms') ?>">Terms of Use</a>
             </div>
             <div class="footer-link mt-4 d-flex">
               <span class="vicon-double-right-arrow"></span>
-              <a class="ms-1 fw-bold" href="privacy-policy.html"
+              <a class="ms-1 fw-bold" href="<?php  echo site_url('/privacy') ?>"
                 >Privacy Policy</a
               >
             </div>
