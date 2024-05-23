@@ -90,16 +90,24 @@
     <!-- Shapes -->
     <div class="shapes">
       <div class="shape-image shape-image-44">
-        <img src="img/shapes/Lykeion/geo-shape-transparent-9.png" alt="" />
+        <img
+          src="<?php echo get_theme_file_uri('img/shapes/geo-shape-transparent-9.png'); ?>"
+          alt="" />
       </div>
       <div class="shape-image shape-image-45">
-        <img src="img/shapes/Lykeion/geometric-21.png" alt="" />
+        <img
+          src="<?php echo get_theme_file_uri('img/shapes/geometric-21.png'); ?>"
+          alt="" />
       </div>
       <div class="shape-image shape-image-46">
-        <img src="img/shapes/Lykeion/geo-shape-transparent-5.png" alt="" />
+        <img
+          src="<?php echo get_theme_file_uri('img/shapes/geo-shape-transparent-5.png'); ?>"
+          alt="" />
       </div>
       <div class="shape-image shape-image-47">
-        <img src="img/shapes/Lykeion/memphis-shape2-big.png" alt="" />
+        <img
+          src="<?php echo get_theme_file_uri('img/shapes/memphis-shape2-big.png'); ?>"
+          alt="" />
       </div>
     </div>
     <!-- end shapes -->
