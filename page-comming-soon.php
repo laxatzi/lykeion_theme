@@ -111,15 +111,6 @@
       </div>
     </div>
     <!-- end shapes -->
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
-      crossorigin="anonymous"
-      async
-    ></script>
-    <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
-
-    <script src="main.js"></script> -->
     <?php
     get_footer();
 ?>
