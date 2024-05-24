@@ -14,6 +14,10 @@
           <div class="col-lg-10">
             <div class="privacy-rules">
                   <h2 class="mb-5"><?php the_title(); ?></h2>
+                  <div class="thumbnail-image"><?php
+                    $thumbnail = get_the_post_thumbnail(null, 'large');
+                    echo $thumbnail;
+                  ?></div>
     <?php the_content(); ?>
             </div>
           </div>
