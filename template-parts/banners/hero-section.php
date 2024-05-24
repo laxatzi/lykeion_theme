@@ -1,6 +1,6 @@
 
 <div class="wrapper container-fluid">
-<section id="hero" class="container pt-5 pb-5">
+<section id="hero" class="container pt-5">
         <div
           class="intro ps-sm-0 p-sm-5 p-3 mt-sm-0 mt-5 text-sm-start text-center"
         >
