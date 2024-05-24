@@ -298,7 +298,6 @@
                   ><img
                     class="img-fluid pointing-arrow"
                     src="<?php echo get_theme_file_uri('img/icons/curved-arrow-1.png') ?>"
-                    src="img/icons/curved-arrow-1.png"
                     alt=""
                   />
                 </span>
@@ -464,7 +463,6 @@
                     <img
                       class="img-fluid"
                       src="<?php echo get_theme_file_uri('img/icons/student-thumb.png') ?>"
-                      src="img/icons/student-thumb.png"
                       alt=""
                     />
                     <h3 class="fw-bold">450+</h3>
