@@ -23,7 +23,9 @@
                     class="video-play-btn"
                     target="_blank"
                   >
-                    <img src="img/icons/youtube-orange.png" alt="" />
+                    <img
+                      src="<?php echo get_theme_file_uri('img/icons/youtube-orange.png'); ?>"
+                      alt="" />
                   </a>
                 </div>
               </div>
