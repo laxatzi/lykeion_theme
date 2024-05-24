@@ -338,10 +338,6 @@ section {
   position: relative;
 }
 
-.student img {
-  vertical-align: sub;
-}
-
 .shape-image {
   position: absolute;
   z-index: 1;
@@ -666,6 +662,15 @@ section {
 
   .images-about {
     flex: 1;
+  }
+}
+
+/*@  ************************************************************************************
+  985px
+****************************************************************************************/
+@media screen and (max-width: 995px) {
+  #hero {
+    flex-direction: column;
   }
 }
 
