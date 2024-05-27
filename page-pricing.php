@@ -394,4 +394,7 @@
 <?php
     get_footer();
 ?>
+<script src="<?php echo get_theme_file_uri('js/toggle-pages.js'); ?>"></script>
 
+  </body>
+</html>
