@@ -197,7 +197,7 @@
                       </li>
                       <li>
                         <img
-                          src="img/icons/check-thumb-16.png"
+                          src="<?php echo get_theme_file_uri('/img/icons/check-thumb-16.png') ?>"
                           alt=""
                           class="me-2"
                         /><span>discounts for companies</span>
@@ -231,6 +231,8 @@
                     >
                       <li>
                         <img
+                                                  src="<?php echo get_theme_file_uri('/img/icons/check-thumb-16.png') ?>"
+
                           src="img/icons/check-thumb-16.png"
                           alt=""
                           class="me-2"
@@ -239,6 +241,8 @@
                       </li>
                       <li>
                         <img
+                                                  src="<?php echo get_theme_file_uri('/img/icons/check-thumb-16.png') ?>"
+
                           src="img/icons/check-thumb-16.png"
                           alt=""
                           class="me-2"
@@ -247,6 +251,8 @@
                       </li>
                       <li>
                         <img
+                                                  src="<?php echo get_theme_file_uri('/img/icons/check-thumb-16.png') ?>"
+
                           src="img/icons/check-thumb-16.png"
                           alt=""
                           class="me-2"
@@ -255,6 +261,8 @@
                       </li>
                       <li>
                         <img
+                                                  src="<?php echo get_theme_file_uri('/img/icons/check-thumb-16.png') ?>"
+
                           src="img/icons/check-thumb-16.png"
                           alt=""
                           class="me-2"
@@ -286,6 +294,8 @@
                     >
                       <li>
                         <img
+                                                  src="<?php echo get_theme_file_uri('/img/icons/check-thumb-16.png') ?>"
+
                           src="img/icons/check-thumb-16.png"
                           alt=""
                           class="me-2"
@@ -294,7 +304,7 @@
                       </li>
                       <li>
                         <img
-                          src="img/icons/check-thumb-16.png"
+                          src="<?php echo get_theme_file_uri('/img/icons/check-thumb-16.png') ?>"
                           alt=""
                           class="me-2"
                         />
@@ -302,7 +312,7 @@
                       </li>
                       <li>
                         <img
-                          src="img/icons/check-thumb-16.png"
+                          src="<?php echo get_theme_file_uri('/img/icons/check-thumb-16.png') ?>"
                           alt=""
                           class="me-2"
                         />
@@ -310,7 +320,7 @@
                       </li>
                       <li>
                         <img
-                          src="img/icons/check-thumb-16.png"
+                          src="<?php echo get_theme_file_uri('/img/icons/check-thumb-16.png') ?>"
                           alt=""
                           class="me-2"
                         />
@@ -341,7 +351,7 @@
                     >
                       <li>
                         <img
-                          src="img/icons/check-thumb-16.png"
+                          src="<?php echo get_theme_file_uri('/img/icons/check-thumb-16.png') ?>"
                           alt=""
                           class="me-2"
                         />
@@ -349,7 +359,7 @@
                       </li>
                       <li>
                         <img
-                          src="img/icons/check-thumb-16.png"
+                          src="<?php echo get_theme_file_uri('/img/icons/check-thumb-16.png') ?>"
                           alt=""
                           class="me-2"
                         />
@@ -357,7 +367,7 @@
                       </li>
                       <li>
                         <img
-                          src="img/icons/check-thumb-16.png"
+                          src="<?php echo get_theme_file_uri('/img/icons/check-thumb-16.png') ?>"
                           alt=""
                           class="me-2"
                         />
@@ -365,14 +375,14 @@
                       </li>
                       <li>
                         <img
-                          src="img/icons/check-thumb-16.png"
+                          src="<?php echo get_theme_file_uri('/img/icons/check-thumb-16.png') ?>"
                           alt=""
                           class="me-2"
                         /><span>virtual class preparation</span>
                       </li>
                       <li>
                         <img
-                          src="img/icons/check-thumb-16.png"
+                          src="<?php echo get_theme_file_uri('/img/icons/check-thumb-16.png') ?>"
                           alt=""
                           class="me-2"
                         /><span>discounts for companies</span>
