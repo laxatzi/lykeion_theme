@@ -1,3 +1,6 @@
+const accordionButtonItems = document.querySelectorAll(".accordion-button");
+const accordion = document.querySelector(".accordion");
+
 accordion.addEventListener("click", accordionButtonInteraction);
 
 function accordionButtonInteraction(e) {
