@@ -10,9 +10,7 @@
             <div class="col-lg-8 col-md-8 mb-md-4 mb-lg-0">
               <div class="intro--faq ps-0 mb-md-5 mb-sm-4">
                 <h3 class="intro">Frequently Asked Questions</h3>
-                <h2 class="fw-bold mt-2 mb-sm-3">
-                  Get Answers Here
-                </h2>
+                <h2 class="fw-bold mt-2 mb-sm-3">Get Answers Here</h2>
               </div>
             </div>
            </div>
@@ -30,7 +28,10 @@
                <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    <button
+                      class="accordion-button"
+                       type="button"
+                       data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                       what are the qualifications of your teachers?
                     </button>
                   </h2>
