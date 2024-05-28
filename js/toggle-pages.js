@@ -1,18 +1,21 @@
-const courseNav = document.querySelector(".course-nav");
+// toggling subPages
+const billingDuration = document.querySelector(".billing-duration");
 const subpages = document.querySelectorAll(".subpage");
-const courseNavItems = document.querySelectorAll(".course-nav-item");
+const durations = document.querySelectorAll(".duration");
 const accordionButtonItems = document.querySelectorAll(".accordion-button");
-const accordion = document.querySelector(".accordion");
+const billingDurationButton = document.querySelector(
+  ".billing-duration button"
+);
 
-courseNav.addEventListener("click", subpageInteraction);
+billingDuration.addEventListener("click", subpageInteraction);
 // When a child element of `buttons` is clicked
 function subpageInteraction(e) {
   // Check to see if its a button
   if (e.target.matches("button")) {
     // For every element in the `panels` node list use `classList`
     // to remove the active class
-    courseNavItems.forEach((courseNavItem) =>
-      courseNavItem.classList.remove("focused-nav-item")
+    durations.forEach((duration) =>
+      duration.classList.remove("focused-nav-item")
     );
     subpages.forEach((subpage) => subpage.classList.remove("active"));
 
@@ -31,3 +34,17 @@ function subpageInteraction(e) {
     document.querySelector(matchId).classList.add("active");
   }
 }
+
+// toggling button
+const buttons = document.querySelectorAll(".btn");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", (el) => {
+    const elem = el.target;
+    const parent = elem.parentElement;
+    const getAria = parent.getAttribute("aria-checked");
+    let isAriaState = getAria === "false";
+
+    parent.setAttribute("aria-checked", isAriaState ? true : false);
+  });
+});
