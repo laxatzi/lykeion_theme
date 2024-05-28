@@ -1,8 +1,6 @@
 const courseNav = document.querySelector(".course-nav");
 const subpages = document.querySelectorAll(".subpage");
 const courseNavItems = document.querySelectorAll(".course-nav-item");
-const accordionButtonItems = document.querySelectorAll(".accordion-button");
-const accordion = document.querySelector(".accordion");
 
 courseNav.addEventListener("click", subpageInteraction);
 // When a child element of `buttons` is clicked

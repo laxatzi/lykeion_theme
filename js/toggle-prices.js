@@ -1,7 +1,6 @@
 const billingDuration = document.querySelector(".billing-duration");
 const subpagesPrice = document.querySelectorAll(".subpage");
 const durations = document.querySelectorAll(".duration");
-// const accordionButtonItems = document.querySelectorAll(".accordion-button");
 const billingDurationButton = document.querySelector(
   ".billing-duration button"
 );
