@@ -1,8 +1,7 @@
-// toggling subPages
 const billingDuration = document.querySelector(".billing-duration");
-const subpages = document.querySelectorAll(".subpage");
+const subpagesPrice = document.querySelectorAll(".subpage");
 const durations = document.querySelectorAll(".duration");
-const accordionButtonItems = document.querySelectorAll(".accordion-button");
+// const accordionButtonItems = document.querySelectorAll(".accordion-button");
 const billingDurationButton = document.querySelector(
   ".billing-duration button"
 );
@@ -17,7 +16,7 @@ function subpageInteraction(e) {
     durations.forEach((duration) =>
       duration.classList.remove("focused-nav-item")
     );
-    subpages.forEach((subpage) => subpage.classList.remove("active"));
+    subpagesPrice.forEach((subpage) => subpage.classList.remove("active"));
 
     // "Destructure" the `id` from the button's data set
     const { id } = e.target.dataset;
