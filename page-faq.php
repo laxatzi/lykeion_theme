@@ -264,7 +264,6 @@
 
 <?php
     get_footer();
+
 ?>
-<script src="<?php echo get_theme_file_uri('js/accordion.js'); ?>"></script>
-  </body>
-</html>
+
