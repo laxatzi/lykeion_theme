@@ -16,7 +16,7 @@
             <div
               class="edu_theme-title d-flex justify-content-center align-items-center mb-3"
             >
-              <a class="edu_theme me-3 d-flex" href="#"
+              <a class="edu_theme me-3 d-flex" href="<?php echo site_url(); ?>"
                 ><span class="vicon-logo me-1"></span>
                 <h2 class="fw-bold">edu_theme</h2></a
               >
