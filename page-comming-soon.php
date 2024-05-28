@@ -114,6 +114,4 @@
     <?php
     get_footer();
 ?>
-<script src="<?php echo get_theme_file_uri('js/countdown.js'); ?>"></script>
-  </body>
-</html>
+
