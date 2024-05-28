@@ -63,18 +63,18 @@
             </div>
             <div class="footer-link mt-4 d-flex">
               <span class="vicon-double-right-arrow"></span>
-              <a class="ms-1 fw-bold" href="pricing.html">Pricing Plans</a>
+              <a class="ms-1 fw-bold" href="<?php  echo site_url('/pricing') ?>">Pricing Plans</a>
             </div>
             <div class="footer-link mt-4 d-flex">
               <span class="vicon-double-right-arrow"></span>
-              <a class="ms-1 fw-bold" href="#">Upcoming Events</a>
+              <a class="ms-1 fw-bold" href="<?php  echo site_url('/events') ?>">Upcoming Events</a>
             </div>
           </div>
           <div class="footer-links d-flex">
             <h4 class="fw-bold ms-1">Useful</h4>
             <div class="footer-link mt-4 d-flex">
               <span class="vicon-double-right-arrow"></span>
-              <a class="ms-1 fw-bold" href="faq.html">FAQ</a>
+              <a class="ms-1 fw-bold" href="<?php  echo site_url('/faq') ?>">FAQ</a>
             </div>
             <div class="footer-link mt-4 d-flex">
               <span class="vicon-double-right-arrow"></span>
