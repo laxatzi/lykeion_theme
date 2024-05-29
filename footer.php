@@ -80,6 +80,10 @@
               <span class="vicon-double-right-arrow"></span>
               <a class="ms-1 fw-bold" href="members.html">Members Area</a>
             </div>
+              <div class="footer-link mt-4 d-flex">
+              <span class="vicon-double-right-arrow"></span>
+              <a class="ms-1 fw-bold" href="<?php  echo site_url('/gallery') ?>">Gallery</a>
+            </div>
             <div class="footer-link mt-4 d-flex">
               <span class="vicon-double-right-arrow"></span>
               <a class="ms-1 fw-bold" href="<?php  echo site_url('/terms') ?>">Terms of Use</a>
