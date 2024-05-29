@@ -4,6 +4,8 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
+        <script src="bootstrap.bundle.min.js" defer></script>
+
   </head>
   <body <?php body_class(); ?>>
     <a class="back-to-top hidden" href="#" id="js--back-to-top" title="Go to top">
