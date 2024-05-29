@@ -17,7 +17,7 @@
             <div class="row mt-5 mb-5">
              <main class="col-lg-8 pb-5 faq-section">
                 <div class="course-nav d-flex me-3 p-3 mb-3 fw-bold">
-                  <button data-id="intro-page" class="course-nav-item" >General</button>
+                  <button data-id="intro-page" class="course-nav-item" autofocus >General</button>
                   <button data-id="curriculum-page" class="course-nav-item" >Enrollment</button>
                   <button data-id="tutor-nav-page" class="course-nav-item" >Classes</button>
                   <button data-id="review-nav-page" class="course-nav-item">Miscellaneous</button>
