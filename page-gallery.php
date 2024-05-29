@@ -56,7 +56,7 @@
                     </div>
                   </div>
                   </a>
-                  <a class="masonry-brick event" href="img/gallery/happy-children-playing.jpg">
+                  <a class="masonry-brick event" href="<?php echo get_theme_file_uri('img/gallery/happy-children-playing.jpg')?>">
                   <div class="masonry-img">
                     <img
                       src="<?php echo get_theme_file_uri('img/gallery/happy-children-playing.jpg')?>"
