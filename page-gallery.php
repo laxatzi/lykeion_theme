@@ -45,10 +45,10 @@
                   </a>
                   <a
                     class="masonry-brick event"
-                    href="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>">
+                    href="<?php echo get_theme_file_uri('img/gallery/children-theater.jpg')?>">
                   <div class="masonry-img">
                     <img
-                      src="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>"
+                      src="<?php echo get_theme_file_uri('img/gallery/children-theater.jpg')?>"
                       alt="" />
                     <div class="hovered-content">
                       <span class="gallery-zoom-icon vicon-zoom--white"></span>
@@ -59,7 +59,7 @@
                   <a class="masonry-brick event" href="img/gallery/happy-children-playing.jpg">
                   <div class="masonry-img">
                     <img
-                      src="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>"
+                      src="<?php echo get_theme_file_uri('img/gallery/happy-children-playing.jpg')?>"
                       alt="" />
                     <div class="hovered-content">
                       <span class="gallery-zoom-icon vicon-zoom--white"></span>
@@ -69,10 +69,10 @@
                   </a>
                   <a
                     class="masonry-brick classroom"
-                    href="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>">
+                    href="<?php echo get_theme_file_uri('img/gallery/school-is-closed.jpg')?>">
                   <div class=" masonry-img">
                     <img
-                      src="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>"
+                      src="<?php echo get_theme_file_uri('img/gallery/school-is-closed.jpg')?>"
                       alt="" />
                     <div class="hovered-content">
                       <span class="gallery-zoom-icon vicon-zoom--white"></span>
@@ -82,10 +82,10 @@
                   </a>
                   <a
                     class="masonry-brick event"
-                    href="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>">
+                    href="<?php echo get_theme_file_uri('img/gallery/happy-kids-going-school-gal.jpg')?>">
                     <div class="masonry-img">
                       <img
-                        src="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>"
+                        src="<?php echo get_theme_file_uri('img/gallery/happy-kids-going-school-gal.jpg')?>"
                         alt="" />
                       <div class="hovered-content">
                         <span class="gallery-zoom-icon vicon-zoom--white"></span>
@@ -95,10 +95,10 @@
                     </a>
                     <a
                       class="masonry-brick event"
-                      href="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>">
+                      href="<?php echo get_theme_file_uri('img/gallery/student-tourists-with-map.jpg')?>">
                     <div class="masonry-img">
                       <img
-                        src="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>"
+                        src="<?php echo get_theme_file_uri('img/gallery/student-tourists-with-map.jpg')?>"
                         alt="" />
                         <div class="hovered-content">
                           <span class="gallery-zoom-icon vicon-zoom--white"></span>
@@ -108,10 +108,10 @@
                     </a>
                     <a
                       class="masonry-brick classroom"
-                      href="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>">
+                      href="<?php echo get_theme_file_uri('img/gallery/kids-in-bus.jpg')?>">
                       <div class=" masonry-img">
                         <img
-                          src="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>"
+                          src="<?php echo get_theme_file_uri('img/gallery/kids-in-bus.jpg')?>"
                           alt="" />
                         <div class="hovered-content">
                           <span class="gallery-zoom-icon vicon-zoom--white"></span>
@@ -121,10 +121,10 @@
                     </a>
                     <a
                       class="masonry-brick classroom"
-                      href="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>">
+                      href="<?php echo get_theme_file_uri('img/gallery/children-raising-hands.jpg')?>">
                       <div class=" masonry-img">
                         <img
-                          src="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>"
+                          src="<?php echo get_theme_file_uri('img/gallery/children-raising-hands.jpg')?>"
                           alt="" />
                         <div class="hovered-content">
                              <span class="gallery-zoom-icon vicon-zoom--white"></span>
@@ -134,10 +134,10 @@
                     </a>
                     <a
                       class="masonry-brick event"
-                      href="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>">
+                      href="<?php echo get_theme_file_uri('img/gallery/big-ben-gallery.jpg')?>">
                       <div class=" masonry-img">
                         <img
-                          src="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>"
+                          src="<?php echo get_theme_file_uri('img/gallery/big-ben-gallery.jpg')?>"
                           alt="" />
                         <div class="hovered-content">
                           <span class="gallery-zoom-icon vicon-zoom--white"></span>
@@ -147,10 +147,10 @@
                     </a>
                     <a
                       class="masonry-brick classroom"
-                      href="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>">
+                      href="<?php echo get_theme_file_uri('img/gallery/empty-hallway-background-gal.jpg')?>">
                       <div class=" masonry-img">
                         <img
-                          src="<?php echo get_theme_file_uri('img/gallery/students-lesson-in-class.jpg')?>"
+                          src="<?php echo get_theme_file_uri('img/gallery/empty-hallway-background-gal.jpg')?>"
                           alt="" />
                         <div class="hovered-content">
                           <span class="gallery-zoom-icon vicon-zoom--white"></span>
