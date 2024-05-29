@@ -1619,6 +1619,10 @@ button.course-nav-item:active {
   color: var(--cc-primary);
 }
 
+button.course-nav-item:focus {
+  outline: 1px dotted var(--cc-primary);
+}
+
 .accordion-button:not(.collapsed) {
   background-color: var(--cc-grey-lighter);
   border: none;
