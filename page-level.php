@@ -23,16 +23,33 @@
             <div class="col-lg-8 col-md-8 mb-4 mb-lg-0">
             <!-- Test Filters -->
               <div class="gallery-filters d-flex gap-2">
-                <div class="gallery-filter">
-                  <button type="button" class="btn active">Take</button>
+                <div
+                  class="gallery-filter test-pages"
+                  role="switched"
+                  aria-checked="false"
+                  >
+                  <button
+                    type="button"
+                    class="btn active take page"
+                    data-id="test-page"
+                  >
+                    Take</button>
                 </div>
                 <div class="gallery-filter">
-                  <button type="button" class="btn inactive">
+                  <button
+                    type="button"
+                    class="btn inactive solutions page"
+                    data-id="solutions-page"
+                    >
                     Solutions
                   </button>
                 </div>
                 <div class="gallery-filter">
-                  <button type="button" class="btn inactive">
+                  <button
+                    type="button"
+                    class="btn inactive results page"
+                    data-id="results-page"
+                    >
                     My Results
                   </button>
                 </div>
