@@ -2978,6 +2978,10 @@ li.cat-item a {
   color: var(--cc-white-sugar);
 }
 
+#section-main {
+  --bs-gutter-x: 0;
+}
+
 .qa {
   border-bottom: 1px solid var(--cc-grey-lighter);
 }
