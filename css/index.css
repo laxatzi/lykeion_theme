@@ -2949,6 +2949,15 @@ li.cat-item a {
   border: 1px solid var(--cc-grey-lighter);
 }
 
+.answer p {
+  font-weight: bold;
+  color: var(--cc-primary);
+}
+
+.answer p.wrong {
+  color: var(--cc-distinct-dark);
+}
+
 .input-group-text {
   border-right: none;
   margin-right: none;
