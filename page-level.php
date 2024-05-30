@@ -58,6 +58,7 @@
 
               </div>
                 <div class="subpage active mt-5" id="q-page">
+
                   <div class="qa my-2 py-3 col-xl-8">
                     <h4 class="fw-bold mt-2">Question 1</h4>
 
@@ -120,7 +121,7 @@
 
                     <div class="question my-3">
                       <h6 class="fw-bold">Question</h6>
-                      <p>I didn't _____ anything, it was too dark!</p>
+                      <p>I didn't _____ anything; it was too dark!</p>
                     </div>
                     <div class="answer my-3">
                       <h6 class="fw-bold">Answer</h6>
@@ -148,7 +149,7 @@
 
                     <div class="question my-3">
                       <h6 class="fw-bold">Question</h6>
-                    <p>I _____ drink Champagne - only at Christmas!</p>
+                      <p>I usually go skiing only ___ Christmas!</p>
                     </div>
                     <div class="answer my-3">
                       <h6 class="fw-bold">Answer</h6>
@@ -174,13 +175,72 @@
                  <!-- end of subpage -->
                 </div>
                 <!-- new subPage-->
-                   <div class="subpage mt-5" id="s-page">
-                    <h2>This is the solutions page</h2>
-                   </div>
-                <!-- new subPage -->
-                   <div class="subpage mt-5" id="r-page">
-                    <h2>This is the results page</h2>
-                   </div>
+                <div class="subpage mt-5" id="s-page">
+                  <h2>This is the solutions page</h2>
+
+                  <div class="qa my-2 py-3 col-xl-8">
+                    <h4 class="fw-bold mt-2">Question 1</h4>
+                    <div class="answer my-3">
+                      <h6 class="fw-bold">Answer:</h6>
+                      <p>What</p>
+                    </div>
+                  </div>
+                  <div class="qa my-2 py-3 col-xl-8">
+                    <h4 class="fw-bold mt-2">Question 2</h4>
+                    <div class="answer my-3">
+                      <h6 class="fw-bold">Answer:</h6>
+                      <p>in</p>
+                    </div>
+                  </div>
+                  <div class="qa my-2 py-3 col-xl-8">
+                    <h4 class="fw-bold mt-2">Question 3</h4>
+                    <div class="answer my-3">
+                      <h6 class="fw-bold">Answer:</h6>
+                      <p>didn't</p>
+                    </div>
+                  </div>
+                  <div class="qa my-2 py-3 col-xl-8">
+                    <h4 class="fw-bold mt-2">Question 4</h4>
+                    <div class="answer my-3">
+                      <h6 class="fw-bold">Answer:</h6>
+                      <p>at</p>
+                    </div>
+                  </div>
+
+                </div>
+              <!-- new subPage -->
+                <div class="subpage mt-5" id="r-page">
+                  <h2>This is the results page</h2>
+                    <div class="qa my-2 py-3 col-xl-8">
+                    <h4 class="fw-bold mt-2">Question 1</h4>
+                    <div class="answer my-3">
+                      <h6 class="fw-bold">My answer:</h6>
+                      <p>What</p>
+                    </div>
+                  </div>
+                  <div class="qa my-2 py-3 col-xl-8">
+                    <h4 class="fw-bold mt-2">Question 2</h4>
+                    <div class="answer my-3">
+                      <h6 class="fw-bold">My answer:</h6>
+                      <p>in</p>
+                    </div>
+                  </div>
+                  <div class="qa my-2 py-3 col-xl-8">
+                    <h4 class="fw-bold mt-2">Question 3</h4>
+                    <div class="answer my-3">
+                      <h6 class="fw-bold">My answer:</h6>
+                      <p class="wrong">wasn't</p>
+                    </div>
+                  </div>
+                  <div class="qa my-2 py-3 col-xl-8">
+                    <h4 class="fw-bold mt-2">Question 4</h4>
+                    <div class="answer my-3">
+                      <h6 class="fw-bold">My answer:</h6>
+                      <p>at</p>
+                    </div>
+                  </div>
+                </div>
+
             </div>
           </div>
         </div>
