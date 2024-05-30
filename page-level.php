@@ -4,8 +4,8 @@
     get_template_part('template-parts/banners/page-banner');
 ?>
 <!-- code here -->
-  <main class="container-fluid" id="section-main">
-    <div id="pricing-section">
+  <main class="container-fluid" id="section-main" >
+    <div id="pricing-section" >
       <div class="container py-5">
 
     <div class="main container-fluid">
@@ -22,7 +22,7 @@
               </div>
             <div class="col-lg-8 col-md-8 mb-4 mb-lg-0">
             <!-- Test Filters -->
-              <div class="gallery-filters d-flex gap-2">
+
                 <div
                   class="gallery-filter test-pages"
                   role="switched"
@@ -34,18 +34,14 @@
                     data-id="test-page"
                   >
                     Take</button>
-                </div>
-                <div class="gallery-filter">
-                  <button
+                     <button
                     type="button"
                     class="btn inactive solutions page"
                     data-id="solutions-page"
                     >
                     Solutions
                   </button>
-                </div>
-                <div class="gallery-filter">
-                  <button
+                                    <button
                     type="button"
                     class="btn inactive results page"
                     data-id="results-page"
@@ -53,7 +49,8 @@
                     My Results
                   </button>
                 </div>
-              </div>
+
+
                   <!-- <h5 class="d-flex align-items-center">Page
                     <select class="form-select page-select" aria-label="Default select example">
                       <option selected value="1">1</option>
