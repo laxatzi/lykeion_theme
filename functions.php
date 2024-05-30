@@ -39,6 +39,12 @@
 
     }
 
+    if ( is_page('level') ) {
+
+    wp_enqueue_script('my-custom-script', get_stylesheet_directory_uri() . '/js/toggle-test.js', array(), false, true);
+
+    }
+
 }
 
 add_action('wp_enqueue_scripts', 'add_custom_js_to_specific_page');
