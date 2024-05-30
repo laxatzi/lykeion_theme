@@ -7,9 +7,8 @@
   <main class="container-fluid" id="section-main">
     <div id="pricing-section">
       <div class="container py-5">
-        <div class="row">
-        </div>
-            <main class="container-fluid">
+
+    <div class="main container-fluid">
       <div class="pt-sm-5 pt-2" id="leveltest-section">
         <div class="container pt-5 pb-5">
           <div class="row mt-5 faq-section-intro">
@@ -19,25 +18,26 @@
                 <h3 class="intro">Level Test</h3>
                 <h2 class="fw-bold mt-2 mb-3">Access your level!</h2>
               </div>
-              <!-- Gallery Filters -->
-                <div class="gallery-filters d-flex gap-2">
-                  <div class="gallery-filter">
-                    <button type="button" class="btn active">Take</button>
-                  </div>
-                  <div class="gallery-filter">
+
+              </div>
+               <div class="col-lg-8 col-md-8 mb-4 mb-lg-0">
+            <!-- Test Filters -->
+              <div class="gallery-filters d-flex gap-2">
+                <div class="gallery-filter">
+                  <button type="button" class="btn active">Take</button>
+                </div>
+                <div class="gallery-filter">
                   <button type="button" class="btn inactive">
                     Solutions
                   </button>
-                  </div>
-                  <div class="gallery-filter">
-                    <button type="button" class="btn inactive">
-                      My Results
-                    </button>
-                  </div>
+                </div>
+                <div class="gallery-filter">
+                  <button type="button" class="btn inactive">
+                    My Results
+                  </button>
                 </div>
               </div>
-               <div class="col-lg-8 col-md-8 mb-4 mb-lg-0">
-                  <h5 class="d-flex align-items-center">Page
+                  <!-- <h5 class="d-flex align-items-center">Page
                     <select class="form-select page-select" aria-label="Default select example">
                       <option selected value="1">1</option>
                       <option value="2">2</option>
@@ -51,8 +51,8 @@
                       <option value="10">10</option>
                     </select>
                   of 10</h5>
-                  <small>All answers must be answered or left blank in order to move to the next page.</small>
-
+                  <small>All answers must be answered or left blank in order to move to the next page.</small> -->
+                <div class="subpage active mt-5" id="q-page">
                   <div class="qa my-2 py-5 col-xl-8">
                     <h4 class="fw-bold mt-2">Question 1</h4>
 
@@ -171,10 +171,9 @@
           </div>
         </div>
       </div>
-    </main>
-      </div>
     </div>
-</mail>
+  </div>
+</main>
 <?php
     get_footer();
 
