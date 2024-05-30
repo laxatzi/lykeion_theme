@@ -2944,7 +2944,7 @@ li.cat-item a {
 }
 
 .answer input {
-  background-color: var(--cc-grey-lighter);
+  background-color: var(--cc-white-sugar);
   border-radius: 5px;
   border: 1px solid var(--cc-grey-lighter);
 }
