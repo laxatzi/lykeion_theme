@@ -77,17 +77,17 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="leveltest.html"
+                    <a class="dropdown-item" href="<?php echo site_url('/level') ?>"
                       >Level Test</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="refer.html"
+                    <a class="dropdown-item" href="<?php echo site_url('/refer') ?>"
                       >Refer A Friend</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="partners.html"
+                    <a class="dropdown-item" href="<?php echo site_url('/partners') ?>"
                       >Partner Program</a
                     >
                   </li>
