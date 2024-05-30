@@ -86,8 +86,8 @@
                       echo 'class="current-menu-item nav-item"';
                     }else {
                       echo 'class="nav-item"';
-                    } ?>>>
-                    <a class="dropdown-item" href="leveltest.html"
+                    } ?>>
+                    <a class="dropdown-item" href="<?php echo site_url('/level') ?>"
                       >Level Test</a
                     >
                   </li>
@@ -96,9 +96,9 @@
                         echo 'class="current-menu-item nav-item"';
                       }else {
                         echo 'class="nav-item"';
-                      } ?>>
+                      } ?>
                   >
-                    <a class="dropdown-item" href="refer.html"
+                    <a class="dropdown-item" href="<?php echo site_url('/refer') ?>"
                       >Refer A Friend</a
                     >
                   </li>
@@ -108,9 +108,9 @@
                       echo 'class="current-menu-item nav-item"';
                     }else {
                       echo 'class="nav-item"';
-                    } ?>>
+                    } ?>
                   >
-                    <a class="dropdown-item" href="partners.html"
+                    <a class="dropdown-item" href="<?php echo site_url('/partners') ?>"
                       >Partner Program</a
                     >
                   </li>
