@@ -30,20 +30,20 @@
                   >
                   <button
                     type="button"
-                    class="btn active take page"
+                    class="btn take page"
                     data-id="test-page"
                   >
                     Take</button>
                      <button
                     type="button"
-                    class="btn inactive solutions page"
+                    class="btn solutions page"
                     data-id="solutions-page"
                     >
                     Solutions
                   </button>
                                     <button
                     type="button"
-                    class="btn inactive results page"
+                    class="btn results page"
                     data-id="results-page"
                     >
                     My Results
@@ -180,6 +180,8 @@
                     </div>
                 <!-- end of question -->
                   </div>
+                 <!-- end of subpage -->
+                </div>
                 <!-- end of subpage -->
                    <div class="subpage mt-5" id="s-page">
                     <h2>This is the solutions page</h2>
@@ -188,9 +190,6 @@
                    <div class="subpage mt-5" id="r-page">
                     <h2>This is the results page</h2>
                    </div>
-
-                </div>
-
             </div>
           </div>
         </div>
