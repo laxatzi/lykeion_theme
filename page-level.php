@@ -31,20 +31,20 @@
                   <button
                     type="button"
                     class="btn take page"
-                    data-id="test-page"
+                    data-id="q-page"
                   >
                     Take</button>
                      <button
                     type="button"
                     class="btn solutions page"
-                    data-id="solutions-page"
+                    data-id="s-page"
                     >
                     Solutions
                   </button>
                                     <button
                     type="button"
                     class="btn results page"
-                    data-id="results-page"
+                    data-id="r-page"
                     >
                     My Results
                   </button>
@@ -182,11 +182,11 @@
                   </div>
                  <!-- end of subpage -->
                 </div>
-                <!-- end of subpage -->
+                <!-- new subPage-->
                    <div class="subpage mt-5" id="s-page">
                     <h2>This is the solutions page</h2>
                    </div>
-                <!-- end of subpage -->
+                <!-- new subPage -->
                    <div class="subpage mt-5" id="r-page">
                     <h2>This is the results page</h2>
                    </div>
