@@ -57,23 +57,6 @@
 
 
               </div>
-
-
-                  <!-- <h5 class="d-flex align-items-center">Page
-                    <select class="form-select page-select" aria-label="Default select example">
-                      <option selected value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  of 10</h5>
-                  <small>All answers must be answered or left blank in order to move to the next page.</small> -->
                 <div class="subpage active mt-5" id="q-page">
                   <div class="qa my-2 py-3 col-xl-8">
                     <h4 class="fw-bold mt-2">Question 1</h4>
