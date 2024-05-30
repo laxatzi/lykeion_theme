@@ -3016,7 +3016,8 @@ button.test-nav-item:focus {
   border-bottom: 1px solid var(--cc-grey-lighter);
 }
 
-#r-page .qa {
+#r-page .qa,
+#s-page .qa {
   background-color: #e7e1ef;
   padding: 10px;
   border: 2px solid var(--cc-primary);

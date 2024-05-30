@@ -176,34 +176,30 @@
                 </div>
                 <!-- new subPage-->
                 <div class="subpage mt-5" id="s-page">
-                  <h2>This is the solutions page</h2>
+                  <h2 class="mb-3">These are the right answers:</h2>
 
                   <div class="qa my-2 py-3 col-xl-8">
                     <h4 class="fw-bold mt-2">Question 1</h4>
                     <div class="answer my-3">
-                      <h6 class="fw-bold">Answer:</h6>
-                      <p>What</p>
+                      <p class="fw-bold">Answer: <span>What</span></p>
                     </div>
                   </div>
                   <div class="qa my-2 py-3 col-xl-8">
                     <h4 class="fw-bold mt-2">Question 2</h4>
                     <div class="answer my-3">
-                      <h6 class="fw-bold">Answer:</h6>
-                      <p>in</p>
+                      <p class="fw-bold">Answer: <span>in</span></p>
                     </div>
                   </div>
                   <div class="qa my-2 py-3 col-xl-8">
                     <h4 class="fw-bold mt-2">Question 3</h4>
                     <div class="answer my-3">
-                      <h6 class="fw-bold">Answer:</h6>
-                      <p>didn't</p>
+                      <p class="fw-bold">Answer: <span>didn't</span></p>
                     </div>
                   </div>
                   <div class="qa my-2 py-3 col-xl-8">
                     <h4 class="fw-bold mt-2">Question 4</h4>
                     <div class="answer my-3">
-                      <h6 class="fw-bold">Answer:</h6>
-                      <p>at</p>
+                      <p class="fw-bold">Answer: <span>at</span></p>
                     </div>
                   </div>
 
