@@ -210,33 +210,29 @@
                 </div>
               <!-- new subPage -->
                 <div class="subpage mt-5" id="r-page">
-                  <h2>This is the results page</h2>
+                  <h2 class="mb-3">The answers you gave:</h2>
                     <div class="qa my-2 py-3 col-xl-8">
                     <h4 class="fw-bold mt-2">Question 1</h4>
                     <div class="answer my-3">
-                      <h6 class="fw-bold">My answer:</h6>
-                      <p>What</p>
+                      <p class="fw-bold">My answer: <span>What</span></p>
                     </div>
                   </div>
                   <div class="qa my-2 py-3 col-xl-8">
                     <h4 class="fw-bold mt-2">Question 2</h4>
                     <div class="answer my-3">
-                      <h6 class="fw-bold">My answer:</h6>
-                      <p>in</p>
+                      <p class="fw-bold">My answer: <span>in</span></p>
                     </div>
                   </div>
                   <div class="qa my-2 py-3 col-xl-8">
                     <h4 class="fw-bold mt-2">Question 3</h4>
                     <div class="answer my-3">
-                      <h6 class="fw-bold">My answer:</h6>
-                      <p class="wrong">wasn't</p>
+                      <p class="fw-bold">My answer: <span class="wrong">wasn't</span></p>
                     </div>
                   </div>
                   <div class="qa my-2 py-3 col-xl-8">
                     <h4 class="fw-bold mt-2">Question 4</h4>
                     <div class="answer my-3">
-                      <h6 class="fw-bold">My answer:</h6>
-                      <p>at</p>
+                      <p class="fw-bold">My answer: <span>at</span></p>
                     </div>
                   </div>
                 </div>

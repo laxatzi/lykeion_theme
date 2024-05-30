@@ -2949,12 +2949,16 @@ li.cat-item a {
   border: 1px solid var(--cc-grey-lighter);
 }
 
-.answer p {
+.answer span {
   font-weight: bold;
   color: var(--cc-primary);
 }
 
-.answer p.wrong {
+.answer span.input-group-text {
+  color: var(--cc-white-sugar);
+}
+
+.answer span.wrong {
   color: var(--cc-distinct-dark);
 }
 
@@ -3010,6 +3014,13 @@ button.test-nav-item:focus {
 
 .qa {
   border-bottom: 1px solid var(--cc-grey-lighter);
+}
+
+#r-page .qa {
+  background-color: #e7e1ef;
+  padding: 10px;
+  border: 2px solid var(--cc-primary);
+  border-radius: 5px;
 }
 
 .input-group-prepend:hover {
