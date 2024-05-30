@@ -2978,6 +2978,23 @@ li.cat-item a {
   color: var(--cc-white-sugar);
 }
 
+button.test-nav-item {
+  background-color: var(--cc-grey-light);
+  border: none;
+  font-weight: bold;
+  color: var(--cc-white-sugar);
+}
+
+button.test-nav-item:focus,
+button.test-nav-item:active {
+  color: var(--cc-primary);
+  background-color: var(--cc-grey-lighter);
+}
+
+button.test-nav-item:focus {
+  outline: 1px dotted var(--cc-primary);
+}
+
 #section-main {
   --bs-gutter-x: 0;
 }

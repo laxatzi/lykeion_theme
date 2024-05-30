@@ -27,34 +27,34 @@
                   role="select"
                   aria-checked="false"
               >
-                  <div class="gallery-filter">
+
                     <button
                       type="button"
-                      class="active btn take page me-2"
+                      class="btn test-nav-item take page me-2"
                       data-id="q-page"
+                      autofocus
                     >
                       Take
                     </button>
-                  </div>
-                  <div class="gallery-filter">
+
+
                     <button
                       type="button"
-                      class="inactive btn solutions page me-2"
+                      class="btn test-nav-item solutions page me-2"
                       data-id="s-page"
                     >
                       Solutions
                     </button>
 
-                  </div>
-                  <div class="gallery-filter">
+
                     <button
                       type="button"
-                      class="inactive btn results page"
+                      class="btn test-nav-item results page"
                       data-id="r-page"
                     >
                       My Results
                     </button>
-                  </div>
+
 
               </div>
 
