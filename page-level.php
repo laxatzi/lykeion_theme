@@ -20,7 +20,7 @@
               </div>
 
               </div>
-               <div class="col-lg-8 col-md-8 mb-4 mb-lg-0">
+            <div class="col-lg-8 col-md-8 mb-4 mb-lg-0">
             <!-- Test Filters -->
               <div class="gallery-filters d-flex gap-2">
                 <div class="gallery-filter">
@@ -166,7 +166,17 @@
                     </div>
                 <!-- end of question -->
                   </div>
+                <!-- end of subpage -->
+                   <div class="subpage mt-5" id="s-page">
+                    <h2>This is the solutions page</h2>
+                   </div>
+                <!-- end of subpage -->
+                   <div class="subpage mt-5" id="r-page">
+                    <h2>This is the results page</h2>
+                   </div>
+
                 </div>
+
             </div>
           </div>
         </div>
