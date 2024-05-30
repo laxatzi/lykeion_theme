@@ -6,7 +6,7 @@
 <!-- code here -->
   <main class="container-fluid" id="section-main" >
     <div id="pricing-section" >
-      <div class="container py-5">
+      <div class="container py-3">
 
     <div class="main container-fluid">
       <div class="pt-sm-5 pt-2" id="leveltest-section">
@@ -20,35 +20,43 @@
               </div>
 
               </div>
-            <div class="col-lg-8 col-md-8 mb-4 mb-lg-0">
+            <div class="col-lg-8 col-md-8 mb-3 mb-lg-0">
             <!-- Test Filters -->
-
-                <div
-                  class="gallery-filter test-pages"
-                  role="switched"
+              <div
+                  class="gallery-filters d-flex test-pages"
+                  role="select"
                   aria-checked="false"
-                  >
-                  <button
-                    type="button"
-                    class="btn take page"
-                    data-id="q-page"
-                  >
-                    Take</button>
-                     <button
-                    type="button"
-                    class="btn solutions page"
-                    data-id="s-page"
+              >
+                  <div class="gallery-filter">
+                    <button
+                      type="button"
+                      class="active btn take page me-2"
+                      data-id="q-page"
                     >
-                    Solutions
-                  </button>
-                                    <button
-                    type="button"
-                    class="btn results page"
-                    data-id="r-page"
+                      Take
+                    </button>
+                  </div>
+                  <div class="gallery-filter">
+                    <button
+                      type="button"
+                      class="inactive btn solutions page me-2"
+                      data-id="s-page"
                     >
-                    My Results
-                  </button>
-                </div>
+                      Solutions
+                    </button>
+
+                  </div>
+                  <div class="gallery-filter">
+                    <button
+                      type="button"
+                      class="inactive btn results page"
+                      data-id="r-page"
+                    >
+                      My Results
+                    </button>
+                  </div>
+
+              </div>
 
 
                   <!-- <h5 class="d-flex align-items-center">Page
@@ -67,7 +75,7 @@
                   of 10</h5>
                   <small>All answers must be answered or left blank in order to move to the next page.</small> -->
                 <div class="subpage active mt-5" id="q-page">
-                  <div class="qa my-2 py-5 col-xl-8">
+                  <div class="qa my-2 py-3 col-xl-8">
                     <h4 class="fw-bold mt-2">Question 1</h4>
 
                     <div class="question my-3">
