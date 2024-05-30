@@ -1,21 +1,17 @@
-const billingDuration = document.querySelector(".billing-duration");
-const subpagesPrice = document.querySelectorAll(".subpage");
-const durations = document.querySelectorAll(".duration");
-const billingDurationButton = document.querySelector(
-  ".billing-duration button"
-);
+const testPages = document.querySelector(".test-pages");
+const subPages = document.querySelectorAll(".subpage");
+const pages = document.querySelectorAll(".page");
+const testPagesButton = document.querySelector(".test-pages button");
 
-billingDuration.addEventListener("click", subpageInteraction);
+testPages.addEventListener("click", subpageInteraction);
 // When a child element of `buttons` is clicked
 function subpageInteraction(e) {
   // Check to see if its a button
   if (e.target.matches("button")) {
     // For every element in the `panels` node list use `classList`
     // to remove the active class
-    durations.forEach((duration) =>
-      duration.classList.remove("focused-nav-item")
-    );
-    subpagesPrice.forEach((subpage) => subpage.classList.remove("active"));
+    pages.forEach((page) => page.classList.remove("focused-nav-item"));
+    subPages.forEach((subpage) => subpage.classList.remove("active"));
 
     // "Destructure" the `id` from the button's data set
     const { id } = e.target.dataset;
