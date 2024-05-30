@@ -2,6 +2,7 @@ const testPages = document.querySelector(".test-pages");
 const subPages = document.querySelectorAll(".subpage");
 const pages = document.querySelectorAll(".page");
 const testPagesButton = document.querySelector(".test-pages button");
+const galleryFilterAll = document.querySelectorAll(".gallery-filter");
 
 testPages.addEventListener("click", subpageInteraction);
 // When a child element of `buttons` is clicked
@@ -41,4 +42,18 @@ buttons.forEach((button) => {
 
     parent.setAttribute("aria-checked", isAriaState ? true : false);
   });
+});
+
+galleryFilterAll.forEach((theFilter) => {
+  const active = theFilter.querySelector(".active");
+
+  if (active) {
+    active.classList.remove("active");
+    active.classList.add("inactive");
+  }
+
+  if ((ev.target.classList.contains = "inactive")) {
+    ev.target.classList.remove("inactive");
+    ev.target.classList.add("active");
+  }
 });
