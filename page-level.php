@@ -11,10 +11,10 @@
     <div class="main container-fluid">
       <div class="pt-sm-5 pt-2" id="leveltest-section">
         <div class="container pt-5 pb-5">
-          <div class="row mt-5 faq-section-intro">
+          <div class="row mt-3 faq-section-intro">
             <div class="col-lg-8 col-md-8 mb-4 mb-lg-0 d-lg-flex justify-content-between">
               <!-- intro -->
-              <div class="intro--faq ps-0 mb-lg-5">
+              <div class="intro--faq ps-0 mb-lg-3">
                 <h3 class="intro">Level Test</h3>
                 <h2 class="fw-bold mt-2 mb-3">Access your level!</h2>
               </div>
