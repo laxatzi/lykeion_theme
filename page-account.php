@@ -28,14 +28,15 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-12 form-group">
+                    <div class="col-12 form-group pass">
                       <label for="password">Password *</label>
                       <input
                         type="text"
                         class="form-control py-3 mb-3"
-                        name="email"
+                        name="password"
                         id="password"
                       />
+                      <span class="vicon-eye-open me-1"></span>
                     </div>
                   </div>
                   <div class="row">
@@ -58,7 +59,7 @@
                   </div>
                   <div class="row">
                     <div class="col-12 mt-3">
-                      <a href=""><small>Lost your password?</small></a>
+                      <a href="<?php echo site_url('/reset-password') ?>"><small>Lost your password?</small></a>
                     </div>
                   </div>
                 </form>
@@ -83,7 +84,7 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-12 form-group">
+                    <div class="col-12 form-group pass">
                       <label for="password">Password *</label>
                       <input
                         type="text"
@@ -91,6 +92,7 @@
                         name="email"
                         id="password"
                       />
+                      <span class="vicon-eye-open me-1"></span>
                     </div>
                   </div>
                   <div class="row">
