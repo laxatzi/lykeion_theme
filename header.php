@@ -131,7 +131,7 @@
               <span class="vicon-search" aria-hidden="true"></span>
               <!-- Search -->
             </a>
-            <a href="" ms-3><span class="vicon-user"></span></a>
+            <a href="<?php echo site_url('/account') ?>" ms-3><span class="vicon-user"></span></a>
           </div>
         </div>
       </nav>
