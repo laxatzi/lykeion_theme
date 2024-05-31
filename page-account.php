@@ -6,7 +6,7 @@
     <main class="container-fluid">
       <div class="pt-md-4 pt-sm-3 pt-2" id="faq-section">
         <div class="container pt-5 pb-5">
-          <div class="row mt-5 mb-5 col-10 d-flex gap-4">
+          <div class="row mt-5 mb-5 col-10 d-flex flex-column flex-lg-row gap-4">
 <!-- form div -->
             <div class="form-wrapper mt-3  col-12">
               <h2 class="fw-bold p-3">Login</h2>
