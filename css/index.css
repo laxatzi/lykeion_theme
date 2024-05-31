@@ -2143,6 +2143,19 @@ form.register {
   border: 1px solid #eaebf8;
 }
 
+.pass {
+  position: relative;
+}
+
+.pass span.vicon-eye-open {
+  position: absolute;
+  right: 30px;
+  top: 40%;
+  padding: 9px 8px;
+  transition: 0.3s;
+  font-size: 1.42rem;
+}
+
 .purchasing-guide h3 {
   text-transform: capitalize;
 }
