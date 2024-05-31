@@ -2138,6 +2138,11 @@ form {
   border-radius: 5px;
 }
 
+form.login,
+form.register {
+  border: 1px solid #eaebf8;
+}
+
 .purchasing-guide h3 {
   text-transform: capitalize;
 }
