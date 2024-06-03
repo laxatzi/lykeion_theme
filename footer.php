@@ -51,7 +51,7 @@
             </div>
             <div class="footer-link mt-4 d-flex">
               <span class="vicon-double-right-arrow"></span>
-              <a class="ms-1 fw-bold" href="index.html#testimonials-section"
+              <a class="ms-1 fw-bold" href="<?php echo site_url('/testimonials') ?>"
                 >Testimonials</a
               >
             </div>
