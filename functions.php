@@ -45,7 +45,7 @@
 
     }
 
-    if ( is_page('account') ) {
+    if ( is_page('account') OR is_page('reset-password') ) {
 
     wp_enqueue_script('my-custom-script', get_stylesheet_directory_uri() . '/js/toggle-vicons.js', array(), false, true);
 
