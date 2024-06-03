@@ -24,10 +24,12 @@
                         name="name"
                         id="username"
                       />
+
+
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-12 form-group">
+                    <div class="col-12 form-group pass">
                       <label for="password">Password *</label>
                       <input
                         type="text"
@@ -35,6 +37,7 @@
                         name="email"
                         id="password"
                       />
+                                            <span class=" vicon-eye-open vicon-eye-close  me-1 eye-toggle"></span>
                     </div>
                   </div>
 
