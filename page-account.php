@@ -36,8 +36,7 @@
                         name="password"
                         id="password"
                       />
-                      <span class="me-1 vicon-eye-close eye-toggle"></span>
-                      <span class="me-1 vicon-eye-open eye-toggle"></span>
+                      <span class="vicon-eye-open vicon-eye-close  me-1 eye-toggle"></span>
                     </div>
                   </div>
                   <div class="row">
@@ -93,8 +92,7 @@
                         name="email"
                         id="password"
                       />
-                      <span class="vicon-eye-close me-1 eye-toggle"></span>
-                      <span class="vicon-eye-open me-1 eye-toggle"></span>
+                      <span class=" vicon-eye-open vicon-eye-close  me-1 eye-toggle"></span>
                     </div>
                   </div>
                   <div class="row">

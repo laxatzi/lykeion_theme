@@ -2147,7 +2147,7 @@ form.register {
   position: relative;
 }
 
-.pass span.vicon-eye-open {
+.pass span.vicon-eye-close {
   position: absolute;
   right: 30px;
   top: 40%;
@@ -2156,9 +2156,9 @@ form.register {
   font-size: 1.42rem;
 }
 
-.pass span.vicon-eye-close {
+.pass span.vicon-eye-open {
   position: absolute;
-  right: 10px;
+  right: 30px;
   top: 40%;
   padding: 9px 8px;
   transition: 0.3s;
