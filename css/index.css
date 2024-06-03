@@ -2156,6 +2156,15 @@ form.register {
   font-size: 1.42rem;
 }
 
+.pass span.vicon-eye-close {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  padding: 9px 8px;
+  transition: 0.3s;
+  font-size: 1.42rem;
+}
+
 .purchasing-guide h3 {
   text-transform: capitalize;
 }
