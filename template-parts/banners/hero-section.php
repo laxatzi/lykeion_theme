@@ -28,7 +28,7 @@
               <img src="<?php echo get_theme_file_uri('/img/icons/arrow.png') ?>" alt="" />
             </div>
             <div class="read-more mt-5 btn btn-lg mb-sm-3 mb-5">
-              <a href="leveltest.html" class="link-btn d-flex"
+              <a href="<?php echo site_url('/level') ?>" class="link-btn d-flex"
                 >Get started today<span class="vicon-arrow--right"></span
               ></a>
             </div>
