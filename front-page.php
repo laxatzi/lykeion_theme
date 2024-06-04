@@ -230,7 +230,7 @@ get_header();
             </div>
 
             <div class="read-more mt-5 btn btn-lg col-sm-6 col-12">
-              <a href="about.html" class="link-btn d-flex"
+              <a href="<?php echo site_url('/about') ?>" class="link-btn d-flex"
                 >Learn More<span class="vicon-arrow--right"></span
               ></a>
             </div>
