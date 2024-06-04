@@ -1,6 +1,6 @@
 <?php
     get_header('inner');
-    get_template_part('template-parts/banners/event-banner');
+    get_template_part('template-parts/banners/course-banner');
   ?>
    <main id="virtual-classes" class="container-fluid courses">
       <div class="pt-5 container" >
