@@ -2345,6 +2345,20 @@ a:focus::after {
   color: var(--cc-bg-primary-lighter);
 }
 
+.buy-course {
+  border: 2px solid var(--cc-primary);
+  background-color: var(--cc-bg-primary-lighter);
+  border-radius: var(--bs-border-radius);
+  padding: 10px;
+  color: var(--cc-primary);
+  font-weight: bold;
+}
+
+.buy-course:hover {
+  background-color: var(--cc-primary);
+  color: var(--cc-white-sugar);
+}
+
 .share-event {
   width: 90%;
 }
