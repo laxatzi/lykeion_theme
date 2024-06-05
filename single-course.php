@@ -144,8 +144,14 @@
                   </div>
                 </div>
             <!-- buy course -->
+
+                  <div class="buy-course  mt-5 col-11 d-flex justify-content-center">
+                  $<?php the_field('course_price'); ?>
+                  </div>
+
+
                 <div class="event-action">
-                 <div class="book-seat btn btn-lg mt-5 col-11 d-flex justify-content-center">
+                 <div class="book-seat btn btn-lg mt-3 col-11 d-flex justify-content-center">
                    <a href="" class="link-btn">Buy Now</a>
                  </div>
 
