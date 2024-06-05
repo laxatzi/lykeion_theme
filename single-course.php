@@ -49,7 +49,7 @@
               <!-- Students -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-duration me-3" ></span>
+                    <span class="vicon-users me-3" ></span>
                     <span >Students</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex" >
@@ -59,7 +59,7 @@
               <!-- Lessons -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-users me-3"></span>
+                    <span class="vicon-video-fill me-3"></span>
                     <span>Lessons</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
@@ -70,7 +70,7 @@
           <!-- Skill Level -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-time-primary me-3"></span>
+                    <span class="vicon-chart me-3"></span>
                     <span>Skill Level</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
@@ -80,7 +80,7 @@
             <!-- Lang -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-time-primary me-3"></span>
+                    <span class="vicon-language me-3"></span>
                     <span>Language</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
@@ -91,7 +91,7 @@
             <!-- Quizzes -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-geo-pin--primary me-3"></span>
+                    <span class="vicon-puzzle me-3"></span>
                     <span>Quizzes</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
@@ -102,7 +102,7 @@
              <!-- Cert -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-tag--primary me-3"></span>
+                    <span class="vicon-cert me-3"></span>
                     <span>Certification</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
@@ -113,7 +113,7 @@
             <!-- Pass Percentage -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-tag--primary me-3"></span>
+                    <span class="vicon-percentage me-3"></span>
                     <span>Pass Percentage</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
@@ -124,7 +124,7 @@
              <!-- Deadline -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-tag--primary me-3"></span>
+                    <span class="vicon-calendar-event me-3"></span>
                     <span>Deadline</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
@@ -135,7 +135,7 @@
               <!-- Instructor -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-tag--primary me-3"></span>
+                    <span class="vicon-teacher me-3"></span>
                     <span>Instructor</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
@@ -143,11 +143,10 @@
                     <span>&euro; <?php the_field('course_instructor'); ?></span>
                   </div>
                 </div>
-            <!-- book seat -->
+            <!-- buy course -->
                 <div class="event-action">
-                 <div class="book-seat btn btn-lg mt-5 col-11">
+                 <div class="book-seat btn btn-lg mt-5 col-11 d-flex justify-content-center">
                    <a href="" class="link-btn">Buy Now</a>
-                   <span class="vicon-arrow--right"></span>
                  </div>
 
                  </div>
