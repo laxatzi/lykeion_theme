@@ -18,7 +18,7 @@
               <div class="course-title">
                   <h1 class="fw-bold mt-4 mb-5"><?php the_title();?></h1>
               </div>
-          <!-- main event content -->
+          <!-- main course content -->
               <div id="intro-page">
                 <div class="main-event-content" id="intro">
                   <?php
@@ -30,84 +30,117 @@
             <!-- end of course-info-main section -->
             <aside class="d-flex flex-column event-sidebar">
               <div class="event-title">
-                <h2 class="text-center fw-bold py-5">Event Details</h2>
+                <h2 class="text-center fw-bold py-5">Course Details</h2>
               </div>
               <div class="event-detailing p-3">
-              <!-- Event-date -->
+              <!-- Course Duration -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
                     <span class="vicon-calendar-event me-2"></span>
-                    <span>Event Date</span>
+                    <span>Course Duration</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
                     <span><?php
-                      $eventDate = new DateTime(get_field('event_date'));
-			                echo $eventDate->format('j').' '.$eventDate->format('F').' '. $eventDate->format('Y')
+                      $courseDuration = new DateTime(get_field('course_duration'));
+			                echo $courseDuration->format('j').' '.$courseDuration->format('F').' '. $courseDuration->format('Y')
                     ?></span>
                   </div>
                 </div>
-              <!-- event duration -->
+              <!-- Students -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
                     <span class="vicon-duration me-2"></span>
-                    <span>Duration</span>
+                    <span>Students</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
-                    <span><?php the_field('event_duration'); ?> 00m</span>
+                    <span><?php the_field('course_number'); ?></span>
                   </div>
                 </div>
-              <!-- enrolled users so far -->
+              <!-- Lessons -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
                     <span class="vicon-users me-2"></span>
-                    <span>Enrolled So Far</span>
+                    <span>Lessons</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
 
-                    <span><?php the_field('event_enrolled'); ?></span>
+                    <span><?php the_field('course_lessons'); ?></span>
                   </div>
                 </div>
-          <!-- Start Time -->
+          <!-- Skill Level -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
                     <span class="vicon-time-primary me-2"></span>
-                    <span>Start Time</span>
+                    <span>Skill Level</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
-                    <span><?php the_field('start_time'); ?></span>
+                    <span><?php the_field('course_level'); ?></span>
                   </div>
                 </div>
-            <!-- End Time -->
+            <!-- Lang -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
                     <span class="vicon-time-primary me-2"></span>
-                    <span>End Time</span>
+                    <span>Language</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
 
-                    <span><?php the_field('end_time'); ?></span>
+                    <span><?php the_field('course_language'); ?></span>
                   </div>
                 </div>
-            <!-- Location -->
+            <!-- Quizzes -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
                     <span class="vicon-geo-pin--primary me-2"></span>
-                    <span>Location</span>
+                    <span>Quizzes</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
 
-                    <span style="font-size:.75rem;margin-right: -1rem;"><?php the_field('event_venue'); ?></span>
+                    <span style="font-size:.75rem;margin-right: -1rem;"><?php the_field('course_quizzes'); ?></span>
                   </div>
                 </div>
-             <!-- Price -->
+             <!-- Cert -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
                     <span class="vicon-tag--primary me-2"></span>
-                    <span>Price</span>
+                    <span>Certification</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
 
-                    <span>&euro; <?php the_field('price'); ?></span>
+                    <span>&euro; <?php the_field('course_certification'); ?></span>
+                  </div>
+                </div>
+            <!-- Pass Percentage -->
+                <div class="info-list d-flex mt-3 mb-3 p-3">
+                  <div class="info-list-level fw-bold d-flex">
+                    <span class="vicon-tag--primary me-2"></span>
+                    <span>Pass Percentage</span>
+                  </div>
+                  <div class="info-list-duration fw-bold d-flex">
+
+                    <span>&euro; <?php the_field('pass_percentage'); ?>%</span>
+                  </div>
+                </div>
+             <!-- Deadline -->
+                <div class="info-list d-flex mt-3 mb-3 p-3">
+                  <div class="info-list-level fw-bold d-flex">
+                    <span class="vicon-tag--primary me-2"></span>
+                    <span>Certification</span>
+                  </div>
+                  <div class="info-list-duration fw-bold d-flex">
+
+                    <span>&euro; <?php the_field('course_deadline'); ?></span>
+                  </div>
+                </div>
+              <!-- Instructor -->
+                <div class="info-list d-flex mt-3 mb-3 p-3">
+                  <div class="info-list-level fw-bold d-flex">
+                    <span class="vicon-tag--primary me-2"></span>
+                    <span>Certification</span>
+                  </div>
+                  <div class="info-list-duration fw-bold d-flex">
+
+                    <span>&euro; <?php the_field('course_instructor'); ?></span>
                   </div>
                 </div>
             <!-- book seat -->
