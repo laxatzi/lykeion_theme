@@ -37,7 +37,7 @@
               <!-- Event-date -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-calendar-event me-2"></span>
+                    <span class="vicon-calendar-event me-3"></span>
                     <span>Event Date</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
@@ -50,7 +50,7 @@
               <!-- event duration -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-duration me-2"></span>
+                    <span class="vicon-duration me-3"></span>
                     <span>Duration</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
@@ -60,7 +60,7 @@
               <!-- enrolled users so far -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-users me-2"></span>
+                    <span class="vicon-users me-3"></span>
                     <span>Enrolled So Far</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
@@ -71,7 +71,7 @@
           <!-- Start Time -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-time-primary me-2"></span>
+                    <span class="vicon-time-primary me-3"></span>
                     <span>Start Time</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
@@ -81,7 +81,7 @@
             <!-- End Time -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-time-primary me-2"></span>
+                    <span class="vicon-time-primary me-3"></span>
                     <span>End Time</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
@@ -92,7 +92,7 @@
             <!-- Location -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-geo-pin--primary me-2"></span>
+                    <span class="vicon-geo-pin--primary me-3"></span>
                     <span>Location</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
@@ -103,7 +103,7 @@
              <!-- Price -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
-                    <span class="vicon-tag--primary me-2"></span>
+                    <span class="vicon-tag--primary me-3"></span>
                     <span>Price</span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
