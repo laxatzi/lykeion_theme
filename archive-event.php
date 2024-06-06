@@ -45,7 +45,7 @@
                    <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail(null, array( 145, 145)); ?></a>
                 </div>
                 <div class="img-wrapper-event--mobile d-block d-sm-none">
-                   < <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail(null, array( 400, 400)); ?></a>
+                   <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail(null, array( 400, 400)); ?></a>
                 </div>
             </div>
             <!-- event info -->
