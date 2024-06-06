@@ -55,7 +55,7 @@
                 <div class="info-list d-flex mt-3 mb-3">
                   <div class="info-list-level fw-bold d-flex">
                     <img
-                      class="img-fluid"
+                      class="me-2 img-fluid"
                       src="<?php echo get_theme_file_uri('img/icons/level-chart-thumb-16.png') ?>"
                       alt=""
                     />

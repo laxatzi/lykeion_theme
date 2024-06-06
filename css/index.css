@@ -1856,10 +1856,6 @@ p.card-text {
   font-size: 1rem;
 }
 
-.card-body img {
-  margin: 0 auto;
-}
-
 #form-message-success {
   display: none;
 }
