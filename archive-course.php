@@ -69,7 +69,15 @@
                  <a href="<?php the_permalink(); ?>"><h5 class="fw-bold mb-2 mt-2" style="font-size: 1.15rem"><?php the_title(); ?></h5></a>
 
                 <p class="card-text">
-                <?php the_excerpt(); ?>
+                <?php
+
+                  $excerpt = get_the_excerpt();
+
+                  $excerpt = substr( $excerpt, 0, 140 ); // Only display first 260 characters of excerpt
+                  $result = substr( $excerpt, 0, strrpos( $excerpt, ' ' ) );
+                  echo $result;
+
+                  ?>
                 </p>
                 <div
                   class="tutor d-sm-flex flex-column align-items-start justify-content-center mt-4"
@@ -77,7 +85,7 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="img-fluid me-1"
-                      src="<?php echo get_theme_file_uri('img/sigmund-thumb.jpg') ?>"
+                      src="<?php the_field('author_image') ?>"
                       alt="teacher's profile"
                     />
                     <h4 class="fw-bold pt-2"><?php the_field('course_instructor'); ?></h4>
