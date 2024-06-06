@@ -26,14 +26,12 @@
         <!-- course-item -->
             <?php
 
-
-
             while(have_posts()) {
               the_post();
               ?>
             <div id="vclasses-list">
               <div class="d-sm-flex flex-wrap">
-                            <!-- start card display  -->
+          <!-- start card display  -->
             <div class="card p-4">
               <div class="card-img-container">
                 <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail(null, array( 400, 400)); ?></a>
@@ -58,22 +56,28 @@
                   <div class="info-list-level fw-bold d-flex">
                     <img
                       class="me-2 img-fluid"
-                      src="img/icons/level-chart-thumb-16.png"
+                      src="<?php echo get_theme_file_uri('img/icons/level-chart-thumb-16.png') ?>"
                       alt=""
                     />
-                    <span>Beginner</span>
+                    <span><?php the_field('course_level'); ?></span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
                     <span class="vicon-duration me-2"></span>
-                    <span>3h 34m</span>
+                    <span><?php the_field('course_duration'); ?> days</span>
                   </div>
                 </div>
-                <h3 class="fw-bold mb-2 mt-4">
-                  English for restaurant workers
-                </h3>
+                 <a href="<?php the_permalink(); ?>"><h5 class="fw-bold mb-2 mt-2" style="font-size: 1.15rem"><?php the_title(); ?></h5></a>
+
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                <?php
+
+                  $excerpt = get_the_excerpt();
+
+                  $excerpt = substr( $excerpt, 0, 140 ); // Only display first 260 characters of excerpt
+                  $result = substr( $excerpt, 0, strrpos( $excerpt, ' ' ) );
+                  echo $result;
+
+                  ?>
                 </p>
                 <div
                   class="tutor d-sm-flex flex-column align-items-start justify-content-center mt-4"
@@ -81,30 +85,30 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="img-fluid me-1"
-                      src="img/sigmund-thumb.jpg"
+                      src="<?php the_field('author_image') ?>"
                       alt="teacher's profile"
                     />
-                    <h4 class="fw-bold pt-2">Daniel Gerard</h4>
+                    <h4 class="fw-bold pt-2"><?php the_field('course_instructor'); ?></h4>
                   </div>
                   <div class="tutor-lessons d-flex mt-2">
-                    <div class="lesson-icon me-1">
+                    <div class="lesson-icon me-2">
                       <span class="vicon-lesson"></span>
                     </div>
                     <div class="lesson-number d-flex">
-                      <span>8</span>&nbsp;
-                      <p>Courses</p>
+                      <span><?php the_field('course_lessons'); ?></span>&nbsp;
+                      <p>Lessons</p>
                     </div>
                   </div>
                 </div>
                 <div class="price-list d-flex mt-5">
-                  <div class="price price-current">$55.99</div>
+                  <div class="price price-current">$<?php the_field('course_price'); ?></div>
                   <div class="price price-prev">
-                    <s class="ms-4"> $69.99</s>
+                    <s class="ms-4">$<?php the_field('course_old_price'); ?></s>
                   </div>
                 </div>
 
                 <div class="read-more mt-3 mb-3 btn btn-lg">
-                  <a href="course-info.html" class="link-btn d-flex"
+                  <a href="<?php echo get_the_permalink(); ?>" class="link-btn d-flex"
                     >Enroll now <span class="vicon-arrow--right"></span
                   ></a>
                 </div>
