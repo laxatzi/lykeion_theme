@@ -41,9 +41,8 @@
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
                     <span><?php
-                      $courseDuration = new DateTime(get_field('course_duration'));
-			                echo $courseDuration->format('j').' '.$courseDuration->format('F').' '. $courseDuration->format('Y')
-                    ?></span>
+                     the_field('course_duration');
+                    ?> days</span>
                   </div>
                 </div>
               <!-- Students -->
@@ -129,7 +128,11 @@
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
 
-                    <span>&euro; <?php the_field('course_deadline'); ?></span>
+                    <span><?php
+                    $deadlineDate = new DateTime(get_field('course_date'));
+			                echo $deadlineDate->format('j').' '.$deadlineDate->format('F').' '. $deadlineDate->format('Y')
+
+                    ?></span>
                   </div>
                 </div>
               <!-- Instructor -->
@@ -140,7 +143,7 @@
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
 
-                    <span>&euro; <?php the_field('course_instructor'); ?></span>
+                    <span><?php the_field('course_instructor');  ?></span>
                   </div>
                 </div>
             <!-- buy course -->
@@ -156,6 +159,7 @@
                  </div>
 
                  </div>
+              </div>
             </aside>
         </div>
 <!-- end row -->
