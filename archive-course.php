@@ -26,14 +26,12 @@
         <!-- course-item -->
             <?php
 
-
-
             while(have_posts()) {
               the_post();
               ?>
             <div id="vclasses-list">
               <div class="d-sm-flex flex-wrap">
-                            <!-- start card display  -->
+          <!-- start card display  -->
             <div class="card p-4">
               <div class="card-img-container">
                 <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail(null, array( 400, 400)); ?></a>
@@ -57,8 +55,8 @@
                 <div class="info-list d-flex mt-3 mb-3">
                   <div class="info-list-level fw-bold d-flex">
                     <img
-                      class="me-2 img-fluid"
-                      src="img/icons/level-chart-thumb-16.png"
+                      class="img-fluid"
+                      src="<?php echo get_theme_file_uri('img/icons/level-chart-thumb-16.png') ?>"
                       alt=""
                     />
                     <span>Beginner</span>
