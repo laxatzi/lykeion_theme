@@ -69,8 +69,7 @@
                  <a href="<?php the_permalink(); ?>"><h5 class="fw-bold mb-2 mt-2" style="font-size: 1.15rem"><?php the_title(); ?></h5></a>
 
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                <?php the_excerpt(); ?>
                 </p>
                 <div
                   class="tutor d-sm-flex flex-column align-items-start justify-content-center mt-4"
@@ -96,7 +95,7 @@
                 <div class="price-list d-flex mt-5">
                   <div class="price price-current">$<?php the_field('course_price'); ?></div>
                   <div class="price price-prev">
-                    <s class="ms-4"> $69.99 <?php the_field('course_old_price'); ?></s>
+                    <s class="ms-4">$<?php the_field('course_old_price'); ?></s>
                   </div>
                 </div>
 
