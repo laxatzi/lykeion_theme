@@ -73,9 +73,9 @@
 
                   $excerpt = get_the_excerpt();
 
-                  $excerpt = substr( $excerpt, 0, 140 ); // Only display first 140 characters of excerpt
+                  $excerpt = substr( $excerpt, 0, 120 ); // Only display first 140 characters of excerpt
                   $result = substr( $excerpt, 0, strrpos( $excerpt, ' ' ) );
-                  echo $excerpt;
+                  echo $result." [&hellip;]";
 
                   ?>
                 </p>

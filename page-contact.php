@@ -21,9 +21,11 @@
                   <div class="card-deck d-sm-flex gap-3 my-3">
                     <div class="card p-4">
                       <div class="card-body">
-                        <img
-                          src="<?php echo get_theme_file_uri('/img/icons/internet-thumb-50.png') ?>"
-                          alt="" />
+                        <div class="text-center d-flex justify-content-center">
+                          <img
+                            src="<?php echo get_theme_file_uri('/img/icons/internet-thumb-50.png') ?>"
+                            alt="" />
+                        </div>
                         <h5 class="card-title text-center fw-bold py-3">
                           Our Website
                         </h5>
@@ -38,9 +40,12 @@
                     </div>
                     <div class="card p-4">
                       <div class="card-body">
+                        <div class="text-center d-flex justify-content-center">
                         <img
                           src="<?php echo get_theme_file_uri('/img/icons/headphones-thumb-50.png') ?>"
-                          alt="" />
+                          alt=""
+                          />
+                        </div>
                         <h5 class="card-title text-center fw-bold py-3">
                           Call Us
                         </h5>
@@ -55,9 +60,11 @@
                   <div class="card-deck d-sm-flex gap-sm-3 my-sm-3">
                     <div class="card p-4">
                       <div class="card-body">
-                        <img
+                        <div class="text-center d-flex justify-content-center">
+                          <img
                           src="<?php echo get_theme_file_uri('/img/icons/email-thumb-50.png') ?>"
                           alt="" />
+                        </div>
                         <h5 class="card-title text-center fw-bold py-3">
                           Email Us
                         </h5>
@@ -68,9 +75,11 @@
                     </div>
                     <div class="card p-4">
                       <div class="card-body">
-                        <img
-                          src="<?php echo get_theme_file_uri('/img/icons/location-thumb-50.png') ?>"
-                          alt="" />
+                        <div class="text-center d-flex justify-content-center">
+                          <img
+                            src="<?php echo get_theme_file_uri('/img/icons/location-thumb-50.png') ?>"
+                            alt="" />
+                        </div>
                         <h5 class="card-title text-center fw-bold py-3">
                           Our Address
                         </h5>
