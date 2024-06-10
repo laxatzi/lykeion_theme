@@ -164,6 +164,15 @@
         </div>
 <!-- end row -->
       </div>
+       <!-- new row -->
+      <div class="row">
+        <div class="course-info-main p-sm-4 p-3 mt-md-5 mt-sm-4 mt-3 ps-0 d-flex">
+          <div class="p-sm-3 p-2 mb-md-0 mb-5">
+              <?php echo 'New Row!'; ?>
+
+          </div>
+        </div>
+      </div>
 <!-- end of container -->
       </div>
    </main>
