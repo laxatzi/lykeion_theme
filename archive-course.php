@@ -32,7 +32,7 @@
             <div id="vclasses-list">
               <div class="d-sm-flex flex-wrap">
           <!-- start card display  -->
-            <div class="card p-4">
+            <div class="card p-3 me-3">
               <div class="card-img-container">
                 <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail(null, array( 400, 400)); ?></a>
               </div>
@@ -73,9 +73,9 @@
 
                   $excerpt = get_the_excerpt();
 
-                  $excerpt = substr( $excerpt, 0, 140 ); // Only display first 260 characters of excerpt
+                  $excerpt = substr( $excerpt, 0, 140 ); // Only display first 140 characters of excerpt
                   $result = substr( $excerpt, 0, strrpos( $excerpt, ' ' ) );
-                  echo $result;
+                  echo $excerpt;
 
                   ?>
                 </p>
