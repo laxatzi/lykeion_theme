@@ -32,7 +32,7 @@
             <div id="vclasses-list">
               <div class="d-sm-flex flex-wrap">
           <!-- start card display  -->
-            <div class="card p-4 me-3">
+            <div class="card p-3 me-3">
               <div class="card-img-container">
                 <a href="<?php the_permalink(); ?>"><?php echo get_the_post_thumbnail(null, array( 400, 400)); ?></a>
               </div>
