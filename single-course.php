@@ -168,14 +168,24 @@
       <div class="row">
         <div class="course-info-main p-sm-4 p-3 mt-md-5 mt-sm-4 mt-3 ps-0 d-flex">
           <div class="p-sm-3 p-2 mb-md-0 mb-5">
+                <div class="intro--about ps-0 mb-5 text-sm-start text-center">
+                  <h3 class="intro">Other Courses You May Also Like!</h3>
+                  <h2 style="text-transform: uppercase;"class="fw-bold mt-2 mb-3">
+                    Related Courses
+                  </h2>
+                </div>
               <?php
                 $related_courses = get_field('related_courses');
 
-
+                if ($related_courses) {
                  foreach($related_courses as $related_course) {
 
                   echo get_the_title($related_course);
                  }
+                } else {
+                  echo "all right!";
+                 }
+
               ?>
 
           </div>
