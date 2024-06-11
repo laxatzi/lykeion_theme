@@ -173,6 +173,7 @@
 
 
                  foreach($related_courses as $related_course) {
+
                   echo get_the_title($related_course);
                  }
               ?>
