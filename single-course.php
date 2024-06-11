@@ -170,7 +170,7 @@
           <div class="p-sm-3 p-2 mb-md-0 mb-5">
                 <div class="intro--about ps-0 mb-5 text-sm-start text-center">
                   <h3 class="intro">Other Courses You May Also Like!</h3>
-                  <h2 style="text-transform: uppercase;"class="fw-bold mt-2 mb-3">
+                  <h2 style="text-transform:"class="fw-bold mt-2 mb-3">
                     Related Courses
                   </h2>
                 </div>
@@ -180,10 +180,12 @@
                 if ($related_courses) {
                  foreach($related_courses as $related_course) {
 
-                  echo get_the_title($related_course);
+                  ?>
+                   <a href="<?php echo esc_url( get_permalink(166)) ?>"><h5 class="fw-bold mb-2 mt-2" style="font-size: 1.15rem"><?php echo get_the_title($related_course); ?></h5></a>
+                   <?php
                  }
                 } else {
-                  echo "all right!";
+                  echo "We couldn't find any related course at the moment!";
                  }
 
               ?>
