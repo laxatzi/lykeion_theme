@@ -174,6 +174,8 @@
                     Related Courses
                   </h2>
                 </div>
+          <div id="vclasses-list">
+            <div class="d-sm-flex flex-wrap" >
               <?php
                 $related_courses = get_field('related_courses');
 
@@ -183,7 +185,7 @@
                   ?>
 
         <!-- start card display  -->
-         <div id="vclasses-list">
+
             <div class="card p-3 me-3">
               <div class="card-img-container">
                 <a href="<?php echo esc_url( get_permalink($related_course->ID)); ?>"><?php echo get_the_post_thumbnail(null, array( 400, 400)); ?></a>
@@ -268,7 +270,7 @@
                 </div>
               </div>
             </div>
-          </div>
+
             <!-- end card -->
                    <?php
                  }
@@ -277,7 +279,8 @@
                  }
 
               ?>
-
+          </div>
+          </div>
           </div>
         </div>
       </div>
