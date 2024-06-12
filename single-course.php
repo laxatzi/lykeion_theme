@@ -217,7 +217,7 @@
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
                     <span class="vicon-duration me-2"></span>
-                    <span><?php the_field('course_duration'); ?> days</span>
+                    <span><?php the_field('course_duration', $related_course); ?> days</span>
                   </div>
                 </div>
                  <a href="<?php echo esc_url( get_permalink($related_course->ID)) ?>"><h5 class="fw-bold mb-2 mt-2" style="font-size: 1.15rem"><?php echo get_the_title($related_course); ?></h5></a>
@@ -238,25 +238,25 @@
                   <div class="tutor-profile d-flex">
                     <img
                       class="img-fluid me-1"
-                      src="<?php the_field('author_image') ?>"
+                      src="<?php the_field('author_image', $related_course) ?>"
                       alt="teacher's profile"
                     />
-                    <h4 class="fw-bold pt-2"><?php the_field('course_instructor'); ?></h4>
+                    <h4 class="fw-bold pt-2"><?php the_field('course_instructor', $related_course); ?></h4>
                   </div>
                   <div class="tutor-lessons d-flex mt-2">
                     <div class="lesson-icon me-2">
                       <span class="vicon-lesson"></span>
                     </div>
                     <div class="lesson-number d-flex">
-                      <span><?php the_field('course_lessons'); ?></span>&nbsp;
+                      <span><?php the_field('course_lessons', $related_course); ?></span>&nbsp;
                       <p>Lessons</p>
                     </div>
                   </div>
                 </div>
                 <div class="price-list d-flex mt-5">
-                  <div class="price price-current">$<?php the_field('course_price'); ?></div>
+                  <div class="price price-current">$<?php the_field('course_price', $related_course); ?></div>
                   <div class="price price-prev">
-                    <s class="ms-4">$<?php the_field('course_old_price'); ?></s>
+                    <s class="ms-4">$<?php the_field('course_old_price', $related_course); ?></s>
                   </div>
                 </div>
 
