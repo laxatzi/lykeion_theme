@@ -170,7 +170,7 @@
           <div class="p-sm-3 p-2 mb-md-0 mb-5">
                 <div class="intro--about ps-0 mb-5 text-sm-start text-center">
                   <h3 class="intro">Other Courses You May Also Like!</h3>
-                  <h2 style="text-transform:"class="fw-bold mt-2 mb-3">
+                  <h2 style="text-transform:uppercase;" class="fw-bold mt-2 mb-3">
                     Related Courses
                   </h2>
                 </div>
