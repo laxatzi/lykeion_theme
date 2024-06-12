@@ -166,7 +166,7 @@
       </div>
        <!-- new row -->
       <div class="row">
-        <div class="course-info-main p-sm-4 p-3 mt-md-5 mt-sm-4 mt-3 ps-0 d-flex">
+        <div class="course-info-main p-sm-4 d-flex">
           <div class="p-sm-3 p-2 mb-md-0 mb-5">
                 <div class="intro--about ps-0 mb-5 text-sm-start text-center">
                   <h3 class="intro">Other Courses You May Also Like!</h3>
