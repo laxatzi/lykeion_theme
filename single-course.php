@@ -181,7 +181,7 @@
                  foreach($related_courses as $related_course) {
 
                   ?>
-                   <a href="<?php echo esc_url( get_permalink(166)) ?>"><h5 class="fw-bold mb-2 mt-2" style="font-size: 1.15rem"><?php echo get_the_title($related_course); ?></h5></a>
+                   <a href="<?php echo esc_url( get_permalink($related_course->ID)) ?>"><h5 class="fw-bold mb-2 mt-2" style="font-size: 1.15rem"><?php echo get_the_title($related_course); ?></h5></a>
                    <?php
                  }
                 } else {
