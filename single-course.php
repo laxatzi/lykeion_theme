@@ -183,7 +183,8 @@
                   ?>
 
         <!-- start card display  -->
-            <div class="card-related p-3 me-3">
+         <div id="vclasses-list">
+            <div class="card p-3 me-3">
               <div class="card-img-container">
                 <a href="<?php echo esc_url( get_permalink($related_course->ID)); ?>"><?php echo get_the_post_thumbnail(null, array( 400, 400)); ?></a>
               </div>
@@ -267,6 +268,7 @@
                 </div>
               </div>
             </div>
+          </div>
             <!-- end card -->
                    <?php
                  }
