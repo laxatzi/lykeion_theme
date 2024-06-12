@@ -210,7 +210,10 @@
                       src="<?php echo get_theme_file_uri('img/icons/level-chart-thumb-16.png') ?>"
                       alt=""
                     />
-                    <span><?php the_field('course_level'); ?></span>
+                    <span><?php
+                      // get_field values from other post type
+                      the_field('course_level',$related_course);
+                      ?></span>
                   </div>
                   <div class="info-list-duration fw-bold d-flex">
                     <span class="vicon-duration me-2"></span>
