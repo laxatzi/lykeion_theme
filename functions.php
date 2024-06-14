@@ -149,7 +149,7 @@ function wp_display_popular_posts($num_posts) {
 add_theme_support( 'post-thumbnails' );
 
 function university_adjust_queries($query) {
-
+      //  The is_admin function will evaluate to true only if we are in the back-end (thus in our case in the front-end)
 		if(!is_admin() AND is_post_type_archive('course') AND $query->is_main_query()) {
 
 			$query->set('orderby', 'title');
