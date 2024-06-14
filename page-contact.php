@@ -33,7 +33,7 @@
                           ><a
                             class="card-text my-0 text-center"
                             href="lambroshatzinikolaou.com"
-                            >lambroshatzinikolaou.com</a
+                            ><?php the_field('course_website'); ?></a
                           ></small
                         >
                       </div>
@@ -49,7 +49,7 @@
                         <h5 class="card-title text-center fw-bold py-3">
                           Call Us
                         </h5>
-                        <p class="card-text my-0 text-center">2310-xxx-xxx</p>
+                        <p class="card-text my-0 text-center"><?php the_field('course_phone'); ?></p>
                       </div>
                     </div>
                     <!-- end of card deck -->
@@ -69,7 +69,7 @@
                           Email Us
                         </h5>
                         <p class="card-text my-0 text-center">
-                          email@email.com
+                          <?php the_field('course_email'); ?>
                         </p>
                       </div>
                     </div>
@@ -84,7 +84,7 @@
                           Our Address
                         </h5>
                         <p class="card-text my-0 text-center">
-                          Mikras Asias 89, Pefka, Thessaloniki
+                          <?php the_field('course_address'); ?>
                         </p>
                       </div>
                     </div>
