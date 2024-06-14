@@ -19,7 +19,7 @@
               <div class="card-deck-wrapper">
                 <div class="row">
                   <div class="card-deck d-sm-flex gap-3 my-3">
-                    <div class="card p-4">
+                    <div class="card p-2">
                       <div class="card-body">
                         <div class="text-center d-flex justify-content-center">
                           <img
@@ -33,12 +33,12 @@
                           ><a
                             class="card-text my-0 text-center"
                             href="lambroshatzinikolaou.com"
-                            ><?php the_field('course_website'); ?></a
+                            ><?php the_field('contact_website'); ?></a
                           ></small
                         >
                       </div>
                     </div>
-                    <div class="card p-4">
+                    <div class="card p-2">
                       <div class="card-body">
                         <div class="text-center d-flex justify-content-center">
                         <img
@@ -49,7 +49,7 @@
                         <h5 class="card-title text-center fw-bold py-3">
                           Call Us
                         </h5>
-                        <p class="card-text my-0 text-center"><?php the_field('course_phone'); ?></p>
+                        <p class="card-text my-0 text-center"><?php the_field('contact_phone'); ?></p>
                       </div>
                     </div>
                     <!-- end of card deck -->
@@ -58,7 +58,7 @@
                 </div>
                 <div class="row">
                   <div class="card-deck d-sm-flex gap-sm-3 my-sm-3">
-                    <div class="card p-4">
+                    <div class="card p-2">
                       <div class="card-body">
                         <div class="text-center d-flex justify-content-center">
                           <img
@@ -69,11 +69,11 @@
                           Email Us
                         </h5>
                         <p class="card-text my-0 text-center">
-                          <?php the_field('course_email'); ?>
+                          <?php the_field('contact_email'); ?>
                         </p>
                       </div>
                     </div>
-                    <div class="card p-4">
+                    <div class="card p-2">
                       <div class="card-body">
                         <div class="text-center d-flex justify-content-center">
                           <img
@@ -84,7 +84,7 @@
                           Our Address
                         </h5>
                         <p class="card-text my-0 text-center">
-                          <?php the_field('course_address'); ?>
+                          <?php the_field('contact_address'); ?>
                         </p>
                       </div>
                     </div>
