@@ -19,7 +19,7 @@
               <div class="card-deck-wrapper">
                 <div class="row">
                   <div class="card-deck d-sm-flex gap-3 my-3">
-                    <div class="card p-2">
+                    <div class="card p-1">
                       <div class="card-body">
                         <div class="text-center d-flex justify-content-center">
                           <img
@@ -38,7 +38,7 @@
                         >
                       </div>
                     </div>
-                    <div class="card p-2">
+                    <div class="card p-1">
                       <div class="card-body">
                         <div class="text-center d-flex justify-content-center">
                         <img
@@ -58,7 +58,7 @@
                 </div>
                 <div class="row">
                   <div class="card-deck d-sm-flex gap-sm-3 my-sm-3">
-                    <div class="card p-2">
+                    <div class="card p-1">
                       <div class="card-body">
                         <div class="text-center d-flex justify-content-center">
                           <img
@@ -73,7 +73,7 @@
                         </p>
                       </div>
                     </div>
-                    <div class="card p-2">
+                    <div class="card p-1">
                       <div class="card-body">
                         <div class="text-center d-flex justify-content-center">
                           <img
@@ -136,11 +136,11 @@
                   <div class="row">
                     <div class="col-md-12 form-group">
                       <textarea
-                        class="form-control py-2 mb-3"
+                        class="form-control py-1 mb-3"
                         name="message"
                         id="message"
                         cols="30"
-                        rows="7"
+                        rows="4"
                         placeholder="Write your message"
                       ></textarea>
                     </div>
