@@ -89,7 +89,7 @@
                       />
                     </div>
                   </div>
-                  <div class="row mb-4">
+  <div class="row mb-4">
                     <h3 class="my-3">Languages You Teach:</h3>
                     <div class="form-check ms-3 my-1">
                       <input
