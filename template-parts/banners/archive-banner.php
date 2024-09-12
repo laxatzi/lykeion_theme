@@ -5,9 +5,9 @@
             <ol class="breadcrumb d-flex">
               <li class="breadcrumb-item"><a href="<?php echo site_url('/blog') ?>" ?>Blog</a></li>
               <li class="separator">
-                <span class="vicon-double-right-arrow-black"></span>
+                <span class="vicon-double-left-arrow-black"></span>
               </li>
-              <li class="breadcrumb-item" aria-current="page"><?php echo get_the_title(); ?></li>
+              <li class="breadcrumb-item" aria-current="page"><?php the_archive_description(); ?></li>
             </ol>
           </nav>
         </div>
