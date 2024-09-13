@@ -1325,8 +1325,13 @@ get_header();
               <h3 class="fw-bold"><?php the_title(); ?></h3>
             </a>
               <p class="card-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Quaerat harum pariatur sapiente odit quae minus?
+                <?php
+               if (has_excerpt()) {
+                  the_excerpt();
+               } else {
+                echo wp_trim_words(get_the_content(), 18);
+               }
+             ?>
               </p>
 
               <div class="author d-flex mt-4 p-2">
@@ -1338,8 +1343,8 @@ get_header();
                 </div>
               </div>
               <div class="read-more mt-5 mb-3 btn btn-lg">
-                <a href="blog-details.html" class="link-btn d-flex"
-                  >Read more<span class="vicon-arrow--right"></span
+                <a class="link-btn d-flex"
+                 href="<?php the_permalink(); ?>" >Read more<span class="vicon-arrow--right"></span
                 ></a>
               </div>
             </div>
