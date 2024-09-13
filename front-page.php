@@ -1287,7 +1287,14 @@ get_header();
         </div>
 
         <div class="blogpost-list d-md-flex flex-wrap gap-4 pb-sm-5">
-          <div class="blogpost-card p-4">
+          <?php
+              $homepagePosts = new WP_Query(array(
+                'posts_per_page' => 3
+              ));
+
+              while($homepagePosts->have_posts()){
+                $homepagePosts->the_post();?>
+                            <div class="blogpost-card p-4">
             <div class="blogpost-img">
               <a href="blogpost-page.html">
                 <img
@@ -1312,7 +1319,7 @@ get_header();
             <div class="blogpost-card-body p-3">
               <div class="tagline mt-3 mb-3 d-flex">
                 <span class="vicon-tag me-2"></span>
-                <a href="tag-page.html">Business English</a>
+                <a href="tag-page.html"><?php the_title(); ?></a>
               </div>
               <div class="author-profile d-flex mt-2 mb-3">
                 <img
@@ -1344,7 +1351,11 @@ get_header();
               </div>
             </div>
           </div>
-          <div class="blogpost-card p-4">
+                <?php
+              }
+          ?>
+
+          <!-- <div class="blogpost-card p-4">
             <div class="blogpost-img">
               <a href="blogpost-page.html">
                 <img
@@ -1452,7 +1463,7 @@ get_header();
                 ></a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="shapes">
