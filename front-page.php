@@ -1304,33 +1304,26 @@ get_header();
                 />
               </a>
             </div>
-            <small class="attribute p-2"
-              >Photo by
-              <a
-                href="https://unsplash.com/@camille1030?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                >Camille Chen</a
-              >
-              on
-              <a
-                href="https://unsplash.com/photos/people-working-near-desk-vNqE2R7hSoc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                >Unsplash</a
-              >
-            </small>
+
             <div class="blogpost-card-body p-3">
               <div class="tagline mt-3 mb-3 d-flex">
                 <span class="vicon-tag me-2"></span>
-                <a href="tag-page.html"><?php the_title(); ?></a>
+               <a href=""><?php
+                  echo get_the_category_list(', ');
+              ?></a>
               </div>
               <div class="author-profile d-flex mt-2 mb-3">
                 <img
-                  src="<?php echo get_theme_file_uri('/img/thumbs/sigmund-thumb.jpg') ?>"
+                  src=" <?php echo get_avatar( get_the_author_meta( 'ID' ), 40 ); ?>"
                   alt="teacher's profile"
                   class="img-fluid"
                 />
 
-                <h4 class="fw-bold pt-2">Daniel Gerard</h4>
+                <h4 class="pt-2"><?php  the_author_posts_link(); ?></h4>
               </div>
-              <h3 class="fw-bold">Key vocabulary for order taking</h3>
+               <a href="<?php the_permalink(); ?>">
+              <h3 class="fw-bold"><?php the_title(); ?></h3>
+            </a>
               <p class="card-text">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Quaerat harum pariatur sapiente odit quae minus?
