@@ -1314,12 +1314,12 @@ get_header();
               ?></a>
               </div>
               <div class="author-profile d-flex mt-2 mb-3">
-                <img
+                <!-- <img
                   src=" <?php echo get_avatar( get_the_author_meta( 'ID' ), 40 ); ?>"
                   alt="teacher's profile"
                   class="img-fluid"
-                />
-
+                /> -->
+              <?php echo get_avatar( get_the_author_meta( 'ID' ), 40 ); ?>
                 <h4 class="pt-2"><?php  the_author_posts_link(); ?></h4>
               </div>
                <a href="<?php the_permalink(); ?>">
