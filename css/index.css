@@ -615,6 +615,7 @@ section {
 /* End of shapes */
 .topic {
   background-color: var(--cc-white-sugar);
+  transition: background-color 0.5s ease-in-out;
 }
 
 .topic img.white {
