@@ -1289,7 +1289,8 @@ get_header();
         <div class="blogpost-list d-md-flex flex-wrap gap-4 pb-sm-5">
           <?php
               $homepagePosts = new WP_Query(array(
-                'posts_per_page' => 3
+                'posts_per_page' => 3,
+                  'order' => 'ASC',
               ));
 
               while($homepagePosts->have_posts()){
@@ -1338,7 +1339,10 @@ get_header();
                 <div class="events-meta">
                   <div class="meta meta-date d-flex">
                     <span class="vicon-calendar me-2"></span>
-                    <p>30 October 2023</p>
+                    <p>  <?php
+                    $publish_date = get_the_time('j F, Y');
+                   echo $publish_date;
+                  ?></p>
                   </div>
                 </div>
               </div>
