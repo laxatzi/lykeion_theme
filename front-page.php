@@ -1351,11 +1351,11 @@ get_header();
           </div>
                 <?php
               }
+            wp_reset_postdata();
           ?>
-
-
         </div>
       </div>
+
       <div class="shapes">
         <div class="shape-image shape-image-27">
           <img
