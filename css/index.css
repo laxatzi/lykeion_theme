@@ -98,7 +98,12 @@ a {
   padding: 0.05em 0;
 }
 
-a::after {
+a:hover,
+a:focus {
+  color: var(--cc-color-dark);
+}
+
+a.nav-link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -112,8 +117,8 @@ a::after {
   transition: opacity 300ms, transform 300ms;
 }
 
-a:hover::after,
-a:focus::after {
+a.nav-link:hover::after,
+a.nav-link:focus::after {
   transform: scale(1);
 }
 
