@@ -8,7 +8,7 @@
         <!-- events headings -->
           <div id="vclasses-headings" class="p-sm-5 ps-0 text-center">
             <h3 class="intro text-center">Learning can be fun!</h3>
-            <h2 class="mt-2 mb-3 fw-bold text-center">Upcoming Events!</h2>
+            <h2 class="mt-2 mb-3 fw-bold text-center">All Upcoming Events!</h2>
           </div>
         </div>
 
