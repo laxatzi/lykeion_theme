@@ -1298,11 +1298,7 @@ get_header();
                             <div class="blogpost-card p-4">
             <div class="blogpost-img">
               <a href="blogpost-page.html">
-                <!-- <img
-                  src="<?php echo get_theme_file_uri('/img/restaurant-workers.jpg') ?>"
-                  alt=""
-                  class="img-fluid"
-                /> -->
+
                 <?php
                   echo  get_the_post_thumbnail(null, array(444, 760));
 
