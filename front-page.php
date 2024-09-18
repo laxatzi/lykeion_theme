@@ -1300,7 +1300,7 @@ get_header();
               <a href="blogpost-page.html">
 
                 <?php
-                  echo  get_the_post_thumbnail(null, array(444, 760));
+                  echo  get_the_post_thumbnail(null, array(400, 300));
 
                 ?>
               </a>
