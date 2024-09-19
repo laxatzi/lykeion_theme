@@ -85,8 +85,7 @@
       </div>
       </div>
       <!-- end of event list -->
-
-
+         <!-- pagination -->
           <?php
             }
           ?>
