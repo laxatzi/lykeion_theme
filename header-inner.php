@@ -49,7 +49,7 @@
                 <a class="nav-link" href="<?php echo site_url('/about') ?>">About</a>
               </li>
               <li <?php
-                if(get_post_type() == 'event') {
+                if(get_post_type() == 'event' or is_page('past-events')) {
                   echo 'class="current-menu-item nav-item"';
                 }else {
                   echo 'class="nav-item"';
