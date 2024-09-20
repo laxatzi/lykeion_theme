@@ -66,7 +66,7 @@
                     <span><?php the_field('course_lessons'); ?></span>
                   </div>
                 </div>
-          <!-- Skill Level -->
+             <!-- Skill Level -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
                     <span class="vicon-chart me-3"></span>
@@ -76,7 +76,7 @@
                     <span><?php the_field('course_level'); ?></span>
                   </div>
                 </div>
-            <!-- Lang -->
+             <!-- Lang -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
                     <span class="vicon-language me-3"></span>
@@ -87,7 +87,7 @@
                     <span><?php the_field('course_language'); ?></span>
                   </div>
                 </div>
-            <!-- Quizzes -->
+             <!-- Quizzes -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
                     <span class="vicon-puzzle me-3"></span>
@@ -109,7 +109,7 @@
                     <span><?php the_field('course_certification'); ?></span>
                   </div>
                 </div>
-            <!-- Pass Percentage -->
+             <!-- Pass Percentage -->
                 <div class="info-list d-flex mt-3 mb-3 p-3">
                   <div class="info-list-level fw-bold d-flex">
                     <span class="vicon-percentage me-3"></span>
@@ -146,7 +146,7 @@
                     <span><?php the_field('course_instructor');  ?></span>
                   </div>
                 </div>
-            <!-- buy course -->
+              <!-- buy course -->
 
                   <div class="buy-course  mt-5 col-11 d-flex justify-content-center">
                   $<?php the_field('course_price'); ?>
@@ -188,7 +188,9 @@
 
             <div class="card p-3 me-3">
               <div class="card-img-container">
-                <a href="<?php echo esc_url( get_permalink($related_course->ID)); ?>"><?php echo get_the_post_thumbnail($related_course, array( 400, 400)); ?></a>
+                <a href="<?php echo esc_url( get_permalink($related_course->ID)); ?>">
+                         <?php echo get_the_post_thumbnail($related_course, array( 400, 400)); ?>
+                </a>
               </div>
 
               <div class="card-body">
@@ -229,7 +231,7 @@
 
                   $excerpt = get_the_excerpt();
 
-                  $excerpt = substr( $excerpt, 0, 120 ); // Only display first 140 characters of excerpt
+                  $excerpt = substr( $excerpt, 0, 120 ); // Only display first 120 characters of excerpt
                   $result = substr( $excerpt, 0, strrpos( $excerpt, ' ' ) );
                   echo $result." [&hellip;]";
 
