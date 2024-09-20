@@ -805,12 +805,12 @@ button.heart:active .bi-heart-fill {
 }
 
 #vclasses-list {
-  max-width: 1200px;
+  max-width: 1320px;
 }
 
 #vclasses-list .card {
-  min-width: 340px;
-  max-width: 340px;
+  min-width: 420px;
+  max-width: 420px;
   width: auto;
   margin: 25px auto 0px;
 }
