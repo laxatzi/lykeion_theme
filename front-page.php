@@ -370,9 +370,9 @@ get_header();
                 </div>
 
                 <div class="read-more mt-3 mb-3 btn btn-lg">
-                  <a href="course-info.html" class="link-btn d-flex"
-                    >Enroll now <span class="vicon-arrow--right"></span
-                  ></a>
+                   <a href="<?php echo get_the_permalink(); ?>" class="link-btn d-flex">
+
+                    Enroll now <span class="vicon-arrow--right"></span></a>
                 </div>
               </div>
             </div>
