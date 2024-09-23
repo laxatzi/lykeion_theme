@@ -298,11 +298,14 @@ get_header();
             ?>
             <div class="card p-4">
               <div class="card-img-container">
-                <img
+                 <a href="<?php  echo get_the_permalink(); ?>">
+                        <?php  echo get_the_post_thumbnail(null, array( 400, 500));  ?>
+                      </a>
+                <!-- <img
                   src="<?php echo get_theme_file_uri('/img/restaurant-workers.jpg') ?>"
                   class="card-img-top img-fluid"
                   alt=""
-                />
+                /> -->
               </div>
 
               <div class="card-body">
