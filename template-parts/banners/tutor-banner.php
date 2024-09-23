@@ -3,9 +3,7 @@
           <h2 class="banner mt-5 mb-1 fw-bold"><a href="<?php echo get_post_type_archive_link('tutor') ?>">Tutors</a></h2>
           <nav class="breadcrumb-nav">
             <ol class="breadcrumb d-flex">
-              <li class="separator">
-                <span class="vicon-double-right-arrow-black"></span>
-              </li>
+
               <li class="breadcrumb-item" aria-current="page"><?php echo get_the_title() ?></li>
             </ol>
           </nav>
