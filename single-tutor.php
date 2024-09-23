@@ -24,7 +24,7 @@
                 <div class="intro--about ps-0 mb-5 text-sm-start text-center">
                   <h3 class="intro">Courses Created by <?php the_field('tutor_name') ?> </h3>
                   <h2 style="text-transform:uppercase;" class="fw-bold mt-2 mb-3">
-                    Related Courses
+                    Course Subjects:
                   </h2>
                 </div>
           <div id="vclasses-list">
