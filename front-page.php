@@ -290,6 +290,7 @@ get_header();
             $homepage_courses = new WP_Query(array(
               'posts_per_page' => 6,
               'order' => 'ASC',
+              'post_type' => 'course'
             ));
 
             while($homepage_courses->have_posts()) {
@@ -490,6 +491,8 @@ get_header();
           </div>
           <?php
             }
+            wp_reset_postdata();
+
           ?>
             <div class="read-more btn btn-lg col-lg-3 col-md-4 col-8 my-5" style="margin: 0 auto;">
               <a href="<?php echo get_post_type_archive_link('event') ?>" class="link-btn d-flex"
@@ -906,7 +909,7 @@ get_header();
               </div>
             </div>
           </div>
-                <?php
+          <?php
               }
             wp_reset_postdata();
           ?>
