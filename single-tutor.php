@@ -114,7 +114,7 @@
                 <div class="price-list d-flex mt-5">
                   <div class="price price-current">$<?php the_field('course_price', $related_course); ?></div>
                   <div class="price price-prev">
-                    <s class="ms-4">$<?php the_field('course_old_price', $related_course); ?></s>
+                    <s class="ms-2">$<?php the_field('course_old_price', $related_course); ?></s>
                   </div>
                 </div>
 
