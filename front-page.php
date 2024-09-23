@@ -284,6 +284,17 @@ get_header();
         </div>
         <div id="vclasses-list">
           <div class="d-sm-flex flex-wrap">
+
+          <?php
+
+            $homepage_courses = new WP_Query(array(
+              'posts_per_page' => 6,
+              'order' => 'ASC',
+            ));
+
+            while($homepage_courses->have_posts()) {
+              $homepage_courses->the_post();
+            ?>
             <div class="card p-4">
               <div class="card-img-container">
                 <img
@@ -375,7 +386,18 @@ get_header();
                 </div>
               </div>
             </div>
+                            <?php
+              }
+            wp_reset_postdata();
+          ?>
+        </div>
+      </div>
 
+
+
+
+
+<!--
             <div class="card p-4">
               <div class="card-img-container">
                 <img
@@ -461,7 +483,10 @@ get_header();
                   ></a>
                 </div>
               </div>
-            </div>
+            </div> -->
+
+
+<!--
 
             <div class="card p-4">
               <div class="card-img-container">
@@ -553,8 +578,10 @@ get_header();
                   ></a>
                 </div>
               </div>
-            </div>
+            </div> -->
 
+
+<!--
             <div class="card p-4">
               <div class="card-img-container">
                 <img
@@ -735,8 +762,8 @@ get_header();
                   ></a>
                 </div>
               </div>
-            </div>
-
+            </div> -->
+<!--
             <div class="card p-4">
               <div class="card-img-container">
                 <img
@@ -823,9 +850,8 @@ get_header();
                   ></a>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+            </div> -->
+
       </div>
     </section>
 
@@ -1295,7 +1321,7 @@ get_header();
 
               while($homepagePosts->have_posts()){
                 $homepagePosts->the_post();?>
-                            <div class="blogpost-card p-4">
+          <div class="blogpost-card p-4">
             <div class="blogpost-img">
               <a href="blogpost-page.html">
 
