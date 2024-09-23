@@ -1,6 +1,6 @@
 <?php
     get_header('inner');
-    get_template_part('template-parts/banners/post-banner');
+    get_template_part('template-parts/banners/tutor-banner');
 
     while(have_posts()) {
     the_post();
