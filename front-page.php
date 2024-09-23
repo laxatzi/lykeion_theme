@@ -303,18 +303,7 @@ get_header();
                   alt=""
                 />
               </div>
-              <small class="attribute p-2">
-                Photo by
-                <a
-                  href="https://unsplash.com/@camille1030?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                  >Camille Chen</a
-                >
-                on
-                <a
-                  href="https://unsplash.com/photos/people-working-near-desk-vNqE2R7hSoc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                  >Unsplash</a
-                >
-              </small>
+
               <div class="card-body">
                 <div class="ratings d-flex mb-4">
                   <div class="rating-stars d-flex">
@@ -344,9 +333,11 @@ get_header();
                     <span>3h 34m</span>
                   </div>
                 </div>
-                <h3 class="fw-bold mb-2 mt-4">
-                  English for restaurant workers
-                </h3>
+                 <a href="<?php  echo get_the_permalink(); ?>">
+                  <h3 class="fw-bold mb-2 mt-4">
+                    <?php the_title(); ?>
+                  </h3>
+                </a>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
