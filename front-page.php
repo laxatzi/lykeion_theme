@@ -553,6 +553,10 @@ get_header();
                 $homepage_tutors->the_post();?>
 
           <div class="tutor-tab">
+             <?php
+                  echo  get_the_post_thumbnail(null, array(250, 300));
+
+                ?>
             <div class="tutor-info p-2">
               <h5>
                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -561,7 +565,11 @@ get_header();
             </div>
           </div>
 
-            <?php } ?>
+            <?php
+
+          }
+           wp_reset_postdata();
+          ?>
 
         </div>
       </div>
