@@ -561,7 +561,7 @@ get_header();
               <h5>
                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
               </h5>
-              <span class="desc">English Literature BA (Hons)</span>
+              <span class="desc"><?php the_field('tutor_title') ?></span>
             </div>
           </div>
 
