@@ -560,7 +560,7 @@ get_header();
             </div>
           </div>
 
-
+            <?php } ?>
 
         </div>
       </div>
