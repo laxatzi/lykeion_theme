@@ -537,11 +537,9 @@ get_header();
           <h3 class="intro">
             Highly trained native and international teachers
           </h3>
-          <h2 class="mt-2 fw-bold">Meet our tutors!</h2>
-          <small class="attribute attribute-rev mb-3 text-center">
-            Photos by <a href="https://unsplash.com/">Unsplash</a>. Attribution
-            <a href="attribute-page">page</a>
-          </small>
+           <a href="<?php echo get_post_type_archive_link('tutor') ?>">
+                <h2 class="mt-2 fw-bold">Meet our tutors!</h2>
+           </a>
         </div>
         <div class="tutors-container d-md-flex">
           <div class="tutor-tab">
