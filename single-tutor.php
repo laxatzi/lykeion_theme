@@ -11,9 +11,14 @@
           <div class="col-lg-10 col-md-10" id="blog-details-section">
 
             <h1 class="fw-bold"><?php the_title();?></h1>
-            <?php
-            the_content();
-             ?>
+              <div class="content_wrapper d-flex">
+                <div class="img_wrapper">
+                  <?php the_post_thumbnail(); ?>
+                </div>
+                <div class="the_content">
+                 <?php the_content(); ?>
+                </div>
+             </div>
           </div>
         </div>
 
