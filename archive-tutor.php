@@ -17,8 +17,15 @@
            <div class="blogPost-title p-4 mb-4">
             <a href="<?php the_permalink(); ?>">
               <h2 class="fw-bold"><?php the_title(); ?></h2>
-              </a>
-              <?php the_content(); ?>
+            </a>
+            <div class="content_wrapper d-flex">
+              <div class="img_wrapper">
+                <?php the_post_thumbnail(); ?>
+              </div>
+              <div class="the_content">
+                <?php the_content(); ?>
+              </div>
+            </div>
 
            </div>
 
