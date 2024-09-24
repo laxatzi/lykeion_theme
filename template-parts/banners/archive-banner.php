@@ -3,7 +3,7 @@
           <h1 class="mt-5 mb-1 fw-bold"><?php  the_archive_title(); ?></h1>
           <nav class="breadcrumb-nav">
             <ol class="breadcrumb d-flex">
-              <li class="breadcrumb-item"><a href="<?php echo site_url('/blog') ?>" ?>Blog</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo site_url() ?>" ?>Home</a></li>
               <li class="separator">
                 <span class="vicon-double-left-arrow-black"></span>
               </li>
