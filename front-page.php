@@ -630,7 +630,7 @@ get_header();
                ?>
                 <div class="student-info-content ms-3">
                   <div class="name fw-bold"><?php the_title(); ?></div>
-                  <div class="cert"><?php the_field('level') ?></div>
+                  <div class="cert"><?php the_field('customer_level') ?></div>
                 </div>
               </div>
               <div class="student-testimonial mt-3">
