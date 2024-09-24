@@ -843,6 +843,10 @@ button.heart:active .bi-heart-fill {
   font-size: 16px;
 }
 
+.the-tutorPost {
+  background-color: #e7e1ee;
+}
+
 .lesson-icon svg {
   color: var(--cc-primary);
 }
