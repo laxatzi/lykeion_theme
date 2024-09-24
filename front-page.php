@@ -542,14 +542,16 @@ get_header();
            </a>
         </div>
         <div class="tutors-container d-md-flex">
+          <?php
+              $homepage_tutors = new WP_Query(array(
+                'posts_per_page' => 3,
+                  'order' => 'ASC',
+                   'post_type' => 'tutor',
+              ));
+
+              while($homepage_tutors->have_posts()){
+                $homepage_tutors->the_post();?>
           <div class="tutor-tab">
-            <div class="thumbnail">
-              <a href="tutor-profile.html">
-                <img
-                src="<?php echo get_theme_file_uri('/img/thumbs/usman-thumbnail-265.jpg') ?>"
-                alt="" />
-              </a>
-            </div>
             <div class="tutor-info p-2">
               <h5>
                 <a href="tutor-profile.html">John Katsimatides</a>
@@ -557,40 +559,9 @@ get_header();
               <span class="desc">English Literature BA (Hons)</span>
             </div>
           </div>
-          <div class="tutor-tab">
-            <div class="thumbnail">
-              <a href="tutor-profile.html">
-                <img
-                  src="<?php echo get_theme_file_uri('/img/thumbs/john-newman-thumbnail-265.jpg') ?>"
-                  alt=""
-                  class="img-fluid"
-                />
-              </a>
-            </div>
-            <div class="tutor-info p-2">
-              <h5>
-                <a href="tutor-profile.html">John Newman</a>
-              </h5>
-              <span class="desc">English Literature BA (Hons)</span>
-            </div>
-          </div>
-          <div class="tutor-tab">
-            <div class="thumbnail">
-              <a href="tutor-profile.html">
-                <img
-                  src="<?php echo get_theme_file_uri('/img/thumbs/sigmund-thumbnail-265.jpg') ?>"
-                  alt=""
-                  class="img-fluid"
-                />
-              </a>
-            </div>
-            <div class="tutor-info p-2">
-              <h5>
-                <a href="tutor-profile.html">Daniel Gerard</a>
-              </h5>
-              <span class="desc">Certified Business English Tutor</span>
-            </div>
-          </div>
+
+
+
         </div>
       </div>
       <div class="shapes">
