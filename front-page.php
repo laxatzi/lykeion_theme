@@ -606,36 +606,37 @@ get_header();
         >
           <h3 class="intro text-center">testimonials</h3>
           <h2 class="mt-2 mb-1 fw-bold text-center">What our students say!</h2>
-          <small class="attribute mb-3 text-center">
-            Photos by <a href="https://unsplash.com/">Unsplash</a>. Attribution
-            <a href="attribute-page">page</a>
-          </small>
         </div>
         <div class="testimonials d-flex mt-sm-4 mt-3 pb-sm-5">
-          <!-- first testimonial-card container -->
+
           <div class="testimonial-card-container d-lg-flex">
-            <!-- testimonial-card -->
+               <!-- first testimonial-card container -->
+            <?php
+              $homepage_testimonials = new WP_Query(array(
+                'posts_per_page' => 3,
+                  'order' => 'ASC',
+                   'post_type' => 'testimonial',
+              ));
+
+              while($homepage_testimonials->have_posts()){
+                $homepage_testimonials->the_post();?>
+                <!-- testimonial-card -->
             <div
               class="testimonial-card testimonial-card-1 me-2 p-4 mb-lg-0 mb-4"
             >
               <div class="student-info d-flex">
-                <img
-                  src="<?php echo get_theme_file_uri('/img/thumbs/happy-studentgirl-thumbnail-55.png') ?>"
-                  alt=""
-                  class="img-fluid"
-                />
+                <?php
+               echo  get_the_post_thumbnail(null, array(150, 150));
+               ?>
                 <div class="student-info-content ms-3">
-                  <div class="name fw-bold">Maria Stevens</div>
-                  <div class="cert">C1 Advanced</div>
+                  <div class="name fw-bold"><?php the_title(); ?></div>
+                  <div class="cert"><?php the_field('level') ?></div>
                 </div>
               </div>
               <div class="student-testimonial mt-3">
-                <p>
-                  &ldquo; Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Asperiores dolor deserunt quas facere quisquam
-                  exercitationem voluptate laudantium rem repudiandae dolore!
-                  Quasi?&rdquo;
-                </p>
+                <?php
+                   the_content();
+                ?>
               </div>
               <div class="student-rating mt-4">
                 <div class="rating-stars d-flex mb-2">
@@ -646,71 +647,13 @@ get_header();
                   <span class="vicon-star"></span>
                 </div>
               </div>
-            </div>
-            <!-- testimonial-card-->
-            <div
-              class="testimonial-card testimonial-card-2 me-2 p-4 mb-lg-0 mb-4"
-            >
-              <div class="student-info d-flex">
-                <img
-                  src="<?php echo get_theme_file_uri('/img/thumbs/happy-student-thumbnail.png') ?>"
-                  alt=""
-                  class="img-fluid"
-                />
-                <div class="student-info-content ms-3">
-                  <div class="name fw-bold">Juan Hernangomez</div>
-                  <div class="cert">B2 First</div>
-                </div>
               </div>
-              <div class="student-testimonial mt-3">
-                <p>
-                  &ldquo; Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Asperiores dolor deserunt quas facere quisquam
-                  exercitationem voluptate laudantium rem repudiandae dolore!
-                  Quasi?&rdquo;
-                </p>
-              </div>
-              <div class="student-rating mt-4">
-                <div class="rating-stars d-flex mb-2">
-                  <span class="vicon-star"></span>
-                  <span class="vicon-star"></span>
-                  <span class="vicon-star"></span>
-                  <span class="vicon-star"></span>
-                  <span class="vicon-star"></span>
-                </div>
-              </div>
-            </div>
-            <!-- testimonial-card -->
-            <div class="testimonial-card testimonial-card-3 p-4">
-              <div class="student-info d-flex">
-                <img
-                  src="<?php echo get_theme_file_uri('/img/thumbs/usman-thumbnail-55.png') ?>"
-                  alt=""
-                  class="img-fluid"
-                />
-                <div class="student-info-content ms-3">
-                  <div class="name fw-bold">Petros Papadopoulos</div>
-                  <div class="cert">C2 Proficiency</div>
-                </div>
-              </div>
-              <div class="student-testimonial mt-3">
-                <p id="hop">
-                  &ldquo; Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Asperiores dolor deserunt quas facere quisquam
-                  exercitationem voluptate laudantium rem repudiandae dolore!
-                  Quasi?&rdquo;
-                </p>
-              </div>
-              <div class="student-rating mt-4">
-                <div class="rating-stars d-flex mb-2">
-                  <span class="vicon-star"></span>
-                  <span class="vicon-star"></span>
-                  <span class="vicon-star"></span>
-                  <span class="vicon-star"></span>
-                  <span class="vicon-star"></span>
-                </div>
-              </div>
-            </div>
+
+        <?php
+
+          }
+           wp_reset_postdata();
+          ?>
           </div>
           <!-- end of testimonial-card container -->
         </div>
