@@ -551,10 +551,11 @@ get_header();
 
               while($homepage_tutors->have_posts()){
                 $homepage_tutors->the_post();?>
+
           <div class="tutor-tab">
             <div class="tutor-info p-2">
               <h5>
-                <a href="tutor-profile.html">John Katsimatides</a>
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
               </h5>
               <span class="desc">English Literature BA (Hons)</span>
             </div>
