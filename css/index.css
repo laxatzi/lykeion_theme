@@ -816,10 +816,10 @@ button.heart:active .bi-heart-fill {
 }
 
 #vclasses-list .card {
-  min-width: 420px;
-  max-width: 420px;
+  min-width: 325px;
+  max-width: 375px;
   width: auto;
-  margin: 25px auto 0px;
+  margin: 25px 0px;
 }
 
 .tutor,
@@ -3204,10 +3204,10 @@ span.brand.img-300 img {
 
   .blogpost-card,
   #vclasses-list .card {
-    min-width: 250px;
-    max-width: 300px;
+    min-width: 300px;
+    max-width: 330px;
     width: auto;
-    margin: 25px auto 0px;
+    margin: 25px 0px;
   }
 
   #blog-details-section .meta div {
