@@ -29,8 +29,7 @@
             while(have_posts()) {
               the_post();
               ?>
-            <div id="vclasses-list">
-              <div class="d-sm-flex flex-wrap">
+
           <!-- start card display  -->
             <div class="card p-3 me-3">
               <div class="card-img-container">
@@ -115,8 +114,7 @@
               </div>
             </div>
             <!-- end card -->
-              </div>
-            </div>
+
               <?php
             }
               ?>
