@@ -2,6 +2,7 @@
 
     get_header('inner');
     get_template_part('template-parts/banners/page-banner');
+    get_template_part('template-parts/banners/shape-banner');
 ?>
 <!-- code here -->
   <main class="container-fluid" id="section-main">
