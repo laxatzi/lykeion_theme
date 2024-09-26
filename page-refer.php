@@ -2,6 +2,8 @@
 
     get_header('inner');
     get_template_part('template-parts/banners/page-banner');
+    get_template_part('template-parts/banners/shape-banner');
+
 ?>
     <main class="container-fluid">
       <div class="pt-5" id="faq-section">
