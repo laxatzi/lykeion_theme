@@ -1,7 +1,9 @@
 <?php
     get_header('inner');
     get_template_part('template-parts/banners/course-banner');
-        while(have_posts()) {
+    get_template_part('template-parts/banners/shape-banner');
+
+  while(have_posts()) {
     the_post();
 
   ?>
@@ -286,7 +288,7 @@
           </div>
         </div>
       </div>
-      
+
 <!-- end of container -->
       </div>
    </main>
