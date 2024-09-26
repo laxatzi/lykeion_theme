@@ -1,7 +1,9 @@
 <?php
    get_header('inner');
-    get_template_part('template-parts/banners/archive-banner');
+   get_template_part('template-parts/banners/archive-banner');
+   get_template_part('template-parts/banners/shape-banner');
 ?>
+
    <main class="container-fluid">
       <div class="py-5 pe-5 container" >
         <div class="row mt-5">
