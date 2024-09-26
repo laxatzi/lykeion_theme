@@ -2,6 +2,7 @@
 
     get_header('inner');
     get_template_part('template-parts/banners/page-banner');
+    get_template_part('template-parts/banners/search-banner.php');
 ?>
 
 
