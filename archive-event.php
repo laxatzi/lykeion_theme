@@ -1,6 +1,7 @@
 <?php
    get_header('inner');
-    get_template_part('template-parts/banners/events-all-banner');
+   get_template_part('template-parts/banners/events-all-banner');
+   get_template_part('template-parts/banners/shape-banner');
 ?>
    <main class="container-fluid">
       <div class="py-5 pe-5 container" id="events" >
