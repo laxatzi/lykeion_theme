@@ -4,6 +4,7 @@
     get_template_part('template-parts/banners/page-banner');
     get_template_part('template-parts/banners/shape-banner');
 ?>
+
     <main class="container-fluid">
       <div class="pt-md-4 pt-sm-3 pt-2" id="faq-section">
         <div class="container pt-5 pb-5">
