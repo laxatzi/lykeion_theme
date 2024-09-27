@@ -85,3 +85,7 @@ body.admin-bar .search-overlay {
 .body-no-scroll {
   overflow: hidden;
 }
+
+input {
+  caret-color: #525fe1;
+}
