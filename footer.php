@@ -134,7 +134,7 @@
         <div class="container">
           <span class="vicon-magnifying-glass" aria-hidden="true"></span>
           <input type="text" class="search-term" placeholder="What are you looking for?" id="search-term">
-          <i class="fa fa-window-close search-overlay__close" aria-hidden="true"></i>
+          <span class="vicon-x" aria-hidden="true"></span>
         </div>
      </div>
    </div>
