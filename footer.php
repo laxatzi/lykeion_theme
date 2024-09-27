@@ -133,7 +133,7 @@
       <div class="search-overlay__top">
         <div class="container">
           <span class="search-overlay__icon vicon-magnifying-glass" aria-hidden="true"></span>
-          <input type="text" class="search-term" placeholder="What are you looking for?" id="search-term">
+          <input type="text" class="search-term" placeholder=" Type a query to find what you are looking for!" id="search-term" autofocus>
           <div class="d-flex justify-content-end">
             <span  class="search-overlay__close vicon-close-modal mx-2" aria-hidden="true"></span>
           </div>
