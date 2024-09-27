@@ -132,9 +132,11 @@
     <div class="search-overlay search-overlay--active p-3">
       <div class="search-overlay__top">
         <div class="container">
-          <span class="vicon-magnifying-glass" aria-hidden="true"></span>
+          <span class="search-overlay__icon vicon-magnifying-glass" aria-hidden="true"></span>
           <input type="text" class="search-term" placeholder="What are you looking for?" id="search-term">
-          <span class="vicon-close-modal mx-2" aria-hidden="true">  <i class="m-3 p-1">close</i></span>
+          <div class="d-flex justify-content-end">
+            <span  class="search-overlay__close vicon-close-modal mx-2" aria-hidden="true"></span>
+          </div>
         </div>
      </div>
    </div>
