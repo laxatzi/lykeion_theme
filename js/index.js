@@ -1,3 +1,5 @@
+import Search from "./modules/Search";
+
 /*** Back to top javascript ***/
 
 const scrollTopButton = document.getElementById("js--back-to-top");
@@ -25,3 +27,5 @@ function topFunction() {
 }
 
 scrollTopButton.addEventListener("click", topFunction);
+
+const search = new Search();
