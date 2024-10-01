@@ -129,7 +129,7 @@
         </div>
       </div>
     </footer>
-    <div class="search-overlay search-overlay--active p-3">
+    <div class="search-overlay p-3">
       <div class="search-overlay__top">
         <div class="container p-1">
           <span class="search-overlay__icon vicon-magnifying-glass" aria-hidden="true"></span>
