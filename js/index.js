@@ -1,5 +1,3 @@
-import "../css/search.css";
-
 import { Search } from "./modules/Search.js";
 
 /*** Back to top javascript ***/
