@@ -13,6 +13,18 @@
 
   add_action('wp_enqueue_scripts', 'edutheme_files');
 
+  function add_type_attribute($tag, $handle, $src) {
+    // if not your script, do nothing and return original $tag
+    if ( 'main-js-file' !== $handle ) {
+        return $tag;
+    }
+    // change the script tag by adding type="module" and return it.
+    $tag = '<script type="module" src="' . esc_url( $src ) . '"></script>';
+    return $tag;
+}
+
+add_filter('script_loader_tag', 'add_type_attribute' , 10, 3);
+
   // Dedicated scripts
   function add_custom_js_to_specific_page() {
 
