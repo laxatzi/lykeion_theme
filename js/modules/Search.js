@@ -1,13 +1,13 @@
-import $ from "jquery";
+//import $ from "jquery";
 
 class Search {
   // 1. describe and create/initiate our object
   constructor() {
-    this.resultsDiv = $("#search-overlay__results");
-    this.openButton = $(".js--search-trigger");
-    this.closeButton = $(".search-overlay__close");
-    this.searchOverlay = $(".search-overlay");
-    this.searchField = $("#search-term");
+    this.resultsDiv = jQuery("#search-overlay__results");
+    this.openButton = jQuery(".js--search-trigger");
+    this.closeButton = jQuery(".search-overlay__close");
+    this.searchOverlay = jQuery(".search-overlay");
+    this.searchField = jQuery("#search-term");
     this.events();
     this.isOverlayOpen = false;
     this.isSpinnerVisible = false;
@@ -19,7 +19,7 @@ class Search {
   events() {
     this.openButton.on("click", this.openOverlay.bind(this));
     this.closeButton.on("click", this.closeOverlay.bind(this));
-    $(document).on("keydown", this.keyPressDispatcher.bind(this));
+    jQuery(document).on("keydown", this.keyPressDispatcher.bind(this));
     this.searchField.on("keyup", this.typingLogic.bind(this));
   }
 
@@ -52,7 +52,7 @@ class Search {
     if (
       e.keyCode == 83 &&
       !this.isOverlayOpen &&
-      !$("input, textarea").is(":focus")
+      !jQuery("input, textarea").is(":focus")
     ) {
       this.openOverlay();
     }
@@ -64,14 +64,14 @@ class Search {
 
   openOverlay() {
     this.searchOverlay.addClass("search-overlay--active");
-    $("body").addClass("body-no-scroll");
+    jQuery("body").addClass("body-no-scroll");
     console.log("our open method just ran!");
     this.isOverlayOpen = true;
   }
 
   closeOverlay() {
     this.searchOverlay.removeClass("search-overlay--active");
-    $("body").removeClass("body-no-scroll");
+    jQuery("body").removeClass("body-no-scroll");
     console.log("our close method just ran!");
     this.isOverlayOpen = false;
   }
