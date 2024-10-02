@@ -1,4 +1,4 @@
-import Search from "./modules/Search";
+import { Search } from "./modules/Search.js";
 
 /*** Back to top javascript ***/
 
