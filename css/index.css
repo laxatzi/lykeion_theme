@@ -2825,7 +2825,7 @@ h5 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #8c84a5;
+  background-color: #7564a7;
   visibility: hidden;
   opacity: 0;
   transform: scale(1.09);
@@ -2835,7 +2835,7 @@ h5 {
 
 .search-overlay--active {
   visibility: visible;
-  opacity: 0.85;
+  opacity: 0.95;
   transform: scale(1);
 }
 
@@ -2895,8 +2895,8 @@ body.admin-bar .search-overlay {
   padding: 15px 0;
   margin: 0;
   background-color: #e7e1ef;
-  font-size: 1.15rem;
-  font-weight: 300;
+  font-size: 1.25rem;
+  font-weight: 800;
   outline: none;
   z-index: 11;
 }
