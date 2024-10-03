@@ -32,6 +32,7 @@ scrollTopButton.addEventListener("click", topFunction);
 const navSearch = document.querySelector(".nav-search");
 const navPlus = document.querySelector(".nav-plus");
 const searchOverlay = document.querySelector(".search-overlay");
+const closeOverlay = document.querySelector(".search_overlay__close-div");
 
 if (navSearch !== undefined && navSearch !== null) {
   navSearch.addEventListener("click", (e) => {
@@ -53,5 +54,11 @@ function openOverlay() {
   searchOverlay.classList.add("search-overlay--active");
   document.body.classList.add("body-no-scroll");
 
-  console.log("our open method just ran!");
+  console.log("our OPEN method just ran!");
+}
+
+function closeOverlay() {
+  searchOverlay.classList.remove("search-overlay--active");
+  document.body.classList.remove("body-no-scroll");
+  console.log("our CLOSE method just ran!");
 }
