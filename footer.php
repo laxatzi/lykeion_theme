@@ -130,11 +130,13 @@
       </div>
     </footer>
     <div class="search-overlay p-3">
-       <div class="search-overlay__top">
-        <div class="container p-1">
-          <span class="search-overlay__icon vicon-magnifying-glass" aria-hidden="true"></span>
+       <div class="search-overlay__top" style="border: 1px solid red;">
+        <div class="container p-1 d-flex">
+          <div class="d-flex align-items-center" style="border: 1px solid red">
+            <span class="search-overlay__icon vicon-magnifying-glass" aria-hidden="true"></span>
+          </div>
           <input type="text" class="search-term" placeholder=" Type a query to find what you are looking for!" id="search-term" autofocus>
-          <div class="d-flex justify-content-end">
+          <div class="d-flex align-items-center" style="border: 1px solid red">
             <span  class="search-overlay__close vicon-close-modal" aria-hidden="true"></span>
           </div>
         </div>
