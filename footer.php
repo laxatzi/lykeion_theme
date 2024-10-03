@@ -131,7 +131,7 @@
     </footer>
     <div class="search-overlay p-3">
        <div class="search-overlay__top" style="border: 1px solid red;">
-        <div class="container p-1 d-flex">
+        <div class="container p-1 d-flex justify-content-between">
           <div class="d-flex align-items-center" style="border: 1px solid red">
             <span class="search-overlay__icon vicon-magnifying-glass" aria-hidden="true"></span>
           </div>
