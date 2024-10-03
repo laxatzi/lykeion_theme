@@ -1,5 +1,4 @@
-import { Search } from "./modules/Search.js";
-
+//import { Search } from "./modules/Search.js";
 /*** Back to top javascript ***/
 
 const scrollTopButton = document.getElementById("js--back-to-top");
@@ -28,4 +27,29 @@ function topFunction() {
 
 scrollTopButton.addEventListener("click", topFunction);
 
-const search = new Search();
+//const search = new Search();
+
+const navSearch = document.querySelector(".nav-search");
+const navPlus = document.querySelector(".nav-plus");
+const searchOverlay = document.querySelector(".search-overlay");
+
+if (navSearch !== undefined && navSearch !== null) {
+  navSearch.addEventListener("click", (e) => {
+    e.preventDefault();
+    openOverlay();
+  });
+} else {
+  console.log("openButton is null");
+}
+
+if (navPlus !== undefined && navPlus !== null) {
+  navPlus.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("Nav plus was clicked!");
+  });
+}
+
+function openOverlay() {
+  searchOverlay.classList.add("search-overlay--active");
+  console.log("our open method just ran!");
+}
