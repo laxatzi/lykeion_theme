@@ -51,5 +51,7 @@ if (navPlus !== undefined && navPlus !== null) {
 
 function openOverlay() {
   searchOverlay.classList.add("search-overlay--active");
+  document.body.classList.add("body-no-scroll");
+
   console.log("our open method just ran!");
 }
