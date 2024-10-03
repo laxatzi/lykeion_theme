@@ -2833,6 +2833,12 @@ h5 {
   box-sizing: border-box;
 }
 
+.search-overlay--active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
 /* .search-overlay p {
   padding-top: 15px;
 } */
@@ -2860,12 +2866,6 @@ body.admin-bar .search-overlay {
 .search-overlay__icon {
   margin-right: 10px;
   font-size: 1.8rem;
-}
-
-.search-overlay--active {
-  visibility: visible;
-  opacity: 1;
-  transform: scale(1);
 }
 
 /* .search-overlay__section-title {
