@@ -32,7 +32,7 @@ scrollTopButton.addEventListener("click", topFunction);
 const navSearch = document.querySelector(".nav-search");
 const navPlus = document.querySelector(".nav-plus");
 const searchOverlay = document.querySelector(".search-overlay");
-const closeOverlay = document.querySelector(".search_overlay__close-div");
+const closeOverlayButton = document.querySelector(".search_overlay__close-div");
 
 if (navSearch !== undefined && navSearch !== null) {
   navSearch.addEventListener("click", (e) => {
@@ -40,7 +40,7 @@ if (navSearch !== undefined && navSearch !== null) {
     openOverlay();
   });
 } else {
-  console.log("openButton is null");
+  console.log("navSearch is null");
 }
 
 if (navPlus !== undefined && navPlus !== null) {
@@ -48,6 +48,14 @@ if (navPlus !== undefined && navPlus !== null) {
     e.preventDefault();
     console.log("Nav plus was clicked!");
   });
+}
+
+if (closeOverlayButton !== undefined && closeOverlayButton !== null) {
+  closeOverlayButton.addEventListener("click", () => {
+    closeOverlay();
+  });
+} else {
+  console.log("closeOverlayButton is null!");
 }
 
 function openOverlay() {
