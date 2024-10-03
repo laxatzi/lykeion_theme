@@ -19,7 +19,7 @@
         return $tag;
     }
     // change the script tag by adding type="module" and return it.
-    $tag = '<script type="module" src="' . esc_url( $src ) . '"></script>';
+    $tag = '<script type="module"  src="' . esc_url( $src ) . '"></script>';
     return $tag;
 }
 // Use the script_loader_tag hook
