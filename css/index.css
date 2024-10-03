@@ -2891,13 +2891,14 @@ body.admin-bar .search-overlay {
 .search-term {
   width: 75%;
   box-sizing: border-box;
-  border: 1px solid;
+  border: none;
   padding: 15px 0;
   margin: 0;
-  background-color: transparent;
+  background-color: #e7e1ef;
   font-size: 1.15rem;
   font-weight: 300;
   outline: none;
+  z-index: 11;
 }
 
 .body-no-scroll {
