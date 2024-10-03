@@ -136,7 +136,7 @@
             <span class="search-overlay__icon vicon-magnifying-glass" aria-hidden="true"></span>
           </div>
           <input type="text" class="search-term" placeholder=" Type a query to find what you are looking for!" id="search-term" autofocus>
-          <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center search_overlay__close-div" >
             <span  class="search-overlay__close vicon-close-modal" aria-hidden="true"></span>
           </div>
         </div>
