@@ -81,7 +81,7 @@ function closeLayer() {
 
 function keyStarter(e) {
   if (
-    e.keyCode == 83 &&
+    e.key == "s" &&
     !isLayer &&
     document.activeElement.tagName != "INPUT" &&
     document.activeElement.tagName != "TEXTAREA"
@@ -89,7 +89,7 @@ function keyStarter(e) {
     openLayer();
   }
 
-  if (e.keyCode == 27 && isLayer) {
+  if (e.key == "Escape" && isLayer) {
     closeLayer();
   }
 }
