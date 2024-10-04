@@ -8,6 +8,7 @@ const searchLayer = document.querySelector(".search-layer");
 const closeLayerButton = document.querySelector(".search_layer__close-div");
 let isLayer = false;
 const searchInput = document.querySelector("#search-query");
+let typingTimer;
 
 // ********************************************************************
 // # Events
@@ -39,7 +40,8 @@ if (closeLayerButton !== undefined && closeLayerButton !== null) {
   console.log("closeLayerButton is null!");
 }
 
-document.addEventListener("keydown", (e) => keyStarter(e));
+document.addEventListener("keyup", (e) => keyStarter(e));
+searchInput.addEventListener("keyup", () => queryLogic());
 
 // ********************************************************************
 // # Functions
@@ -73,4 +75,9 @@ function keyStarter(e) {
   if (e.key == "Escape" && isLayer) {
     closeLayer();
   }
+}
+
+function queryLogic() {
+  clearTimeout(typingTimer);
+  typingTimer = setTimeout(() => console.log(searchInput.value), 1000);
 }
