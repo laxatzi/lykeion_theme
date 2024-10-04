@@ -143,7 +143,7 @@
        </div>
       <div class="search-layer__bottom">
         <div class="container">
-          <div id="search-layer__query-results">this is a query result!</div>
+          <div id="search-layer__query-results"></div>
         </div>
      </div>
 
