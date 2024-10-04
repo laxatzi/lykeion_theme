@@ -76,3 +76,18 @@ function closeOverlay() {
   isOverlayOpen = false;
   console.log("our CLOSE method just ran!");
 }
+
+function keyStarter(e) {
+  if (
+    e.keyCode == 83 &&
+    !isOverlayOpen &&
+    document.activeElement.tagName != "INPUT" &&
+    document.activeElement.tagName != "TEXTAREA"
+  ) {
+    this.openOverlay();
+  }
+
+  if (e.keyCode == 27 && isOverlayOpen) {
+    closeOverlay();
+  }
+}
