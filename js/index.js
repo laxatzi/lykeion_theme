@@ -36,6 +36,7 @@ const navPlus = document.querySelector(".nav-plus");
 const searchOverlay = document.querySelector(".search-overlay");
 const closeOverlayButton = document.querySelector(".search_overlay__close-div");
 let isOverlayOpen = false;
+const searchField = document.querySelector("#search-term");
 
 if (navSearch !== undefined && navSearch !== null) {
   navSearch.addEventListener("click", (e) => {
@@ -67,6 +68,7 @@ function openOverlay() {
   searchOverlay.classList.add("search-overlay--active");
   document.body.classList.add("body-no-scroll");
   isOverlayOpen = true;
+  setTimeout(() => searchField.focus(), 400);
   console.log("our OPEN method just ran!");
 }
 
