@@ -129,15 +129,15 @@
         </div>
       </div>
     </footer>
-    <div class="search-overlay p-3">
-       <div class="search-overlay__top" >
+    <div class="search-layer p-3">
+       <div class="search-layer__top" >
         <div class="container p-1 d-flex justify-content-between">
           <div class="d-flex align-items-center" >
-            <span class="search-overlay__icon vicon-magnifying-glass" aria-hidden="true"></span>
+            <span class="search-layer__icon vicon-magnifying-glass" aria-hidden="true"></span>
           </div>
-          <input type="text" class="search-term" placeholder=" Type a query to find what you are looking for!" id="search-term" autofocus>
-          <div class="d-flex align-items-center search_overlay__close-div" >
-            <span  class="search-overlay__close vicon-close-modal" aria-hidden="true"></span>
+          <input type="text" class="search-query" placeholder=" Type a query to find what you are looking for!" id="search-query">
+          <div class="d-flex align-items-center search_layer__close-div" >
+            <span  class="search-layer__close vicon-close-modal" aria-hidden="true"></span>
           </div>
         </div>
        </div>
