@@ -35,7 +35,7 @@ const navSearch = document.querySelector(".nav-search");
 const navPlus = document.querySelector(".nav-plus");
 const searchOverlay = document.querySelector(".search-overlay");
 const closeOverlayButton = document.querySelector(".search_overlay__close-div");
-const isOverlayOpen = false;
+let isOverlayOpen = false;
 
 if (navSearch !== undefined && navSearch !== null) {
   navSearch.addEventListener("click", (e) => {
@@ -84,10 +84,12 @@ function keyStarter(e) {
     document.activeElement.tagName != "INPUT" &&
     document.activeElement.tagName != "TEXTAREA"
   ) {
-    this.openOverlay();
+    openOverlay();
   }
 
   if (e.keyCode == 27 && isOverlayOpen) {
     closeOverlay();
   }
 }
+
+document.addEventListener("keydown", (e) => keyStarter(e));
