@@ -33,9 +33,9 @@ scrollTopButton.addEventListener("click", topFunction);
 
 const navSearch = document.querySelector(".nav-search");
 const navPlus = document.querySelector(".nav-plus");
-const searchOverlay = document.querySelector(".search-overlay");
-const closeOverlayButton = document.querySelector(".search_overlay__close-div");
-let isOverlayOpen = false;
+const searchLayer = document.querySelector(".search-overlay");
+const closeLayerButton = document.querySelector(".search_overlay__close-div");
+let isLayer = false;
 const searchInput = document.querySelector("#search-term");
 
 if (navSearch !== undefined && navSearch !== null) {
@@ -56,40 +56,40 @@ if (navPlus !== undefined && navPlus !== null) {
   console.log("navPlus is null");
 }
 
-if (closeOverlayButton !== undefined && closeOverlayButton !== null) {
-  closeOverlayButton.addEventListener("click", () => {
+if (closeLayerButton !== undefined && closeLayerButton !== null) {
+  closeLayerButton.addEventListener("click", () => {
     closeOverlay();
   });
 } else {
-  console.log("closeOverlayButton is null!");
+  console.log("closeLayerButton is null!");
 }
 
 function openOverlay() {
-  searchOverlay.classList.add("search-overlay--active");
+  searchLayer.classList.add("search-overlay--active");
   document.body.classList.add("body-no-scroll");
-  isOverlayOpen = true;
+  isLayer = true;
   setTimeout(() => searchInput.focus(), 400);
   console.log("our OPEN method just ran!");
 }
 
 function closeOverlay() {
-  searchOverlay.classList.remove("search-overlay--active");
+  searchLayer.classList.remove("search-overlay--active");
   document.body.classList.remove("body-no-scroll");
-  isOverlayOpen = false;
+  isLayer = false;
   console.log("our CLOSE method just ran!");
 }
 
 function keyStarter(e) {
   if (
     e.keyCode == 83 &&
-    !isOverlayOpen &&
+    !isLayer &&
     document.activeElement.tagName != "INPUT" &&
     document.activeElement.tagName != "TEXTAREA"
   ) {
     openOverlay();
   }
 
-  if (e.keyCode == 27 && isOverlayOpen) {
+  if (e.keyCode == 27 && isLayer) {
     closeOverlay();
   }
 }
