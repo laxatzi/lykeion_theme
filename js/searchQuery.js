@@ -6,9 +6,12 @@ const navSearch = document.querySelector(".nav-search");
 const navPlus = document.querySelector(".nav-plus");
 const searchLayer = document.querySelector(".search-layer");
 const closeLayerButton = document.querySelector(".search_layer__close-div");
-let isLayer = false;
 const searchInput = document.querySelector("#search-query");
 let typingTimer;
+let queryResults = document.querySelector("#search-layer__query-results");
+// state
+let isLayer = false;
+let isLoaderVisible = false;
 
 // ********************************************************************
 // # Events
@@ -79,5 +82,13 @@ function keyStarter(e) {
 
 function queryLogic() {
   clearTimeout(typingTimer);
-  typingTimer = setTimeout(() => console.log(searchInput.value), 1000);
+  if (!isLoaderVisible) {
+    queryResults.innerHTML = '<div class="spinner-loader"></div>';
+    isLoaderVisible = true;
+    typingTimer = setTimeout(getQueryResults, 1000);
+  }
+}
+
+function getQueryResults() {
+  queryResults.innerHTML = "I am a search result!";
 }
