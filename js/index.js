@@ -1,4 +1,6 @@
 //import { Search } from "./modules/Search.js";
+// ** words to use for the search field = layer, keyStarter
+
 /*** Back to top javascript ***/
 
 const scrollTopButton = document.getElementById("js--back-to-top");
@@ -33,6 +35,7 @@ const navSearch = document.querySelector(".nav-search");
 const navPlus = document.querySelector(".nav-plus");
 const searchOverlay = document.querySelector(".search-overlay");
 const closeOverlayButton = document.querySelector(".search_overlay__close-div");
+const isOverlayOpen = false;
 
 if (navSearch !== undefined && navSearch !== null) {
   navSearch.addEventListener("click", (e) => {
@@ -48,6 +51,8 @@ if (navPlus !== undefined && navPlus !== null) {
     e.preventDefault();
     console.log("Nav plus was clicked!");
   });
+} else {
+  console.log("navPlus is null");
 }
 
 if (closeOverlayButton !== undefined && closeOverlayButton !== null) {
@@ -61,12 +66,13 @@ if (closeOverlayButton !== undefined && closeOverlayButton !== null) {
 function openOverlay() {
   searchOverlay.classList.add("search-overlay--active");
   document.body.classList.add("body-no-scroll");
-
+  isOverlayOpen = true;
   console.log("our OPEN method just ran!");
 }
 
 function closeOverlay() {
   searchOverlay.classList.remove("search-overlay--active");
   document.body.classList.remove("body-no-scroll");
+  isOverlayOpen = false;
   console.log("our CLOSE method just ran!");
 }
