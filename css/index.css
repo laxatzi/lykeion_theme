@@ -2857,12 +2857,17 @@ body.admin-bar .search-layer {
   top: 26px;
 }
 
-.search-layer__top {
+.search-layer__top,
+.search-layer__bottom {
   background-color: #e7e1ef;
   width: 60%;
   margin: 0 auto;
   border: 1px solid transparent;
   border-radius: 5px;
+}
+
+.search-layer__bottom {
+  margin-top: 25px;
 }
 
 .search-layer__icon {
@@ -2890,7 +2895,8 @@ body.admin-bar .search-layer {
   padding-bottom: 0;
 }
 
-.search-query {
+.search-query-input,
+#search-layer__query-results {
   width: 75%;
   box-sizing: border-box;
   border: none;
