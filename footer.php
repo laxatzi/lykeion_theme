@@ -135,16 +135,18 @@
           <div class="d-flex align-items-center" >
             <span class="search-layer__icon vicon-magnifying-glass" aria-hidden="true"></span>
           </div>
-          <input type="text" class="search-query" placeholder=" Type a query to find what you are looking for!" id="search-query">
+          <input type="text" class="search-query-input" placeholder=" Type a query to find what you are looking for!" id="search-query">
           <div class="d-flex align-items-center search_layer__close-div" >
             <span  class="search-layer__close vicon-close-modal" aria-hidden="true"></span>
           </div>
         </div>
        </div>
-
-     <div class="container">
-       <div id="search-overlay__results"></div>
+      <div class="search-layer__bottom">
+        <div class="container">
+          <div id="search-layer__query-results">this is a query result!</div>
+        </div>
      </div>
+
    </div>
 <?php
   wp_footer();
