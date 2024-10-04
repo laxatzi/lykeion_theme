@@ -41,7 +41,7 @@ const searchInput = document.querySelector("#search-query");
 if (navSearch !== undefined && navSearch !== null) {
   navSearch.addEventListener("click", (e) => {
     e.preventDefault();
-    openOverlay();
+    openLayer();
   });
 } else {
   console.log("navSearch is null");
@@ -58,13 +58,13 @@ if (navPlus !== undefined && navPlus !== null) {
 
 if (closeLayerButton !== undefined && closeLayerButton !== null) {
   closeLayerButton.addEventListener("click", () => {
-    closeOverlay();
+    closeLayer();
   });
 } else {
   console.log("closeLayerButton is null!");
 }
 
-function openOverlay() {
+function openLayer() {
   searchLayer.classList.add("search-layer--active");
   document.body.classList.add("body-no-scroll");
   isLayer = true;
@@ -72,7 +72,7 @@ function openOverlay() {
   console.log("our OPEN method just ran!");
 }
 
-function closeOverlay() {
+function closeLayer() {
   searchLayer.classList.remove("search-layer--active");
   document.body.classList.remove("body-no-scroll");
   isLayer = false;
@@ -86,11 +86,11 @@ function keyStarter(e) {
     document.activeElement.tagName != "INPUT" &&
     document.activeElement.tagName != "TEXTAREA"
   ) {
-    openOverlay();
+    openLayer();
   }
 
   if (e.keyCode == 27 && isLayer) {
-    closeOverlay();
+    closeLayer();
   }
 }
 
