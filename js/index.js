@@ -33,10 +33,10 @@ scrollTopButton.addEventListener("click", topFunction);
 
 const navSearch = document.querySelector(".nav-search");
 const navPlus = document.querySelector(".nav-plus");
-const searchLayer = document.querySelector(".search-overlay");
-const closeLayerButton = document.querySelector(".search_overlay__close-div");
+const searchLayer = document.querySelector(".search-layer");
+const closeLayerButton = document.querySelector(".search_layer__close-div");
 let isLayer = false;
-const searchInput = document.querySelector("#search-term");
+const searchInput = document.querySelector("#search-query");
 
 if (navSearch !== undefined && navSearch !== null) {
   navSearch.addEventListener("click", (e) => {
@@ -65,7 +65,7 @@ if (closeLayerButton !== undefined && closeLayerButton !== null) {
 }
 
 function openOverlay() {
-  searchLayer.classList.add("search-overlay--active");
+  searchLayer.classList.add("search-layer--active");
   document.body.classList.add("body-no-scroll");
   isLayer = true;
   setTimeout(() => searchInput.focus(), 400);
@@ -73,7 +73,7 @@ function openOverlay() {
 }
 
 function closeOverlay() {
-  searchLayer.classList.remove("search-overlay--active");
+  searchLayer.classList.remove("search-layer--active");
   document.body.classList.remove("body-no-scroll");
   isLayer = false;
   console.log("our CLOSE method just ran!");
