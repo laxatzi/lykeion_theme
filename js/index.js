@@ -30,7 +30,7 @@ function topFunction() {
 scrollTopButton.addEventListener("click", topFunction);
 
 //const search = new Search();
-
+// Variables
 const navSearch = document.querySelector(".nav-search");
 const navPlus = document.querySelector(".nav-plus");
 const searchLayer = document.querySelector(".search-layer");
@@ -38,6 +38,7 @@ const closeLayerButton = document.querySelector(".search_layer__close-div");
 let isLayer = false;
 const searchInput = document.querySelector("#search-query");
 
+// Events
 if (navSearch !== undefined && navSearch !== null) {
   navSearch.addEventListener("click", (e) => {
     e.preventDefault();
@@ -63,6 +64,10 @@ if (closeLayerButton !== undefined && closeLayerButton !== null) {
 } else {
   console.log("closeLayerButton is null!");
 }
+
+document.addEventListener("keydown", (e) => keyStarter(e));
+
+// Functions
 
 function openLayer() {
   searchLayer.classList.add("search-layer--active");
@@ -93,5 +98,3 @@ function keyStarter(e) {
     closeLayer();
   }
 }
-
-document.addEventListener("keydown", (e) => keyStarter(e));
