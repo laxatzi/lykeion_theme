@@ -83,9 +83,12 @@ function keyStarter(e) {
 function queryLogic() {
   clearTimeout(typingTimer);
   if (!isLoaderVisible) {
-    queryResults.innerHTML = '<div class="spinner-loader"></div>';
+    queryResults.innerHTML = '<div class="loader"></div>';
     isLoaderVisible = true;
-    typingTimer = setTimeout(getQueryResults, 1000);
+    typingTimer = setTimeout(getQueryResults, 800);
+  } else {
+    queryResults.innerHTML = "";
+    isLoaderVisible = false;
   }
 }
 
