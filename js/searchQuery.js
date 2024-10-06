@@ -84,10 +84,13 @@ function keyStarter(e) {
 function queryLogic() {
   if (searchInput.value !== prevQuery) {
     clearTimeout(typingTimer);
-    if (!isLoaderVisible) {
-      queryResults.innerHTML = '<div class="loader"></div>';
-      isLoaderVisible = true;
-      typingTimer = setTimeout(getQueryResults, 1000);
+
+    if (searchInput.value) {
+      if (!isLoaderVisible) {
+        queryResults.innerHTML = '<div class="loader"></div>';
+        isLoaderVisible = true;
+        typingTimer = setTimeout(getQueryResults, 1000);
+      }
     } else {
       queryResults.innerHTML = "";
       isLoaderVisible = false;
