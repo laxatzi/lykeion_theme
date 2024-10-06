@@ -7,11 +7,12 @@ const navPlus = document.querySelector(".nav-plus");
 const searchLayer = document.querySelector(".search-layer");
 const closeLayerButton = document.querySelector(".search_layer__close-div");
 const searchInput = document.querySelector("#search-query");
-let typingTimer;
 let queryResults = document.querySelector("#search-layer__query-results");
 // state
 let isLayer = false;
 let isLoaderVisible = false;
+let prevQuery;
+let typingTimer;
 
 // ********************************************************************
 // # Events
@@ -81,15 +82,19 @@ function keyStarter(e) {
 }
 
 function queryLogic() {
-  clearTimeout(typingTimer);
-  if (!isLoaderVisible) {
-    queryResults.innerHTML = '<div class="loader"></div>';
-    isLoaderVisible = true;
-    typingTimer = setTimeout(getQueryResults, 800);
-  } else {
-    queryResults.innerHTML = "";
-    isLoaderVisible = false;
+  if (searchInput.value !== prevQuery) {
+    clearTimeout(typingTimer);
+    if (!isLoaderVisible) {
+      queryResults.innerHTML = '<div class="loader"></div>';
+      isLoaderVisible = true;
+      typingTimer = setTimeout(getQueryResults, 1000);
+    } else {
+      queryResults.innerHTML = "";
+      isLoaderVisible = false;
+    }
   }
+
+  prevQuery = searchInput.value;
 }
 
 function getQueryResults() {
