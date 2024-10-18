@@ -44,7 +44,7 @@ if (closeLayerButton !== undefined && closeLayerButton !== null) {
   console.log("closeLayerButton is null!");
 }
 
-document.addEventListener("keyup", (e) => keyStarter(e));
+document.addEventListener("keyup", (e) => keyStart(e));
 searchInput.addEventListener("keyup", () => queryLogic());
 
 // ********************************************************************
@@ -66,7 +66,7 @@ function closeLayer() {
   console.log("our CLOSE method just ran!");
 }
 
-function keyStarter(e) {
+function keyStart(e) {
   if (
     e.key == "s" &&
     !isLayer &&
