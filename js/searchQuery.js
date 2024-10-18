@@ -102,4 +102,5 @@ function showQuery() {
 
 function getQueryResults() {
   queryResults.innerHTML = "I am a search result!";
+  isLoaderVisible = false;
 }
