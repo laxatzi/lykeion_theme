@@ -45,7 +45,7 @@ if (closeLayerButton !== undefined && closeLayerButton !== null) {
 }
 
 document.addEventListener("keyup", (e) => keyStart(e));
-searchInput.addEventListener("keyup", () => queryLogic());
+searchInput.addEventListener("keyup", () => showQuery());
 
 // ********************************************************************
 // # Functions
@@ -81,7 +81,7 @@ function keyStart(e) {
   }
 }
 
-function queryLogic() {
+function showQuery() {
   if (searchInput.value !== prevQuery) {
     clearTimeout(typingTimer);
 
