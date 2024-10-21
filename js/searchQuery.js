@@ -109,7 +109,17 @@ function getQueryResults() {
       return response.json(); // Parse the JSON from the response
     })
     .then((posts) => {
-      alert(posts[0].title.rendered); // Alert the title of the first post
+      queryResults.innerHTML = `
+        <h2 class="search-overlay__section-title">Results:</h2>
+        <ul class="link-list min-list">
+          ${posts
+            .map(
+              (post) =>
+                `<li><a href="${post.link}">${post.title.rendered}</a></li>`
+            )
+            .join("")}
+        </ul>
+      `;
     })
     .catch((error) => {
       console.error("There was a problem with the fetch operation:", error);
