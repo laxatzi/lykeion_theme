@@ -2909,6 +2909,23 @@ body.admin-bar .search-layer {
   z-index: 11;
 }
 
+#search-layer__query-results .link-list li {
+  border: 1px dotted var(--cc-primary-bg);
+  padding: 10px 5px;
+  border-radius: 3px;
+}
+
+#search-layer__query-results .link-list li a {
+  text-decoration: underline;
+}
+
+#search-layer__query-results li {
+  list-style-type: none;
+}
+
+#search-layer__query-results .link-list p {
+  font-weight: normal;
+}
 .body-no-scroll {
   overflow: hidden;
 }
