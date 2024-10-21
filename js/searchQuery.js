@@ -1,5 +1,5 @@
 // ********************************************************************
-// # Variable
+// # Variables
 //****************************************************************** */
 
 const navSearch = document.querySelector(".nav-search");
@@ -30,7 +30,6 @@ if (navSearch !== undefined && navSearch !== null) {
 if (navPlus !== undefined && navPlus !== null) {
   navPlus.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log("Nav plus was clicked!");
   });
 } else {
   console.log("navPlus is null");
@@ -44,7 +43,7 @@ if (closeLayerButton !== undefined && closeLayerButton !== null) {
   console.log("closeLayerButton is null!");
 }
 
-document.addEventListener("keyup", (e) => keyStart(e));
+document.addEventListener("keydown", (e) => keyStart(e));
 searchInput.addEventListener("keyup", () => showQuery());
 
 // ********************************************************************
@@ -56,14 +55,12 @@ function openLayer() {
   document.body.classList.add("body-no-scroll");
   isLayer = true;
   setTimeout(() => searchInput.focus(), 400);
-  console.log("our OPEN method just ran!");
 }
 
 function closeLayer() {
   searchLayer.classList.remove("search-layer--active");
   document.body.classList.remove("body-no-scroll");
   isLayer = false;
-  console.log("our CLOSE method just ran!");
 }
 
 function keyStart(e) {
@@ -89,8 +86,8 @@ function showQuery() {
       if (!isLoaderVisible) {
         queryResults.innerHTML = '<div class="loader"></div>';
         isLoaderVisible = true;
-        typingTimer = setTimeout(getQueryResults, 1000);
       }
+      typingTimer = setTimeout(getQueryResults, 1000);
     } else {
       queryResults.innerHTML = "";
       isLoaderVisible = false;
@@ -101,6 +98,22 @@ function showQuery() {
 }
 
 function getQueryResults() {
-  queryResults.innerHTML = "I am a search result!";
+  // queryResults.innerHTML = "I am a search result!";
+  const searchFieldValue = searchInput.value; // Get the value from the search field
+
+  fetch(`/wp-json/wp/v2/posts?search=${encodeURIComponent(searchFieldValue)}`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json(); // Parse the JSON from the response
+    })
+    .then((posts) => {
+      alert(posts[0].title.rendered); // Alert the title of the first post
+    })
+    .catch((error) => {
+      console.error("There was a problem with the fetch operation:", error);
+    });
+
   isLoaderVisible = false;
 }
