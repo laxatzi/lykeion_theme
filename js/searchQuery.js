@@ -111,14 +111,23 @@ function getQueryResults() {
     .then((posts) => {
       queryResults.innerHTML = `
         <h2 class="search-overlay__section-title">Results:</h2>
-        <ul class="link-list min-list">
+        ${
+          posts.length
+            ? `<ul class="link-list min-list">`
+            : `<p>No results matches your search!</p>`
+        }
+
           ${posts
             .map(
               (post) =>
-                `<li><a href="${post.link}">${post.title.rendered}</a></li>`
+                `<li>
+                  <h3><a href="${post.link}">${post.title.rendered}</a></h3>
+                  <p>${post.excerpt.rendered}</p>
+                 </li>
+              `
             )
             .join("")}
-        </ul>
+      ${posts.length ? `</ul>` : ""}
       `;
     })
     .catch((error) => {
