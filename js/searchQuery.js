@@ -101,7 +101,10 @@ function getQueryResults() {
   // queryResults.innerHTML = "I am a search result!";
   const searchFieldValue = searchInput.value; // Get the value from the search field
 
-  fetch(`/wp-json/wp/v2/posts?search=${encodeURIComponent(searchFieldValue)}`)
+  fetch(
+    eduthemeData.root_url +
+      `/wp-json/wp/v2/posts?search=${encodeURIComponent(searchFieldValue)}`
+  )
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
