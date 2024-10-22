@@ -129,25 +129,7 @@
         </div>
       </div>
     </footer>
-    <div class="search-layer p-3">
-       <div class="search-layer__top" >
-        <div class="container p-1 d-flex justify-content-between">
-          <div class="d-flex align-items-center" >
-            <span class="search-layer__icon vicon-magnifying-glass" aria-hidden="true"></span>
-          </div>
-          <input type="text" class="search-query-input" placeholder=" Type a query to find what you are looking for!" id="search-query">
-          <div class="d-flex align-items-center search_layer__close-div" >
-            <span  class="search-layer__close vicon-close-modal" aria-hidden="true"></span>
-          </div>
-        </div>
-       </div>
-      <div class="search-layer__bottom">
-        <div class="container">
-          <div id="search-layer__query-results"></div>
-        </div>
-     </div>
 
-   </div>
 <?php
   wp_footer();
 ?>
