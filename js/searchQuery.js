@@ -53,8 +53,9 @@ searchInput.addEventListener("keyup", () => showQuery());
 function openLayer() {
   searchLayer.classList.add("search-layer--active");
   document.body.classList.add("body-no-scroll");
-  isLayer = true;
+  searchInput.value = "";
   setTimeout(() => searchInput.focus(), 400);
+  isLayer = true;
 }
 
 function closeLayer() {
@@ -87,7 +88,7 @@ function showQuery() {
         queryResults.innerHTML = '<div class="loader"></div>';
         isLoaderVisible = true;
       }
-      typingTimer = setTimeout(getQueryResults, 1000);
+      typingTimer = setTimeout(getQueryResults, 650);
     } else {
       queryResults.innerHTML = "";
       isLoaderVisible = false;
