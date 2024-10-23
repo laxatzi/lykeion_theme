@@ -54,6 +54,7 @@ function openLayer() {
   searchLayer.classList.add("search-layer--active");
   document.body.classList.add("body-no-scroll");
   searchInput.value = "";
+  queryResults.innerHTML = "";
   setTimeout(() => searchInput.focus(), 400);
   isLayer = true;
 }
