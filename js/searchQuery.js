@@ -99,30 +99,45 @@ function showQuery() {
   prevQuery = searchInput.value;
 }
 
-function getQueryResults() {
-  // queryResults.innerHTML = "I am a search result!";
+async function getQueryResults() {
   const searchFieldValue = searchInput.value; // Get the value from the search field
 
-  fetch(
-    eduthemeData.root_url +
-      `/wp-json/wp/v2/posts?search=${encodeURIComponent(searchFieldValue)}`
-  )
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      return response.json(); // Parse the JSON from the response
-    })
-    .then((posts) => {
-      queryResults.innerHTML = `
+  try {
+    // Define the two URLs for fetching data
+    const url1 = `/wp-json/wp/v2/posts?search=${encodeURIComponent(
+      searchFieldValue
+    )}`;
+    const url2 = `/wp-json/wp/v2/pages?search=${encodeURIComponent(
+      searchFieldValue
+    )}`; // Adjust this URL as needed
+
+    // Use Promise.all to fetch both URLs concurrently
+    const [response1, response2] = await Promise.all([
+      fetch(url1),
+      fetch(url2),
+    ]);
+
+    // Check if both responses are OK
+    if (!response1.ok || !response2.ok) {
+      throw new Error("One or more requests failed");
+    }
+
+    // Parse the JSON responses
+    const posts = await response1.json();
+    const pages = await response2.json();
+
+    // Combine the results (example: merging arrays)
+    const combinedResults = [...posts, ...pages];
+
+    queryResults.innerHTML = `
         <h2 class="search-overlay__section-title">Results:</h2>
         ${
-          posts.length
+          combinedResults.length
             ? `<ul class="link-list min-list">`
             : `<p>No results matches your search!</p>`
         }
 
-          ${posts
+          ${combinedResults
             .map(
               (post) =>
                 `<li>
@@ -132,12 +147,51 @@ function getQueryResults() {
               `
             )
             .join("")}
-      ${posts.length ? `</ul>` : ""}
+      ${combinedResults.length ? `</ul>` : ""}
       `;
-    })
-    .catch((error) => {
-      console.error("There was a problem with the fetch operation:", error);
-    });
+  } catch (error) {
+    queryResults.innerHTML = `<p>Unexpected error; please try again.</p>`;
+    console.error("Error fetching data:", error);
+  }
+
+  // // ONLY POSTS FETCH
+  // const searchFieldValue = searchInput.value; // Get the value from the search field
+
+  // fetch(
+  //   eduthemeData.root_url +
+  //     `/wp-json/wp/v2/posts?search=${encodeURIComponent(searchFieldValue)}`
+  // )
+  //   .then((response) => {
+  //     if (!response.ok) {
+  //       throw new Error("Network response was not ok");
+  //     }
+  //     return response.json(); // Parse the JSON from the response
+  //   })
+  //   .then((posts) => {
+  //     queryResults.innerHTML = `
+  //       <h2 class="search-overlay__section-title">Results:</h2>
+  //       ${
+  //         posts.length
+  //           ? `<ul class="link-list min-list">`
+  //           : `<p>No results matches your search!</p>`
+  //       }
+
+  //         ${posts
+  //           .map(
+  //             (post) =>
+  //               `<li>
+  //                 <h3><a href="${post.link}">${post.title.rendered}</a></h3>
+  //                 <p>${post.excerpt.rendered}</p>
+  //                </li>
+  //             `
+  //           )
+  //           .join("")}
+  //     ${posts.length ? `</ul>` : ""}
+  //     `;
+  //   })
+  //   .catch((error) => {
+  //     console.error("There was a problem with the fetch operation:", error);
+  //   });
 
   isLoaderVisible = false;
 }
