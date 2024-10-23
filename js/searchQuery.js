@@ -113,16 +113,20 @@ async function getQueryResults() {
     const urlEvents = `/wp-json/wp/v2/event?search=${encodeURIComponent(
       searchFieldValue
     )}`;
+    const urlCourses = `wp-json/wp/v2/course?search=${encodeURIComponent(
+      searchFieldValue
+    )}`;
 
     // Use Promise.all to fetch both URLs concurrently
-    const [response1, response2, response3] = await Promise.all([
+    const [response1, response2, response3, response4] = await Promise.all([
       fetch(urlPosts),
       fetch(urlPages),
       fetch(urlEvents),
+      fetch(urlCourses),
     ]);
 
     // Check if both responses are OK
-    if (!response1.ok || !response2.ok || !response3.ok) {
+    if (!response1.ok || !response2.ok || !response3.ok || !response4) {
       throw new Error("One or more requests failed");
     }
 
@@ -130,9 +134,10 @@ async function getQueryResults() {
     const posts = await response1.json();
     const pages = await response2.json();
     const events = await response3.json();
+    const courses = await response4.json();
 
     // Combine the results (example: merging arrays)
-    const combinedResults = [...posts, ...pages, ...events];
+    const combinedResults = [...posts, ...pages, ...events, ...courses];
 
     queryResults.innerHTML = `
         <h2 class="search-overlay__section-title">Results:</h2>
