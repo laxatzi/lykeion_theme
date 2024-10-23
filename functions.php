@@ -1,13 +1,13 @@
 <?php
 
 // custom rest api entries
-function university_custom_rest() {
+function edutheme_custom_rest() {
   register_rest_field('post', 'authorName', array(
     'get_callback' => function() {return get_the_author();}
   ));
 }
 
-add_action('rest_api_init', 'university_custom_rest');
+add_action('rest_api_init', 'edutheme_custom_rest');
 
 // Scripts and Styles
   function edutheme_files() {
