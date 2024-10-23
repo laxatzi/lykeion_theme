@@ -103,31 +103,36 @@ async function getQueryResults() {
   const searchFieldValue = searchInput.value; // Get the value from the search field
 
   try {
-    // Define the two URLs for fetching data
-    const url1 = `/wp-json/wp/v2/posts?search=${encodeURIComponent(
+    // Define URLs for fetching data
+    const urlPosts = `/wp-json/wp/v2/posts?search=${encodeURIComponent(
       searchFieldValue
     )}`;
-    const url2 = `/wp-json/wp/v2/pages?search=${encodeURIComponent(
+    const urlPages = `/wp-json/wp/v2/pages?search=${encodeURIComponent(
       searchFieldValue
-    )}`; // Adjust this URL as needed
+    )}`;
+    const urlEvents = `/wp-json/wp/v2/event?search=${encodeURIComponent(
+      searchFieldValue
+    )}`;
 
     // Use Promise.all to fetch both URLs concurrently
-    const [response1, response2] = await Promise.all([
-      fetch(url1),
-      fetch(url2),
+    const [response1, response2, response3] = await Promise.all([
+      fetch(urlPosts),
+      fetch(urlPages),
+      fetch(urlEvents),
     ]);
 
     // Check if both responses are OK
-    if (!response1.ok || !response2.ok) {
+    if (!response1.ok || !response2.ok || !response3.ok) {
       throw new Error("One or more requests failed");
     }
 
     // Parse the JSON responses
     const posts = await response1.json();
     const pages = await response2.json();
+    const events = await response3.json();
 
     // Combine the results (example: merging arrays)
-    const combinedResults = [...posts, ...pages];
+    const combinedResults = [...posts, ...pages, ...events];
 
     queryResults.innerHTML = `
         <h2 class="search-overlay__section-title">Results:</h2>
@@ -139,10 +144,10 @@ async function getQueryResults() {
 
           ${combinedResults
             .map(
-              (post) =>
+              (publication) =>
                 `<li>
-                  <h3><a href="${post.link}">${post.title.rendered}</a></h3>
-                  <p>${post.excerpt.rendered}</p>
+                  <h3><a href="${publication.link}">${publication.title.rendered}</a></h3>
+                  <p>${publication.excerpt.rendered}</p>
                  </li>
               `
             )
