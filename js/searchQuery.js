@@ -169,7 +169,13 @@ async function getQueryResults() {
             .map(
               (publication) =>
                 `<li>
-                  <h3><a href="${publication.link}">${publication.title.rendered}</a></h3>
+                  <h3><a href="${publication.link}">${
+                  publication.title.rendered
+                }</a><small class="sig"> ${
+                  publication.type == "post"
+                    ? `by ${publication.authorName}`
+                    : ""
+                }</small></h3>
                   <p>${publication.excerpt.rendered}</p>
                  </li>
               `
@@ -181,45 +187,6 @@ async function getQueryResults() {
     queryResults.innerHTML = `<p>Unexpected error; please try again.</p>`;
     console.error("Error fetching data:", error);
   }
-
-  // // ONLY POSTS FETCH
-  // const searchFieldValue = searchInput.value; // Get the value from the search field
-
-  // fetch(
-  //   eduthemeData.root_url +
-  //     `/wp-json/wp/v2/posts?search=${encodeURIComponent(searchFieldValue)}`
-  // )
-  //   .then((response) => {
-  //     if (!response.ok) {
-  //       throw new Error("Network response was not ok");
-  //     }
-  //     return response.json(); // Parse the JSON from the response
-  //   })
-  //   .then((posts) => {
-  //     queryResults.innerHTML = `
-  //       <h2 class="search-overlay__section-title">Results:</h2>
-  //       ${
-  //         posts.length
-  //           ? `<ul class="link-list min-list">`
-  //           : `<p>No results matches your search!</p>`
-  //       }
-
-  //         ${posts
-  //           .map(
-  //             (post) =>
-  //               `<li>
-  //                 <h3><a href="${post.link}">${post.title.rendered}</a></h3>
-  //                 <p>${post.excerpt.rendered}</p>
-  //                </li>
-  //             `
-  //           )
-  //           .join("")}
-  //     ${posts.length ? `</ul>` : ""}
-  //     `;
-  //   })
-  //   .catch((error) => {
-  //     console.error("There was a problem with the fetch operation:", error);
-  //   });
 
   isLoaderVisible = false;
 }
