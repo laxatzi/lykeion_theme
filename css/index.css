@@ -1980,6 +1980,9 @@ small.attribute {
   font-size: 0.75rem;
 }
 
+small.sig {
+  font-size: 0.9rem;
+}
 .pricing-tables .card,
 .pricing-tables .card-header {
   background-color: var(--cc-white-sugar);
