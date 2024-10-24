@@ -14,6 +14,11 @@
     's' => sanitize_text_field($data['key']),
    ));
    $queryData = array(
+     'queryInfo' => array(),
+     'event' => array(),
+     'course' => array(),
+     'tutor' => array(),
+
 
    );
 
