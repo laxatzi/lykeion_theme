@@ -14,7 +14,7 @@
     's' => sanitize_text_field($data['key']),
    ));
    $queryData = array(
-     'queryInfo' => array(),
+     'postsOrPages' => array(),
      'event' => array(),
      'course' => array(),
      'tutor' => array(),
@@ -24,11 +24,36 @@
 
    while($incQueries->have_posts()) {
     $incQueries->the_post();
-    array_push($tutorData, array(
+    if (get_post_type() == 'post' or get_post_type() == 'pages') {
+         array_push($queryData['postsOrPages'], array(
       'title'=> get_the_title(),
       'link' => get_the_permalink(),
     ));
    }
+
+   if (get_post_type() == 'event') {
+      array_push($queryData['event'], array(
+      'title'=> get_the_title(),
+      'link' => get_the_permalink(),
+    ));
+   }
+
+      if (get_post_type() == 'tutor') {
+         array_push($queryData['tutor'], array(
+      'title'=> get_the_title(),
+      'link' => get_the_permalink(),
+    ));
+   }
+
+      if (get_post_type() == 'tutor') {
+         array_push($queryData['tutor'], array(
+      'title'=> get_the_title(),
+      'link' => get_the_permalink(),
+    ));
+   }
+
+  }
+
    return $queryData;
   }
 ?>
