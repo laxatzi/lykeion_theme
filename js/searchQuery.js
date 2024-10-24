@@ -99,6 +99,118 @@ function showQuery() {
   prevQuery = searchInput.value;
 }
 
+function getQueryResults() {
+  const searchFieldValue = searchInput.value; // Get the value from the search field
+
+  fetch(
+    eduthemeData.root_url +
+      `/wp-json/edutheme/v1/searchRoute?key=${encodeURIComponent(
+        searchFieldValue
+      )}`
+  )
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json(); // Parse the JSON from the response
+    })
+    .then((searchResults) => {
+      queryResults.innerHTML = `
+      <div class="container">
+        <div class="row">
+           <div class="col-sm-4">
+            <h2 class="search-overlay__section-title">Post/Pages:</h2>
+            ${
+              searchResults.postsOrPages.length
+                ? `<ul class="link-list min-list">`
+                : `<p>No results matches your search!</p>`
+            }
+
+              ${searchResults.postsOrPages
+                .map(
+                  (publication) =>
+                    `<li>
+                      <h3><a href="${publication.link}">${
+                      publication.title
+                    }</a><small class="sig">${
+                      publication.postType == "post"
+                        ? `by ${publication.authorName}`
+                        : ""
+                    }</small></h3>
+                      <p>${publication.excerpt}</p>
+                      </li>
+                  `
+                )
+                .join("")}
+            ${searchResults.postsOrPages.length ? `</ul>` : ""}
+           </div>
+         <div class="col-sm-4">
+           <h2 class="search-overlay__section-title">Courses:</h2>
+            ${
+              searchResults.course.length
+                ? `<ul class="link-list min-list">`
+                : `<p>No results matches your search!</p>`
+            }
+
+              ${searchResults.course
+                .map(
+                  (publication) =>
+                    `<li>
+                      <h3><a href="${publication.link}">${
+                      publication.title
+                    }</a><small class="sig">${
+                      publication.postType == "post"
+                        ? `by ${publication.authorName}`
+                        : ""
+                    }</small></h3>
+                      <p>${publication.excerpt}</p>
+                      </li>
+                  `
+                )
+                .join("")}
+            ${searchResults.course.length ? `</ul>` : ""}
+
+            <h2 class="search-overlay__section-title">Tutors:</h2>
+
+         </div>
+         <div class="col-sm-4">
+           <h2 class="search-overlay__section-title">Events:</h2>
+            ${
+              searchResults.event.length
+                ? `<ul class="link-list min-list">`
+                : `<p>No results matches your search!</p>`
+            }
+
+              ${searchResults.event
+                .map(
+                  (publication) =>
+                    `<li>
+                      <h3><a href="${publication.link}">${
+                      publication.title
+                    }</a><small class="sig">${
+                      publication.postType == "post"
+                        ? `by ${publication.authorName}`
+                        : ""
+                    }</small></h3>
+                      <p>${publication.excerpt}</p>
+                      </li>
+                  `
+                )
+                .join("")}
+            ${searchResults.event.length ? `</ul>` : ""}
+
+         </div>
+       </div>
+      </div>
+       `;
+    })
+    .catch((error) => {
+      console.error("There was a problem with the fetch operation:", error);
+    });
+
+  isLoaderVisible = false;
+}
+// to be deleted
 async function getQueryResults() {
   const searchFieldValue = searchInput.value; // Get the value from the search field
 
