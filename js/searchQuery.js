@@ -211,97 +211,97 @@ function getQueryResults() {
   isLoaderVisible = false;
 }
 // to be deleted
-async function getQueryResults() {
-  const searchFieldValue = searchInput.value; // Get the value from the search field
+// async function getQueryResults() {
+//   const searchFieldValue = searchInput.value; // Get the value from the search field
 
-  try {
-    // Define URLs for fetching data
-    const urlPosts = `/wp-json/wp/v2/posts?search=${encodeURIComponent(
-      searchFieldValue
-    )}`;
-    const urlPages = `/wp-json/wp/v2/pages?search=${encodeURIComponent(
-      searchFieldValue
-    )}`;
-    const urlEvents = `/wp-json/wp/v2/event?search=${encodeURIComponent(
-      searchFieldValue
-    )}`;
-    const urlCourses = `/wp-json/wp/v2/course?search=${encodeURIComponent(
-      searchFieldValue
-    )}`;
-    const urlTutors = `/wp-json/wp/v2/tutor?search=${encodeURIComponent(
-      searchFieldValue
-    )}`;
+//   try {
+//     // Define URLs for fetching data
+//     const urlPosts = `/wp-json/wp/v2/posts?search=${encodeURIComponent(
+//       searchFieldValue
+//     )}`;
+//     const urlPages = `/wp-json/wp/v2/pages?search=${encodeURIComponent(
+//       searchFieldValue
+//     )}`;
+//     const urlEvents = `/wp-json/wp/v2/event?search=${encodeURIComponent(
+//       searchFieldValue
+//     )}`;
+//     const urlCourses = `/wp-json/wp/v2/course?search=${encodeURIComponent(
+//       searchFieldValue
+//     )}`;
+//     const urlTutors = `/wp-json/wp/v2/tutor?search=${encodeURIComponent(
+//       searchFieldValue
+//     )}`;
 
-    // Use Promise.all to fetch both URLs concurrently
-    const [response1, response2, response3, response4, response5] =
-      await Promise.all([
-        fetch(urlPosts),
-        fetch(urlPages),
-        fetch(urlEvents),
-        fetch(urlCourses),
-        fetch(urlTutors),
-      ]);
+//     // Use Promise.all to fetch both URLs concurrently
+//     const [response1, response2, response3, response4, response5] =
+//       await Promise.all([
+//         fetch(urlPosts),
+//         fetch(urlPages),
+//         fetch(urlEvents),
+//         fetch(urlCourses),
+//         fetch(urlTutors),
+//       ]);
 
-    // Check if both responses are OK
-    if (
-      !response1.ok ||
-      !response2.ok ||
-      !response3.ok ||
-      !response4.ok ||
-      !response5.ok
-    ) {
-      throw new Error("One or more requests failed");
-    }
+//     // Check if both responses are OK
+//     if (
+//       !response1.ok ||
+//       !response2.ok ||
+//       !response3.ok ||
+//       !response4.ok ||
+//       !response5.ok
+//     ) {
+//       throw new Error("One or more requests failed");
+//     }
 
-    // Parse the JSON responses
-    const posts = await response1.json();
-    const pages = await response2.json();
-    const events = await response3.json();
-    const courses = await response4.json();
-    const tutors = await response5.json();
+//     // Parse the JSON responses
+//     const posts = await response1.json();
+//     const pages = await response2.json();
+//     const events = await response3.json();
+//     const courses = await response4.json();
+//     const tutors = await response5.json();
 
-    // Combine the results (example: merging arrays)
-    const combinedResults = [
-      ...posts,
-      ...pages,
-      ...events,
-      ...courses,
-      ...tutors,
-    ];
+//     // Combine the results (example: merging arrays)
+//     const combinedResults = [
+//       ...posts,
+//       ...pages,
+//       ...events,
+//       ...courses,
+//       ...tutors,
+//     ];
 
-    queryResults.innerHTML = `
-        <h2 class="search-overlay__section-title">Results:</h2>
-        ${
-          combinedResults.length
-            ? `<ul class="link-list min-list">`
-            : `<p>No results matches your search!</p>`
-        }
+//     queryResults.innerHTML = `
+//         <h2 class="search-overlay__section-title">Results:</h2>
+//         ${
+//           combinedResults.length
+//             ? `<ul class="link-list min-list">`
+//             : `<p>No results matches your search!</p>`
+//         }
 
-          ${combinedResults
-            .map(
-              (publication) =>
-                `<li>
-                  <h3><a href="${publication.link}">${
-                  publication.title.rendered
-                }</a><small class="sig"> ${
-                  publication.type == "post"
-                    ? `by ${publication.authorName}`
-                    : ""
-                }</small></h3>
-                  <p>${publication.excerpt.rendered}</p>
-                 </li>
-              `
-            )
-            .join("")}
-      ${combinedResults.length ? `</ul>` : ""}
-      `;
-  } catch (error) {
-    queryResults.innerHTML = `<p>Unexpected error; please try again.</p>`;
-    console.error("Error fetching data:", error);
-  }
+//           ${combinedResults
+//             .map(
+//               (publication) =>
+//                 `<li>
+//                   <h3><a href="${publication.link}">${
+//                   publication.title.rendered
+//                 }</a><small class="sig"> ${
+//                   publication.type == "post"
+//                     ? `by ${publication.authorName}`
+//                     : ""
+//                 }</small></h3>
+//                   <p>${publication.excerpt.rendered}</p>
+//                  </li>
+//               `
+//             )
+//             .join("")}
+//       ${combinedResults.length ? `</ul>` : ""}
+//       `;
+//   } catch (error) {
+//     queryResults.innerHTML = `<p>Unexpected error; please try again.</p>`;
+//     console.error("Error fetching data:", error);
+//   }
 
-  isLoaderVisible = false;
-}
+//   isLoaderVisible = false;
+// }
 
 function insertOverlayHTML() {
   document.body.insertAdjacentHTML(
