@@ -8,8 +8,22 @@
     ) );
   }
 
-  function eduthemeCustomRoute() {
-  return `Congratulations, you created a route!`;
-  }
+  function eduthemeCustomRoute($data) {
+   $tutors = new WP_Query(array(
+    'post_type' => 'tutor',
+    's' => sanitize_text_field($data['key']),
+   ));
+   $tutorData = array(
 
+   );
+
+   while($tutors->have_posts()) {
+    $tutors->the_post();
+    array_push($tutorData, array(
+      'title'=> get_the_title(),
+      'link' => get_the_permalink(),
+    ));
+   }
+   return $tutorData;
+  }
 ?>
