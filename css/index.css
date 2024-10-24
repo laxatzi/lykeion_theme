@@ -2838,7 +2838,7 @@ h5 {
 
 .search-layer--active {
   visibility: visible;
-  opacity: 0.95;
+  opacity: 0.98;
   transform: scale(1);
 }
 
