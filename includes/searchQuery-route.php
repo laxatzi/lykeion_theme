@@ -10,7 +10,7 @@
 
   function eduthemeCustomRoute($data) {
    $tutors = new WP_Query(array(
-    'post_type' => 'tutor',
+    'post_type' =>  array('posts', 'pages', 'tutor', 'event', 'course'),
     's' => sanitize_text_field($data['key']),
    ));
    $tutorData = array(
