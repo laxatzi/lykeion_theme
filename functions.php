@@ -1,4 +1,5 @@
 <?php
+require get_theme_file_path('/includes/searchQuery-route.php');
 
 // custom rest api entries
 function edutheme_custom_rest() {
