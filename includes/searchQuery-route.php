@@ -13,7 +13,7 @@
     'post_type' =>  array('posts', 'pages', 'tutor', 'event', 'course'),
     's' => sanitize_text_field($data['key']),
    ));
-   $tutorData = array(
+   $queryData = array(
 
    );
 
@@ -24,6 +24,6 @@
       'link' => get_the_permalink(),
     ));
    }
-   return $tutorData;
+   return $queryData;
   }
 ?>
