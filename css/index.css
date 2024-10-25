@@ -2932,6 +2932,7 @@ ul.link-list {
 
 #search-layer__query-results .link-list p {
   font-weight: normal;
+  font-size: 1rem;
 }
 
 .search-overlay__section-title {

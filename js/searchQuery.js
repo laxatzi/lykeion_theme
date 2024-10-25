@@ -119,7 +119,7 @@ function getQueryResults() {
       <div class="container">
         <div class="row">
            <div class="col-sm-4">
-            <h2 class="search-overlay__section-title">Posts:</h2>
+            <h2 class="search-overlay__section-title mt-3">Posts:</h2>
             ${
               searchResults.post.length
                 ? `<ul class="link-list min-list">`
@@ -138,7 +138,7 @@ function getQueryResults() {
                         : ""
                     }</small></h3>
                        <img>${publication.thumbnail}</img>
-                      <p>${publication.excerpt}</p>
+                      <p class="mt-2">${publication.excerpt}</p>
                       </li>
                   `
                 )
@@ -146,7 +146,7 @@ function getQueryResults() {
             ${searchResults.post.length ? `</ul>` : ""}
            </div>
          <div class="col-sm-4">
-           <h2 class="search-overlay__section-title">Courses:</h2>
+           <h2 class="search-overlay__section-title mt-3">Courses:</h2>
             ${
               searchResults.course.length
                 ? `<ul class="link-list min-list">`
@@ -165,7 +165,7 @@ function getQueryResults() {
                         : ""
                     }</small></h3>
                      <img>${publication.thumbnail}</img>
-                      <p>${publication.excerpt}</p>
+                      <p class="mt-2"> ${publication.excerpt}</p>
                       </li>
                   `
                 )
@@ -173,10 +173,34 @@ function getQueryResults() {
             ${searchResults.course.length ? `</ul>` : ""}
 
             <h2 class="search-overlay__section-title mt-3">Tutors:</h2>
+               ${
+                 searchResults.tutor.length
+                   ? `<ul class="link-list min-list">`
+                   : `<p>No results matches your search!</p>`
+               }
+
+              ${searchResults.tutor
+                .map(
+                  (publication) =>
+                    `<li>
+                      <h3><a href="${publication.link}">${
+                      publication.title
+                    }</a><small class="sig">${
+                      publication.postType == "post"
+                        ? `by ${publication.authorName}`
+                        : ""
+                    }</small></h3>
+                     <img>${publication.thumbnail}</img>
+                      <p class="mt-2">${publication.excerpt}</p>
+                      </li>
+                  `
+                )
+                .join("")}
+            ${searchResults.tutor.length ? `</ul>` : ""}
 
          </div>
          <div class="col-sm-4">
-           <h2 class="search-overlay__section-title">Events:</h2>
+           <h2 class="search-overlay__section-title mt-3">Events:</h2>
             ${
               searchResults.event.length
                 ? `<ul class="link-list min-list">`
@@ -195,7 +219,7 @@ function getQueryResults() {
                         : ""
                     }</small></h3>
                      <img>${publication.thumbnail}</img>
-                      <p>${publication.excerpt}</p>
+                      <p class="mt-2">${publication.excerpt}</p>
                       </li>
                   `
                 )
