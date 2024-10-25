@@ -2918,6 +2918,10 @@ body.admin-bar .search-layer {
   border-radius: 3px;
 }
 
+ul.link-list {
+  padding-left: 0;
+}
+
 #search-layer__query-results .link-list li a {
   text-decoration: underline;
 }
