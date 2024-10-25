@@ -10,11 +10,11 @@
 
   function eduthemeCustomRoute($data) {
    $incQueries = new WP_Query(array(
-    'post_type' =>  array('posts', 'pages', 'tutor', 'event', 'course'),
+    'post_type' =>  array('posts', 'tutor', 'event', 'course'),
     's' => sanitize_text_field($data['key']),
    ));
    $queryData = array(
-     'postsOrPages' => array(),
+     'posts' => array(),
      'event' => array(),
      'course' => array(),
      'tutor' => array(),
@@ -24,44 +24,44 @@
 
    while($incQueries->have_posts()) {
     $incQueries->the_post();
-    if (get_post_type() == 'post' or get_post_type() == 'pages') {
-         array_push($queryData['postsOrPages'], array(
-      'title'=> get_the_title(),
-      'link' => get_the_permalink(),
-      'excerpt' => get_the_excerpt(),
-      'postType' => get_post_type(),
-      'authorName' => get_the_author(),
+    if (get_post_type() == 'posts') {
+      array_push($queryData['posts'], array(
+        'title'=> get_the_title(),
+        'link' => get_the_permalink(),
+        'excerpt' => get_the_excerpt(),
+        'postType' => get_post_type(),
+        'authorName' => get_the_author(),
 
     ));
    }
 
    if (get_post_type() == 'event') {
       array_push($queryData['event'], array(
-      'title'=> get_the_title(),
-      'link' => get_the_permalink(),
-      'excerpt' => get_the_excerpt(),
-      'postType' => get_post_type(),
-      'authorName' => get_the_author(),
+        'title'=> get_the_title(),
+        'link' => get_the_permalink(),
+        'excerpt' => get_the_excerpt(),
+        'postType' => get_post_type(),
+        'authorName' => get_the_author(),
     ));
    }
 
       if (get_post_type() == 'tutor') {
          array_push($queryData['tutor'], array(
-      'title'=> get_the_title(),
-      'link' => get_the_permalink(),
-      'excerpt' => get_the_excerpt(),
-      'postType' => get_post_type(),
-      'authorName' => get_the_author(),
+          'title'=> get_the_title(),
+          'link' => get_the_permalink(),
+          'excerpt' => get_the_excerpt(),
+          'postType' => get_post_type(),
+          'authorName' => get_the_author(),
     ));
    }
 
-      if (get_post_type() == 'tutor') {
-         array_push($queryData['tutor'], array(
-      'title'=> get_the_title(),
-      'link' => get_the_permalink(),
-      'excerpt' => get_the_excerpt(),
-      'postType' => get_post_type(),
-      'authorName' => get_the_author(),
+      if (get_post_type() == 'course') {
+        array_push($queryData['course'], array(
+          'title'=> get_the_title(),
+          'link' => get_the_permalink(),
+          'excerpt' => get_the_excerpt(),
+          'postType' => get_post_type(),
+          'authorName' => get_the_author(),
     ));
    }
 
