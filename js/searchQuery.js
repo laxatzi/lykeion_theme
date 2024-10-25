@@ -121,12 +121,12 @@ function getQueryResults() {
            <div class="col-sm-4">
             <h2 class="search-overlay__section-title">Post/Pages:</h2>
             ${
-              searchResults.postsOrPages.length
+              searchResults.post.length
                 ? `<ul class="link-list min-list">`
                 : `<p>No results matches your search!</p>`
             }
 
-              ${searchResults.postsOrPages
+              ${searchResults.post
                 .map(
                   (publication) =>
                     `<li>
@@ -142,7 +142,7 @@ function getQueryResults() {
                   `
                 )
                 .join("")}
-            ${searchResults.postsOrPages.length ? `</ul>` : ""}
+            ${searchResults.post.length ? `</ul>` : ""}
            </div>
          <div class="col-sm-4">
            <h2 class="search-overlay__section-title">Courses:</h2>
@@ -170,7 +170,7 @@ function getQueryResults() {
                 .join("")}
             ${searchResults.course.length ? `</ul>` : ""}
 
-            <h2 class="search-overlay__section-title">Tutors:</h2>
+            <h2 class="search-overlay__section-title mt-3">Tutors:</h2>
 
          </div>
          <div class="col-sm-4">

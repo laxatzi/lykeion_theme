@@ -10,22 +10,20 @@
 
   function eduthemeCustomRoute($data) {
    $incQueries = new WP_Query(array(
-    'post_type' =>  array('posts', 'tutor', 'event', 'course'),
+    'post_type' =>  array('post','tutor', 'event', 'course'),
     's' => sanitize_text_field($data['key']),
    ));
    $queryData = array(
-     'posts' => array(),
+     'post' => array(),
      'event' => array(),
      'course' => array(),
      'tutor' => array(),
-
-
    );
 
    while($incQueries->have_posts()) {
     $incQueries->the_post();
-    if (get_post_type() == 'posts') {
-      array_push($queryData['posts'], array(
+    if (get_post_type() == 'post') {
+      array_push($queryData['post'], array(
         'title'=> get_the_title(),
         'link' => get_the_permalink(),
         'excerpt' => get_the_excerpt(),
