@@ -137,6 +137,7 @@ function getQueryResults() {
                         ? `by ${publication.authorName}`
                         : ""
                     }</small></h3>
+                       <img>${publication.thumbnail}</img>
                       <p>${publication.excerpt}</p>
                       </li>
                   `
@@ -163,6 +164,7 @@ function getQueryResults() {
                         ? `by ${publication.authorName}`
                         : ""
                     }</small></h3>
+                     <img>${publication.thumbnail}</img>
                       <p>${publication.excerpt}</p>
                       </li>
                   `
@@ -192,6 +194,7 @@ function getQueryResults() {
                         ? `by ${publication.authorName}`
                         : ""
                     }</small></h3>
+                     <img>${publication.thumbnail}</img>
                       <p>${publication.excerpt}</p>
                       </li>
                   `
