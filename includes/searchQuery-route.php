@@ -28,6 +28,10 @@
          array_push($queryData['postsOrPages'], array(
       'title'=> get_the_title(),
       'link' => get_the_permalink(),
+      'excerpt' => get_the_excerpt(),
+      'postType' => get_post_type(),
+      'authorName' => get_the_author(),
+
     ));
    }
 
@@ -35,6 +39,9 @@
       array_push($queryData['event'], array(
       'title'=> get_the_title(),
       'link' => get_the_permalink(),
+      'excerpt' => get_the_excerpt(),
+      'postType' => get_post_type(),
+      'authorName' => get_the_author(),
     ));
    }
 
@@ -42,6 +49,9 @@
          array_push($queryData['tutor'], array(
       'title'=> get_the_title(),
       'link' => get_the_permalink(),
+      'excerpt' => get_the_excerpt(),
+      'postType' => get_post_type(),
+      'authorName' => get_the_author(),
     ));
    }
 
@@ -49,6 +59,9 @@
          array_push($queryData['tutor'], array(
       'title'=> get_the_title(),
       'link' => get_the_permalink(),
+      'excerpt' => get_the_excerpt(),
+      'postType' => get_post_type(),
+      'authorName' => get_the_author(),
     ));
    }
 
