@@ -119,7 +119,7 @@ function getQueryResults() {
       <div class="container">
         <div class="row">
            <div class="col-sm-4">
-            <h2 class="search-overlay__section-title">Post/Pages:</h2>
+            <h2 class="search-overlay__section-title">Posts:</h2>
             ${
               searchResults.post.length
                 ? `<ul class="link-list min-list">`
