@@ -2933,6 +2933,11 @@ ul.link-list {
 #search-layer__query-results .link-list p {
   font-weight: normal;
 }
+
+.search-overlay__section-title {
+  font-weight: bold;
+  color: var(--cc-primary);
+}
 .body-no-scroll {
   overflow: hidden;
 }
