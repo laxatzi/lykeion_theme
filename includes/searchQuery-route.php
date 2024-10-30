@@ -51,7 +51,7 @@
           'excerpt' => get_the_excerpt(),
           'postType' => get_post_type(),
           'authorName' => get_the_author(),
-          'thumbnail' => get_the_post_thumbnail( null, array( 250, 200)),
+          'thumbnail' => get_the_post_thumbnail( null, array( 200, 200)),
     ));
    }
 
