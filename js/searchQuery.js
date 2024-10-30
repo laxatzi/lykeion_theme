@@ -130,13 +130,13 @@ function getQueryResults() {
                 .map(
                   (publication) =>
                     `<li>
-                      <h3><a href="${publication.link}">${
+                      <h4><a href="${publication.link}">${
                       publication.title
                     }</a><small class="sig">${
                       publication.postType == "post"
                         ? `by ${publication.authorName}`
                         : ""
-                    }</small></h3>
+                    }</small></h4>
                        <img>${publication.thumbnail}</img>
                       <p class="mt-2">${publication.excerpt}</p>
                       </li>
@@ -157,13 +157,13 @@ function getQueryResults() {
                 .map(
                   (publication) =>
                     `<li>
-                      <h3><a href="${publication.link}">${
+                      <h4><a href="${publication.link}">${
                       publication.title
                     }</a><small class="sig">${
                       publication.postType == "post"
                         ? `by ${publication.authorName}`
                         : ""
-                    }</small></h3>
+                    }</small></h4>
                      <img>${publication.thumbnail}</img>
                       <p class="mt-2"> ${publication.excerpt}</p>
                       </li>
@@ -183,13 +183,13 @@ function getQueryResults() {
                 .map(
                   (publication) =>
                     `<li>
-                      <h3><a href="${publication.link}">${
+                      <h4><a href="${publication.link}">${
                       publication.title
                     }</a><small class="sig">${
                       publication.postType == "post"
                         ? `by ${publication.authorName}`
                         : ""
-                    }</small></h3>
+                    }</small></h4>
                      <img>${publication.thumbnail}</img>
                       <p class="mt-2">${publication.excerpt}</p>
                       </li>
@@ -211,13 +211,13 @@ function getQueryResults() {
                 .map(
                   (publication) =>
                     `<li>
-                      <h3><a href="${publication.link}">${
+                      <h4><a href="${publication.link}">${
                       publication.title
                     }</a><small class="sig">${
                       publication.postType == "post"
                         ? `by ${publication.authorName}`
                         : ""
-                    }</small></h3>
+                    }</small></h4>
                      <img>${publication.thumbnail}</img>
                       <p class="mt-2">${publication.excerpt}</p>
                       </li>
