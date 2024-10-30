@@ -134,7 +134,7 @@ function getQueryResults() {
                       publication.title
                     }</a><small class="sig">${
                       publication.postType == "post"
-                        ? `by ${publication.authorName}`
+                        ? `<span style="font-style: oblique;">by</span> ${publication.authorName}`
                         : ""
                     }</small></h4>
                        <img>${publication.thumbnail}</img>
