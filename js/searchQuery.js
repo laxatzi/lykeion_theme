@@ -210,18 +210,46 @@ function getQueryResults() {
               ${searchResults.event
                 .map(
                   (publication) =>
-                    `<li>
-                      <h4><a href="${publication.link}">${
-                      publication.title
-                    }</a><small class="sig">${
-                      publication.postType == "post"
-                        ? `by ${publication.authorName}`
-                        : ""
-                    }</small></h4>
-                     <img>${publication.thumbnail}</img>
-                      <p class="mt-2">${publication.excerpt}</p>
-                      </li>
-                  `
+                    `<div class="event-item d-flex flex-column p-4">
+                   <div class="info-wrapper d-flex flex-column">
+                    <div class="event-thumbnail me-sm-2">
+                      <div class="img-wrapper-event--wide d-none d-sm-block">
+                       <a href="${publication.link}">
+                         <img>${publication.thumbnail}</img>
+                        </a>
+                      </div>
+                    </div>
+                  <!-- event info -->
+                  <div class="event-info">
+                     <h4><a href="${publication.link}">${publication.title}</a>
+                    <!-- event-meta -->
+                    <div class="events-meta d-flex flex-column py-3">
+                      <div class="meta meta-date d-flex">
+                        <span class="event-vicon vicon-calendar me-2"></span>
+                        <p>${publication.date} ${publication.month} ${publication.year}</p>
+
+                      </div>
+                      <div class="meta meta-time d-flex mt-2">
+                        <span class="event-vicon vicon-time me-2"></span>
+                        <p><?php the_field('event_time'); ?></p>
+                      </div>
+                      <div class="meta meta-location d-flex mt-2">
+                        <span class="event-vicon vicon-geo-pin me-2"></span>
+                        <p><?php the_field('event_venue'); ?></p>
+                      </div>
+                    </div>
+                    <!-- end event info -->
+                  </div>
+                </div>
+                <div class="event-book">
+                  <div class="read-more btn btn-lg col-lg-12 col-md-4 col-12">
+                   <a href="${publication.link}" class="link-btn">Book your seat</a
+                    >
+                    <span class="vicon-arrow--right"></span>
+                  </div>
+                </div>
+                <!-- end event item -->
+              </div>`
                 )
                 .join("")}
             ${searchResults.event.length ? `</ul>` : ""}
