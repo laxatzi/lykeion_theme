@@ -60,7 +60,8 @@
           'excerpt' => get_the_excerpt(),
           'postType' => get_post_type(),
           'authorName' => get_the_author(),
-          'thumbnail' => get_the_post_thumbnail( null, array( 200, 200)),
+          'thumbnail' => get_the_post_thumbnail( null, array( 300, 320)),
+          'tutorTitle' => get_field('tutor_title'),
     ));
    }
 
