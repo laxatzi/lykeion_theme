@@ -152,7 +152,7 @@ function getQueryResults() {
                 ? `<ul class="link-list min-list">`
                 : `<p>No results matches your search!</p>`
             }
-
+       <!-- COURSES -->
               ${searchResults.course
                 .map(
                   (publication) =>
@@ -178,7 +178,7 @@ function getQueryResults() {
                    ? `<ul class="link-list min-list">`
                    : `<p>No results matches your search!</p>`
                }
-
+       <!-- TUTORS -->
               ${searchResults.tutor
                 .map(
                   (publication) =>
@@ -206,7 +206,7 @@ function getQueryResults() {
                 ? `<ul class="link-list min-list">`
                 : `<p>No results matches your search!</p>`
             }
-
+       <!-- EVENTS -->
               ${searchResults.event
                 .map(
                   (publication) =>
