@@ -62,6 +62,8 @@
           'authorName' => get_the_author(),
           'thumbnail' => get_the_post_thumbnail( null, array( 300, 320)),
           'tutorTitle' => get_field('tutor_title'),
+          'id' => get_the_ID(),
+
     ));
    }
 
@@ -79,13 +81,44 @@
           'authorPosts' => get_the_author_posts_link(),
           'courseDuration' => get_field('course_duration'),
           'courseLevel' => get_field('course_level'),
-
-
+          'id' => get_the_ID(),
     ));
    }
 
   }
 
+   if ($queryData['course']) {
+     $courseMetaQuery = array ('relation' => 'OR');
+
+     foreach($queryData['course'] as $subject) {
+      array_push($courseMetaQuery, array(
+          'key' => 'related_courses',
+          'compare' => 'LIKE',
+          'value' => '"' . $subject['id'] . '"'
+        ));
+    }
+
+   $courseRelationshipQuery = new WP_Query(array(
+      'post_type' => 'tutor',
+      'meta_query' => $courseMetaQuery,
+    ));
+
+    while($courseRelationshipQuery->have_posts()) {
+      $courseRelationshipQuery->the_post();
+
+      if (get_post_type() == 'tutor') {
+        array_push($queryData['tutor'], array(
+          'title'=> get_the_title(),
+          'link' => get_the_permalink(),
+          'thumbnail' => get_the_post_thumbnail( null, array( 300, 320)),
+
+        ));
+      }
+
+    }
+
+    $queryData['tutor'] = array_values(array_unique($queryData['tutor'], SORT_REGULAR));
+  }
+
    return $queryData;
   }
-?>
