@@ -156,17 +156,64 @@ function getQueryResults() {
               ${searchResults.course
                 .map(
                   (publication) =>
-                    `<li>
-                      <h4><a href="${publication.link}">${
-                      publication.title
-                    }</a><small class="sig">${
-                      publication.postType == "post"
-                        ? `by ${publication.authorName}`
-                        : ""
-                    }</small></h4>
-                     <img>${publication.thumbnail}</img>
-                      <p class="mt-2"> ${publication.excerpt}</p>
-                      </li>
+                    `
+              <div class="card p-3">
+                 <a href="${publication.link}">
+                  <img>${publication.thumbnail}</img>
+                 </a>
+
+              <div class="card-body">
+
+                <div class="info-list d-flex flex-column mt-1 mb-2">
+                  <div class="info-list-level fw-bold d-flex">
+                    <span>${publication.courseLevel}</span>
+                  </div>
+                  <div class="info-list-duration fw-bold d-flex">
+                    <span class="vicon-duration mt-1"></span>
+                    <span>${publication.courseDuration} days</span>
+                  </div>
+                </div>
+                  <h3 class="fw-bold mb-2 mt-4">
+                     <a href="${publication.link}">${publication.title}</a>
+                  </h3>
+
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div
+                  class="tutor d-sm-flex flex-column align-items-start mt-4"
+                >
+                  <div class="tutor-profile d-flex">
+
+
+              <p>${publication.authorPosts}</p>
+
+                    <h4 class="fw-bold pt-2 ps-2">${publication.avatar}</h4>
+                  </div>
+                  <div class="tutor-lessons d-flex mt-2">
+                    <div class="lesson-icon me-1">
+                      <span class="vicon-lesson"></span>
+                    </div>
+                    <div class="lesson-number d-flex">
+                      <span>8</span>&nbsp;
+                      <p>Courses</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="price-list d-flex mt-3">
+                  <div class="price price-current">$${publication.price}</div>
+                  <div class="price price-prev">
+                    <s class="ms-2"> $${publication.oldPrice}</s>
+                  </div>
+                </div>
+
+                <div class="read-more mt-3 mb-3 btn btn-lg">
+                    <a href="${publication.link}" class="link-btn d-flex">
+                    Enroll now <span class="vicon-arrow--right"></span></a>
+                </div>
+              </div>
+            </div>
                   `
                 )
                 .join("")}
