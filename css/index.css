@@ -1395,7 +1395,7 @@ header.container-fluid {
 
 .info-list {
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .info-list-duration,
