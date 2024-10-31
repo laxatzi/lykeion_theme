@@ -231,11 +231,11 @@ function getQueryResults() {
                       </div>
                       <div class="meta meta-time d-flex mt-2">
                         <span class="event-vicon vicon-time me-2"></span>
-                        <p><?php the_field('event_time'); ?></p>
+                        <p>${publication.time}</p>
                       </div>
                       <div class="meta meta-location d-flex mt-2">
                         <span class="event-vicon vicon-geo-pin me-2"></span>
-                        <p><?php the_field('event_venue'); ?></p>
+                        <p>${publication.location}</p>
                       </div>
                     </div>
                     <!-- end event info -->
