@@ -34,6 +34,8 @@
    }
 
    if (get_post_type() == 'event') {
+      $eventDate = new DateTime(get_field('event_date'));
+
       array_push($queryData['event'], array(
         'title'=> get_the_title(),
         'link' => get_the_permalink(),
@@ -41,6 +43,10 @@
         'postType' => get_post_type(),
         'authorName' => get_the_author(),
         'thumbnail' => get_the_post_thumbnail( null, array( 250, 200)),
+        //$eventDate->format('j').' '.$eventDate->format('F').' '. $eventDate->format('Y')
+        'date' => $eventDate->format('j'),
+        'monthName' => $eventDate->format('F'),
+        'year' => $eventDate->format('Y'),
     ));
    }
 
