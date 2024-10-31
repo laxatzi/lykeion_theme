@@ -157,7 +157,7 @@ function getQueryResults() {
                 .map(
                   (publication) =>
                     `
-              <div class="card p-3">
+              <div class="card p-2 mt-2">
                  <a href="${publication.link}">
                   <img>${publication.thumbnail}</img>
                  </a>
