@@ -226,7 +226,7 @@ function getQueryResults() {
                     <div class="events-meta d-flex flex-column py-3">
                       <div class="meta meta-date d-flex">
                         <span class="event-vicon vicon-calendar me-2"></span>
-                        <p>${publication.date} ${publication.month} ${publication.year}</p>
+                        <p>${publication.date} ${publication.monthName} ${publication.year}</p>
 
                       </div>
                       <div class="meta meta-time d-flex mt-2">
