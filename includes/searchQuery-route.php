@@ -35,6 +35,7 @@
 
    if (get_post_type() == 'event') {
       $eventDate = new DateTime(get_field('event_date'));
+      $eventTime = new DateTime(get_field('event-time'));
 
       array_push($queryData['event'], array(
         'title'=> get_the_title(),
@@ -47,6 +48,8 @@
         'date' => $eventDate->format('j'),
         'monthName' => $eventDate->format('F'),
         'year' => $eventDate->format('Y'),
+        'time' => $eventTime->format('H:i:s'),
+        'location'=> get_field('event_venue'),
     ));
    }
 
