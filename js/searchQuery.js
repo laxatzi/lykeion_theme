@@ -182,17 +182,18 @@ function getQueryResults() {
               ${searchResults.tutor
                 .map(
                   (publication) =>
-                    `<li>
-                      <h4><a href="${publication.link}">${
-                      publication.title
-                    }</a><small class="sig">${
-                      publication.postType == "post"
-                        ? `by ${publication.authorName}`
-                        : ""
-                    }</small></h4>
-                     <img>${publication.thumbnail}</img>
-                      <p class="mt-2">${publication.excerpt}</p>
-                      </li>
+                    `
+              <div class="tutor-tab mb-2">
+                 <a href="${publication.link}">
+                  <img>${publication.thumbnail}</img>
+                 </a>
+                <div class="tutor-info p-2">
+                <h5>
+                 <a href="${publication.link}">${publication.title}</a>
+                </h5>
+                <span class="desc">${publication.tutorTitle}</span>
+              </div>
+             </div>
                   `
                 )
                 .join("")}
@@ -221,7 +222,7 @@ function getQueryResults() {
                     </div>
                   <!-- event info -->
                   <div class="event-info">
-                     <h4><a href="${publication.link}">${publication.title}</a>
+                     <h4><a href="${publication.link}">${publication.title}</a></h4>
                     <!-- event-meta -->
                     <div class="events-meta d-flex flex-column py-3">
                       <div class="meta meta-date d-flex">
