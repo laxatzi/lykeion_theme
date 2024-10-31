@@ -73,6 +73,14 @@
           'postType' => get_post_type(),
           'authorName' => get_the_author(),
           'thumbnail' => get_the_post_thumbnail( null, array( 250, 200)),
+          'price' => get_field('course_price'),
+          'oldPrice' => get_field('course_old_price'),
+          'avatar' => get_avatar( get_the_author_meta( 'ID' ), 40 ),
+          'authorPosts' => get_the_author_posts_link(),
+          'courseDuration' => get_field('course_duration'),
+          'courseLevel' => get_field('course_level'),
+
+
     ));
    }
 
