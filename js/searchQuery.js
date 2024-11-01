@@ -123,7 +123,9 @@ function getQueryResults() {
             ${
               searchResults.post.length
                 ? `<ul class="link-list min-list">`
-                : `<p class="nos-results">No results matches your search!</p><a href="${eduthemeData.root_url}/blog">View all posts</a>`
+                : `<p class="nos-results">No results matches your search!</p>
+                   <a href="${eduthemeData.root_url}/blog">View all posts</a>
+                 `
             }
 
               ${searchResults.post
@@ -145,14 +147,18 @@ function getQueryResults() {
                 .join("")}
             ${searchResults.post.length ? `</ul>` : ""}
            </div>
+
          <div class="col-sm-4">
+    <!-- COURSES -->
            <h2 class="search-overlay__section-title mt-3">Courses:</h2>
             ${
               searchResults.course.length
                 ? `<ul class="link-list min-list">`
-                : `<p>No results matches your search!</p>`
+                : `<p class="nos-results" style="margin-bottom: 0;">No results matches your search!</p>
+                   <a href="${eduthemeData.root_url}/courses">View all courses</a>
+                  `
             }
-       <!-- COURSES -->
+
               ${searchResults.course
                 .map(
                   (publication) =>
@@ -218,14 +224,16 @@ function getQueryResults() {
                 )
                 .join("")}
             ${searchResults.course.length ? `</ul>` : ""}
-
+ <!-- TUTORS -->
             <h2 class="search-overlay__section-title mt-3">Tutors:</h2>
                ${
                  searchResults.tutor.length
                    ? `<ul class="link-list min-list">`
-                   : `<p>No results matches your search!</p>`
+                   : `<p class="nos-results">No results matches your search!</p>
+                      <a href="${eduthemeData.root_url}/tutors">View all tutors!</a>
+                     `
                }
-       <!-- TUTORS -->
+
               ${searchResults.tutor
                 .map(
                   (publication) =>
@@ -248,13 +256,16 @@ function getQueryResults() {
 
          </div>
          <div class="col-sm-4">
+    <!-- EVENTS -->
            <h2 class="search-overlay__section-title mt-3">Events:</h2>
             ${
               searchResults.event.length
                 ? `<ul class="link-list min-list">`
-                : `<p>No results matches your search!</p>`
+                : `<p class="nos-results">No results matches your search!</p>
+                   <a href="${eduthemeData.root_url}/events">View all events</a>
+                  `
             }
-       <!-- EVENTS -->
+
               ${searchResults.event
                 .map(
                   (publication) =>
