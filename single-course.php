@@ -24,7 +24,7 @@
               <div id="intro-page">
                 <div class="main-event-content" id="intro">
                   <?php
-                    the_content();
+                    the_field('main_body_content');
                   ?>
                 </div>
               </div>
