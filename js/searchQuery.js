@@ -123,7 +123,7 @@ function getQueryResults() {
             ${
               searchResults.post.length
                 ? `<ul class="link-list min-list">`
-                : `<p>No results matches your search!</p>`
+                : `<p class="nos-results">No results matches your search!</p><a href="${eduthemeData.root_url}/blog">View all posts</a>`
             }
 
               ${searchResults.post
