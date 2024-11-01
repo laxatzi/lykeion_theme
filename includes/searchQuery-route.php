@@ -87,6 +87,8 @@
 
   }
 
+  // Course Meta Query
+
    if ($queryData['course']) {
      $courseMetaQuery = array ('relation' => 'OR');
 
@@ -118,6 +120,40 @@
     }
 
     $queryData['tutor'] = array_values(array_unique($queryData['tutor'], SORT_REGULAR));
+  }
+
+    // Tutor Meta Query
+if ($queryData['tutor']) {
+     $tutorMetaQuery = array ('relation' => 'OR');
+
+     foreach($queryData['tutor'] as $subject) {
+      array_push($tutorMetaQuery, array(
+          'key' => 'related_tutors',
+          'compare' => 'LIKE',
+          'value' => '"' . $subject['id'] . '"'
+        ));
+    }
+
+   $tutorRelationshipQuery = new WP_Query(array(
+      'post_type' => 'course',
+      'meta_query' => $tutorMetaQuery,
+    ));
+
+    while($tutorRelationshipQuery->have_posts()) {
+      $tutorRelationshipQuery->the_post();
+
+      if (get_post_type() == 'course') {
+        array_push($queryData['course'], array(
+          'title'=> get_the_title(),
+          'link' => get_the_permalink(),
+          'thumbnail' => get_the_post_thumbnail( null, array( 300, 320)),
+
+        ));
+      }
+
+    }
+
+    $queryData['course'] = array_values(array_unique($queryData['course'], SORT_REGULAR));
   }
 
    return $queryData;
