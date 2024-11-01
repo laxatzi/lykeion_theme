@@ -2939,6 +2939,20 @@ ul.link-list {
   font-weight: bold;
   color: var(--cc-primary);
 }
+
+.nos-results {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.nos-results ~ a {
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: var(--cc-primary-bg);
+  color: var(--cc-grey-lighter);
+}
+
 .body-no-scroll {
   overflow: hidden;
 }
