@@ -21,6 +21,8 @@
   /* fonts */
   --cc-body-font-weight: 600;
   --cc-navbar-brand-font-size-small: 14px;
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /*
@@ -47,7 +49,8 @@ body {
   height: 100%;
   min-width: 360px;
   box-sizing: border-box;
-  font-family: montserrat, sans-serif;
+  font-family: var(--system-ui);
+  font-family: montserrat;
   scroll-behavior: smooth;
   color: var(--cc-color);
 }
