@@ -1,4 +1,4 @@
-            <div class="card p-4">
+            <div class="card p-4 mb-3">
               <div class="card-img-container">
                  <a href="<?php  echo get_the_permalink(); ?>">
                         <?php  echo get_the_post_thumbnail(null, array( 400, 500));  ?>
