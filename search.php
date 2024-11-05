@@ -13,12 +13,7 @@
             </div>
             <div class="aside-content py-4">
               <div class="input-group mb-3 d-flex align-items-center">
-                <form class="search-form" method="get" action="<?php echo esc_url(site_url('')) ?>">
-                  <input type="search" name="s" class="form-control p-2" aria-label="Search keyword">
-                  <div class="input-group-append">
-                    <input class="input-group-search p-2 fw-bold" type="submit" value="Search">
-                  </div>
-                </form>
+                 <?php get_search_form() ?>
               </div>
             </div>
           </div>
