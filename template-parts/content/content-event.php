@@ -13,7 +13,7 @@
                       ><h4 class="fw-bold mb-3"><?php the_title(); ?></h4></a
                     >
                     <!-- event-meta -->
-                    <div class="events-meta d-xl-flex py-3">
+                    <div class="events-meta d-flex flex-column py-3">
                       <div class="meta meta-date d-flex">
                         <span class="event-vicon vicon-calendar me-2"></span>
                         <p><?php $eventDate = new DateTime(get_field('event_date'));
