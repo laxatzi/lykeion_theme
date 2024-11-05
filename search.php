@@ -33,7 +33,9 @@
                 get_template_part('template-parts/content/content', get_post_type());
               }
             } else {
-              echo "<h2>No Results Match Your Query!</h2>";
+             echo "<h2>No Results Match Your Query!</h2>
+                <p>You searched for :
+              <span style=\"font-weight: bold\">&ldquo;". esc_html(get_search_query(false))."&rdquo;</span></p>";
             }
           ?>
          <nav>
