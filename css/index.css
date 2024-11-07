@@ -1387,7 +1387,7 @@ header.container-fluid {
 }
 
 .nav-plus a img {
-  vertical-align: bottom;
+  vertical-align: super;
   padding-right: 5px;
 }
 
