@@ -1388,16 +1388,23 @@ header.container-fluid {
 
 .nav-plus a img {
   vertical-align: super;
-  padding-right: 5px;
 }
 
-.nav-plus a img:hover,
-.nav-plus a img:active {
+.nav-plus a:hover img,
+.nav-plus a:active img {
   transform: scale(1.1);
 }
 
 .nav-plus a::after {
   background-color: transparent;
+}
+
+.logout-avatar img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .empty {
