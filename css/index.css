@@ -1380,9 +1380,19 @@ header.container-fluid {
 .vicon-user {
   font-size: 28px;
 }
+.nav-plus {
+  border: 2px solid var(--cc-bg-dark);
+  border-radius: 4px;
+  background-color: var(--cc-bg-primary-lighter);
+}
 
-.nav-plus a:hover .vicon-user,
-.nav-plus a:active .vicon-user {
+.nav-plus a img {
+  vertical-align: bottom;
+  padding-right: 5px;
+}
+
+.nav-plus a:hover img,
+.nav-plus a:active img {
   transform: scale(1.1);
 }
 
