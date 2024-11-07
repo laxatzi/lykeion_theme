@@ -135,18 +135,18 @@
           <div class="nav-plus ms-2 d-flex">
             <?php if(is_user_logged_in()) {
                 ?>
-             <a href="<?php echo site_url('/wp-signup.php') ?>" class="d-flex">
+             <a href="<?php echo wp_logout_url(); ?>" class="d-flex justify-content-center" >
               <!-- <span class="vicon-user"></span> -->
-                <img src="<?php echo get_theme_file_uri('/img/icons/locked-user-32.png') ?>"
-                alt="login" title="login" />
+               <span class="d-flex align-items-center logout-avatar" ><?php echo get_avatar(get_current_user_id(), 32) ?></span> <img src="<?php echo get_theme_file_uri('/img/icons/logout-rounded-32.png') ?>"
+                alt="logout" title="logout" style="width: 50%;" class="p-1"/>
             </a>
             <?php
             }else {
               ?>
              <a href="<?php echo site_url('/wp-signup.php') ?>" class="d-flex">
               <!-- <span class="vicon-user"></span> -->
-              <img src="<?php echo get_theme_file_uri('/img/icons/logout-rounded-32.png') ?>"
-               alt="logout" title="logout" />
+              <img src="<?php echo get_theme_file_uri('/img/icons/locked-user-32.png') ?>"
+               alt="login" title="login" class="p-1" style="width: 90%;"/>
             </a>
             <?php } ?>
 
