@@ -209,3 +209,16 @@ function university_adjust_queries($query) {
 	}
 
 	add_action('pre_get_posts', 'university_adjust_queries');
+
+  // Redirect subscriber accounts to homepage
+
+  add_action('admin_init', 'redirect_subscribers');
+
+  function redirect_subscribers() {
+    $current_user = wp_get_current_user();
+
+    if ($current_user->roles == 1 AND $current_user->roles[0] == 'subscriber') {
+      wp_redirect(site_url('/'));
+      exit;
+    }
+  }
