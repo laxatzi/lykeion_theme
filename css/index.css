@@ -1381,15 +1381,9 @@ header.container-fluid {
   font-size: 28px;
 }
 
-.nav-plus {
-  width: 100px;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .nav-plus a:hover .vicon-user,
 .nav-plus a:active .vicon-user {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .nav-plus a::after {
