@@ -131,10 +131,10 @@
                 <a  href="<?php echo esc_url(site_url('/search')); ?>"  class="btn btn-outline btn-search" id="search-trigger js--search-trigger"><p class="sr-only">Search</p><span class="vicon-search" aria-hidden="false"></span>
                 </a>
           </div>
-          <div class="nav-plus ms-3 pt-2">
+          <!-- <div class="nav-plus ms-3 pt-2"> -->
 
-            <a href="<?php echo site_url('/account') ?>" ms-3><span class="vicon-user"></span></a>
-          </div>
+            <a href="<?php echo site_url('/account') ?>" class="ms-2 pb-1"><span class="vicon-user"></span></a>
+          <!-- </div> -->
 
         </div>
       </nav>
