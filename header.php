@@ -138,7 +138,7 @@
               <!-- <span class="vicon-user"></span> -->
                 <img src="<?php echo get_theme_file_uri('/img/icons/locked-user-32.png') ?>"
            alt="login" title="login" />
-
+                  <span class="empty"></span>
                 <img src="<?php echo get_theme_file_uri('/img/icons/add-male-user-32.png') ?>"
            alt="register" title="register" />
             </a>
