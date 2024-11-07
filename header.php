@@ -132,14 +132,12 @@
                 <span class="vicon-search" aria-hidden="false"></span>
                 </a>
           </div>
-          <div class="nav-plus ms-1">
+          <div class="nav-plus ms-2 d-flex">
 
-            <a href="<?php echo site_url('/account') ?>" class="ms-2 pb-1">
+            <a href="<?php echo site_url('/account') ?>" class="d-flex">
               <!-- <span class="vicon-user"></span> -->
                 <img src="<?php echo get_theme_file_uri('/img/icons/locked-user-32.png') ?>"
            alt="login" title="login" />
-            </a>
-            <a href="<?php echo site_url('/account') ?>" class="ms-2 pb-1">
 
                 <img src="<?php echo get_theme_file_uri('/img/icons/add-male-user-32.png') ?>"
            alt="register" title="register" />
