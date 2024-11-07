@@ -1391,13 +1391,18 @@ header.container-fluid {
   padding-right: 5px;
 }
 
-.nav-plus a:hover img,
-.nav-plus a:active img {
+.nav-plus a img:hover,
+.nav-plus a img:active {
   transform: scale(1.1);
 }
 
 .nav-plus a::after {
   background-color: transparent;
+}
+
+.empty {
+  background-color: transparent;
+  width: 15px;
 }
 
 .info-list {
