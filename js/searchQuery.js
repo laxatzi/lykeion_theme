@@ -27,14 +27,6 @@ if (navSearch !== undefined && navSearch !== null) {
   console.log("navSearch is null");
 }
 
-if (navPlus !== undefined && navPlus !== null) {
-  navPlus.addEventListener("click", (e) => {
-    e.preventDefault();
-  });
-} else {
-  console.log("navPlus is null");
-}
-
 if (closeLayerButton !== undefined && closeLayerButton !== null) {
   closeLayerButton.addEventListener("click", () => {
     closeLayer();
