@@ -133,15 +133,23 @@
                 </a>
           </div>
           <div class="nav-plus ms-2 d-flex">
-
-            <a href="<?php echo site_url('/account') ?>" class="d-flex">
+            <?php if(is_user_logged_in()) {
+                ?>
+             <a href="<?php echo site_url('/wp-signup.php') ?>" class="d-flex">
               <!-- <span class="vicon-user"></span> -->
                 <img src="<?php echo get_theme_file_uri('/img/icons/locked-user-32.png') ?>"
-           alt="login" title="login" />
-                  <span class="empty"></span>
-                <img src="<?php echo get_theme_file_uri('/img/icons/add-male-user-32.png') ?>"
-           alt="register" title="register" />
+                alt="login" title="login" />
             </a>
+            <?php
+            }else {
+              ?>
+             <a href="<?php echo site_url('/wp-signup.php') ?>" class="d-flex">
+              <!-- <span class="vicon-user"></span> -->
+              <img src="<?php echo get_theme_file_uri('/img/icons/logout-rounded-32.png') ?>"
+               alt="logout" title="logout" />
+            </a>
+            <?php } ?>
+
           </div>
 
         </div>
