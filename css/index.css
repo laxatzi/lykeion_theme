@@ -2589,12 +2589,19 @@ a.privacy-policy-link:hover {
 }
 
 .login #nav a.wp-login-register,
-.login #nav a.wp-login-lost-password {
+.login #nav a.wp-login-lost-password,
+.login #nav a.wp-login-log-in {
   color: var(--cc-primary-bg);
 }
 
+.login #nav a.wp-login-log-in,
+.login #nav a.wp-login-register {
+  font-weight: 700;
+}
+
 .login #nav a.wp-login-register:hover,
-.login #nav a.wp-login-lost-password:hover {
+.login #nav a.wp-login-lost-password:hover,
+.login #nav a.wp-login-log-in:hover {
   color: var(--cc-bg-dark);
 }
 
@@ -2622,6 +2629,11 @@ a.privacy-policy-link:hover {
 
 #login-message p {
   letter-spacing: -1px;
+}
+
+#login .notice p,
+#login p#reg_passmail {
+  letter-spacing: -0.5px;
 }
 
 .login form .input:focus,
