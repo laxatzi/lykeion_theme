@@ -143,7 +143,12 @@
             <?php
             }else {
               ?>
-             <a href="<?php echo site_url('/wp-signup.php') ?>" class="d-flex">
+             <a href="<?php echo wp_registration_url(); ?>" class="d-flex">
+              <!-- <span class="vicon-user"></span> -->
+              <img src="<?php echo get_theme_file_uri('/img/icons/add-male-user-32.png') ?>"
+               alt="register" title="register" class="p-1" style="width: 90%;"/>
+            </a>
+            <a href="<?php echo wp_login_url(); ?>" class="d-flex">
               <!-- <span class="vicon-user"></span> -->
               <img src="<?php echo get_theme_file_uri('/img/icons/locked-user-32.png') ?>"
                alt="login" title="login" class="p-1" style="width: 90%;"/>
