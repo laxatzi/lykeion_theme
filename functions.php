@@ -210,7 +210,8 @@ function university_adjust_queries($query) {
 
 	add_action('pre_get_posts', 'university_adjust_queries');
 
-  //# Redirect subscriber accounts to homepage
+
+//# Redirect subscriber accounts to homepage
 
 function redirect_subscribers_to_homepage() {
     // Check if the user is logged in
@@ -229,3 +230,20 @@ function redirect_subscribers_to_homepage() {
 // Hook the function into WordPress
 add_action('admin_init', 'redirect_subscribers_to_homepage');
 
+
+//# Hide admin bar for Subscribers
+
+function hide_admin() {
+    // Check if the user is logged in
+    if (is_user_logged_in()) {
+        $current_user = wp_get_current_user();
+
+        // Check if the user role is 'subscriber'
+        if (in_array('subscriber', (array) $current_user->roles)) {
+            // hide the admin bar
+            show_admin_bar(false);
+        }
+    }
+}
+
+add_action('wp_loaded', 'hide_admin');
