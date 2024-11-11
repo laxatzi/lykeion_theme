@@ -2559,14 +2559,64 @@ a.masonry-brick::after {
   color: var(--cc-primary-bg);
 }
 
-.wp-core-ui .button-primary.focus,
-.wp-core-ui .button-primary.hover,
-.wp-core-ui .button-primary:focus,
-.wp-core-ui .button-primary:hover {
-  background: var(--cc-primary-bg);
+.wp-core-ui .button,
+.wp-core-ui .button-secondary {
   border-color: var(--cc-primary-bg);
-  color: var(--cc-grey-lighter);
+  background-color: var(--cc-primary-bg);
 }
+
+.wp-core-ui .button:hover {
+  border-color: var(--cc-color-dark);
+  background-color: var(--cc-color-dark);
+}
+
+a.privacy-policy-link:hover {
+  color: var(--cc-bg-dark);
+}
+
+.login #nav a.wp-login-register,
+.login #nav a.wp-login-lost-password {
+  color: var(--cc-primary-bg);
+}
+
+.login #nav a.wp-login-register:hover,
+.login #nav a.wp-login-lost-password:hover {
+  color: var(--cc-bg-dark);
+}
+
+.login p#nav {
+  color: var(--cc-primary-bg);
+}
+
+.login p#backtoblog {
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: var(--cc-primary-bg);
+}
+
+.login p#backtoblog:hover {
+  background-color: var(--cc-bg-dark);
+}
+
+.login p#backtoblog a {
+  color: var(--cc-bg-primary-lighter);
+}
+
+.login p#backtoblog a:hover {
+  color: var(--cc-white-off);
+}
+
+#login-message p {
+  letter-spacing: -1px;
+}
+
+.login form .input:focus,
+.login form input[type="checkbox"]:focus,
+.login input[type="text"]:focus {
+  outline: thick solid var(--cc-primary-bg);
+  border: none;
+}
+
 /*@  ************************************************************************************
   1024px
 ****************************************************************************************/
