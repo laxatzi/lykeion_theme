@@ -1390,8 +1390,8 @@ header.container-fluid {
   vertical-align: super;
 }
 
-.nav-plus a:hover img,
-.nav-plus a:active img {
+.nav-plus a img:hover,
+.nav-plus a img:active {
   transform: scale(1.1);
 }
 
