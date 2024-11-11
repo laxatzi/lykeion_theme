@@ -250,7 +250,20 @@ add_action('wp_loaded', 'hide_admin');
 
 //# Customize Login page
 
+// ## customize header url
+
 function custom_header_url() {
   return esc_url(site_url('/'));
 }
 add_filter('login_headerurl', 'custom_header_url');
+
+// ## add custom css in login page
+
+function custom_login_styles() {
+   wp_enqueue_style('edutheme_google_font_montserrat', '//fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    wp_enqueue_style('edutheme_bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
+    wp_enqueue_style('edutheme_main_styles', get_theme_file_uri('/css/index.css'));
+    wp_enqueue_style('edutheme_vicon_styles', get_theme_file_uri('/css/vicons.css'));
+}
+
+add_action('login_enqueue_scripts', 'custom_login_styles');
