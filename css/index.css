@@ -2533,6 +2533,14 @@ a.masonry-brick::after {
 
 /* # Custom Login Page */
 
+body.login {
+  background-image: linear-gradient(
+    to top right,
+    var(--cc-white-sugar),
+    var(--cc-bg-primary-lighter)
+  );
+}
+
 .login h1 a {
   background-image: none, url(../images/wordpress-logo.svg?ver=20131107);
   background-image: url(../img/icons/course-thumb-85.png?ver=20131202);
