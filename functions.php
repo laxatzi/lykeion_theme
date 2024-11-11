@@ -247,3 +247,10 @@ function hide_admin() {
 }
 
 add_action('wp_loaded', 'hide_admin');
+
+//# Customize Login page
+
+function custom_header_url() {
+  return esc_url(site_url('/'));
+}
+add_filter('login_headerurl', 'custom_header_url');
