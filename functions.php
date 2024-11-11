@@ -210,32 +210,32 @@ function university_adjust_queries($query) {
 
 	add_action('pre_get_posts', 'university_adjust_queries');
 
-  // Redirect subscriber accounts to homepage
+  //#### Redirect subscriber accounts to homepage
 
-  // add_action('login-redirect', 'redirect_subscribers');
+  // add_action('admin-init', 'redirect_subscribers');
 
   // function redirect_subscribers() {
   //   $current_user = wp_get_current_user();
 
-  //   if ($current_user->roles == 1 AND $current_user->roles[0] == 'subscriber') {
+  //   if (count($current_user->roles) == 1 AND $current_user->roles[0] == 'subscriber') {
   //     exit(wp_redirect(site_url('/')));
   //   }
   // }
 
-function redirect_subscribers_to_home() {
+function redirect_subscribers_to_homepage() {
     // Check if the user is logged in
     if (is_user_logged_in()) {
-        // Get the current user's status
         $current_user = wp_get_current_user();
 
-        // Check if the user has the 'subscriber' role
-        if (in_array('subscriber', $current_user->roles)) {
-
+        // Check if the user role is 'subscriber'
+        if (in_array('subscriber', (array) $current_user->roles)) {
+            // Redirect the user to the homepage
             wp_redirect(home_url());
             exit;
         }
     }
 }
 
-// Hook the function into 'template_redirect' action
-add_action('template_redirect', 'redirect_subscribers_to_home');
+// Hook the function into WordPress
+add_action('admin_init', 'redirect_subscribers_to_homepage');
+
