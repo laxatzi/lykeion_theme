@@ -2531,6 +2531,42 @@ a.masonry-brick::after {
   background-color: transparent;
 }
 
+/* # Custom Login Page */
+
+.login h1 a {
+  background-image: none, url(../images/wordpress-logo.svg?ver=20131107);
+  background-image: url(../img/icons/course-thumb-85.png?ver=20131202);
+}
+
+.login form .input,
+.login form input[type="checkbox"],
+.login input[type="text"] {
+  background: var(--cc-bg-primary-lighter);
+}
+
+.login .message,
+.login .notice,
+.login .success {
+  border-left: 4px solid var(--cc-primary-bg);
+}
+
+.wp-core-ui .button,
+.wp-core-ui .button-secondary {
+  border-color: var(--cc-primary-bg);
+}
+
+.wp-core-ui .button-secondary {
+  color: var(--cc-primary-bg);
+}
+
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary.hover,
+.wp-core-ui .button-primary:focus,
+.wp-core-ui .button-primary:hover {
+  background: var(--cc-primary-bg);
+  border-color: var(--cc-primary-bg);
+  color: var(--cc-grey-lighter);
+}
 /*@  ************************************************************************************
   1024px
 ****************************************************************************************/
