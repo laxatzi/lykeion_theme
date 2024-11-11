@@ -106,13 +106,30 @@
             </ul>
           </div>
           <div class="nav-search ms-3">
-            <a href="<?php echo esc_url(site_url('/search')); ?>" class="btn btn-outline btn-search" id="search-trigger js--search-trigger"><p class="sr-only">Search</p>
-              <span class="vicon-search" aria-hidden="true"></span>
-              <!-- Search -->
+            <a  href="<?php echo esc_url(site_url('/search')); ?>"  class="btn btn-outline btn-search" id="search-trigger js--search-trigger"><p class="sr-only">Search</p>
+              <span class="vicon-search" aria-hidden="false"></span>
             </a>
+          </div>
+
+                   <div class="nav-plus ms-2 d-flex">
+            <?php if(is_user_logged_in()) {
+                ?>
+             <a href="<?php echo wp_logout_url(); ?>" class="d-flex justify-content-center" >
+              <!-- <span class="vicon-user"></span> -->
+               <span class="d-flex align-items-center logout-avatar" ><?php echo get_avatar(get_current_user_id(), 32) ?></span> <img src="<?php echo get_theme_file_uri('/img/icons/logout-rounded-32.png') ?>"
+                alt="logout" title="logout" style="width: 50%;" class="p-1"/>
+            </a>
+            <?php
+            }else {
+              ?>
+             <a href="<?php echo site_url('/wp-signup.php') ?>" class="d-flex">
+              <!-- <span class="vicon-user"></span> -->
+              <img src="<?php echo get_theme_file_uri('/img/icons/locked-user-32.png') ?>"
+               alt="login" title="login" class="p-1" style="width: 90%;"/>
+            </a>
+            <?php } ?>
 
           </div>
-           <a href="<?php echo site_url('/account') ?>" class="ms-2 pb-1"><span class="vicon-user"></span></a>
         </div>
       </nav>
 
