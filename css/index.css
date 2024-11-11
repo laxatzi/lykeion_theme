@@ -2570,6 +2570,20 @@ a.masonry-brick::after {
   background-color: var(--cc-color-dark);
 }
 
+.login .button.wp-hide-pw:focus {
+  background: 0 0;
+  border-color: var(--cc-primary-bg);
+  box-shadow: 0 0 0 1px var(--cc-primary-bg);
+  outline: 2px solid transparent;
+  color: var(--cc-primary-bg);
+}
+
+.wp-core-ui input#wp-submit:focus {
+  background-color: var(--cc-primary-bg);
+  outline: 2px solid var(--cc-primary-bg);
+  border-color: var(--cc-white-off);
+}
+
 a.privacy-policy-link:hover {
   color: var(--cc-bg-dark);
 }
@@ -2615,6 +2629,14 @@ a.privacy-policy-link:hover {
 .login input[type="text"]:focus {
   outline: thick solid var(--cc-primary-bg);
   border: none;
+}
+
+.login .wp-pwd button:focus {
+  outline: thick solid var(--cc-primary-bg);
+}
+
+.forgetmenot input[type="checkbox"]:checked::before {
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23525FE1' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
 }
 
 /*@  ************************************************************************************
