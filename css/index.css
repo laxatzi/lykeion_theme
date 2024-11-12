@@ -2613,6 +2613,16 @@ a.privacy-policy-link:hover {
   color: var(--cc-bg-dark);
 }
 
+.login #nav a.wp-login-register:focus,
+.login #nav a.wp-login-lost-password:focus,
+.login #nav a.wp-login-log-in:focus {
+  color: var(--cc-bg-dark);
+  outline: 2px solid var(--cc-primary-bg);
+  border: none;
+  border-radius: 3px;
+  padding: 2px;
+}
+
 .login p#nav {
   color: var(--cc-primary-bg);
 }
@@ -2633,6 +2643,14 @@ a.privacy-policy-link:hover {
 
 .login p#backtoblog a:hover {
   color: var(--cc-white-off);
+}
+
+.login p#backtoblog a:focus {
+  color: var(--cc-bg-primary-lighter);
+  outline: 2px solid var(--cc-bg-primary-lighter);
+  border: none;
+  border-radius: 3px;
+  padding: 2px;
 }
 
 #login-message p {
