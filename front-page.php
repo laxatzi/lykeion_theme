@@ -656,30 +656,13 @@ get_header();
           ?>
           </div>
           <!-- end of testimonial-card container -->
+
         </div>
-        <div class="dots-pagin container d-flex mt-5 mb-sm-0 mb-4">
-          <button
-            type="button"
-            role="tab"
-            aria-label="1"
-            tabindex="0"
-            class="dots-pagin-btn dot-active"
-          ></button>
-          <button
-            type="button"
-            role="tab"
-            aria-label="1"
-            tabindex="0"
-            class="dots-pagin-btn"
-          ></button>
-          <button
-            type="button"
-            role="tab"
-            aria-label="1"
-            tabindex="0"
-            class="dots-pagin-btn"
-          ></button>
-        </div>
+          <div class="read-more btn btn-lg col-lg-3 col-md-4 col-8 my-5" style="margin: 0 auto;">
+            <a href="<?php echo get_post_type_archive_link('testimonial') ?>" class="link-btn d-flex">
+              View What Our Clients Say <span class="vicon-arrow--right"></span>
+            </a>
+          </div>
       </div>
       <div class="shapes">
         <div class="shape-image shape-image-22">
