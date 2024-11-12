@@ -179,18 +179,27 @@
         <div class="row my-3">
           <div class="container-fluid testimonials-best">
             <section class="testimonials-best__inner d-flex container">
-              <div class="testimonials-sticky p-3">
-                <div class="testimonial-card testimonial-card-3 p-4">
-                                      <div class="student-rating mt-4">
+              <div class="testimonials-sticky p-3 me-4">
+                <div class="testimonial-card__inner p-4">
+                  <div class="student-rating mt-2 ">
                       <div class="rating-stars d-flex mb-2">
-                              <span class="vicon-star"></span>
-                              <span class="vicon-star"></span>
-                              <span class="vicon-star"></span>
-                              <span class="vicon-star"></span>
-                              <span class="vicon-star"></span>
+                          <span class="vicon-star"></span>
+                          <span class="vicon-star"></span>
+                          <span class="vicon-star"></span>
+                          <span class="vicon-star"></span>
+                          <span class="vicon-star"></span>
                       </div>
                     </div>
-                    <div class="student-info d-flex">
+
+                    <div class="student-testimonial mt-3">
+                      <p id="hop">
+                          &ldquo; Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Asperiores dolor deserunt quas facere quisquam
+                          exercitationem voluptate laudantium rem repudiandae dolore!
+                          Quasi?&rdquo;
+                      </p>
+                    </div>
+                    <div class="student-info d-flex mt-2">
                       <img
                         src="<?php echo get_theme_file_uri('/img/thumbs/usman-thumbnail-55.png') ?>"
                         alt=""
@@ -201,17 +210,49 @@
                         <div class="cert">C2 Proficiency</div>
                       </div>
                     </div>
-                    <div class="student-testimonial mt-3">
-                      <p id="hop">
-                          &ldquo; Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Asperiores dolor deserunt quas facere quisquam
-                          exercitationem voluptate laudantium rem repudiandae dolore!
-                          Quasi?&rdquo;
-                      </p>
+                  </div>
+                </div>
+              <div class="testimonials-info p-3 ms-4">
+                <div id="about-info"
+                  class="container text-sm-start text-center mt-sm-0 mt-5"
+                >
+                  <div class="intro--about ps-0 mb-2">
+                    <h3 class="intro">Committed to excellence since 1990</h3>
+                    <h2 class="fw-bold mt-2 mb-3">About Us</h2>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
+                      perferendis!
+                    </p>
+                  </div>
+                  <div id="about-tips-section ">
+                    <div id="about-tips">
+                      <div class="about-tip d-flex">
+
+                        <div class="tip text-start p-2">
+                          <h4 class="fw-bold">84%</h4>
+                          <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Consequatur hic est nostrum.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="about-tip d-flex">
+
+                        <div class="tip text-start p-2">
+                          <h4 class="fw-bold">9/10</h4>
+                          <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Consequatur hic est nostrum.
+                          </p>
+                        </div>
+                      </div>
                     </div>
 
-                  </div></div>
-              <div class="testimonials-info p-3">87% Students passed exams with distinction</div>
+
+                  </div>
+                </div>
+
+              </div>
 
             </section>
           </div>

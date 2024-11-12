@@ -1094,17 +1094,20 @@ footer h5 {
 
 .testimonials-best__inner {
   width: 60%;
-  border: 1px solid blue;
 }
 
 .testimonials-sticky {
   flex: 5;
-  border: 1px solid red;
+  background-color: var(--cc-grey-lighter);
 }
 
 .testimonials-info {
   flex: 3;
   border: 1px solid red;
+}
+
+.testimonials-info p {
+  font-size: 1rem;
 }
 
 .student-info {
