@@ -174,6 +174,47 @@
             </div>
 
           </div>
+
+        </div>
+        <div class="row my-3">
+          <div class="container-fluid testimonials-best">
+            <section class="testimonials-best__inner d-flex container">
+              <div class="testimonials-sticky p-3">
+                <div class="testimonial-card testimonial-card-3 p-4">
+                                      <div class="student-rating mt-4">
+                      <div class="rating-stars d-flex mb-2">
+                              <span class="vicon-star"></span>
+                              <span class="vicon-star"></span>
+                              <span class="vicon-star"></span>
+                              <span class="vicon-star"></span>
+                              <span class="vicon-star"></span>
+                      </div>
+                    </div>
+                    <div class="student-info d-flex">
+                      <img
+                        src="<?php echo get_theme_file_uri('/img/thumbs/usman-thumbnail-55.png') ?>"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="student-info-content ms-3">
+                        <div class="name fw-bold">Petros Papadopoulos</div>
+                        <div class="cert">C2 Proficiency</div>
+                      </div>
+                    </div>
+                    <div class="student-testimonial mt-3">
+                      <p id="hop">
+                          &ldquo; Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Asperiores dolor deserunt quas facere quisquam
+                          exercitationem voluptate laudantium rem repudiandae dolore!
+                          Quasi?&rdquo;
+                      </p>
+                    </div>
+
+                  </div></div>
+              <div class="testimonials-info p-3">87% Students passed exams with distinction</div>
+
+            </section>
+          </div>
         </div>
       </div>
     </main>
