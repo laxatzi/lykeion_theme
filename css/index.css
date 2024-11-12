@@ -319,7 +319,7 @@ h3.intro {
   font-size: 1rem;
   font-weight: var(--cc-body-font-weight);
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
 }
 
 h1 {
@@ -1103,11 +1103,15 @@ footer h5 {
 
 .testimonials-info {
   flex: 3;
-  border: 1px solid red;
 }
 
 .testimonials-info p {
   font-size: 1rem;
+  color: var(--cc-grey);
+}
+
+.testimonials-info h4 {
+  color: var(--cc-distinct-dark);
 }
 
 .student-info {
