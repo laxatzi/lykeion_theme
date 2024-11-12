@@ -181,7 +181,7 @@
             <section class="testimonials-best__inner d-flex container">
               <div class="testimonials-sticky p-3 me-4">
                 <div class="testimonial-card__inner p-4">
-                  <div class="student-rating mt-2 ">
+                  <div class="student-rating mt-2 mb-5">
                       <div class="rating-stars d-flex mb-2">
                           <span class="vicon-star"></span>
                           <span class="vicon-star"></span>
@@ -191,7 +191,7 @@
                       </div>
                     </div>
 
-                    <div class="student-testimonial mt-3">
+                    <div class="student-testimonial mt-3 mb-5">
                       <p id="hop">
                           &ldquo; Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Asperiores dolor deserunt quas facere quisquam
@@ -218,21 +218,21 @@
                 >
                   <div class="intro--about ps-0 mb-2">
                     <h3 class="intro">Committed to excellence since 1990</h3>
-                    <h2 class="fw-bold mt-2 mb-3">About Us</h2>
+                    <h2 class="fw-bold mt-2 mb-3">Our Students are Happy</h2>
                     <p>
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
                       perferendis!
                     </p>
                   </div>
                   <div id="about-tips-section ">
+
                     <div id="about-tips">
                       <div class="about-tip d-flex">
 
                         <div class="tip text-start p-2">
-                          <h4 class="fw-bold">84%</h4>
+                          <h4 class="fw-bold">94%</h4>
                           <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Consequatur hic est nostrum.
+                            Passed the exams with distinction.
                           </p>
                         </div>
                       </div>
@@ -241,8 +241,7 @@
                         <div class="tip text-start p-2">
                           <h4 class="fw-bold">9/10</h4>
                           <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Consequatur hic est nostrum.
+                            Would recommend a friend or relative.
                           </p>
                         </div>
                       </div>
