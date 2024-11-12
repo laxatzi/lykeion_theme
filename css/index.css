@@ -2655,6 +2655,7 @@ a.privacy-policy-link:hover {
 
 #login-message p {
   letter-spacing: -1px;
+  font-size: 1rem;
 }
 
 #login .notice p,
