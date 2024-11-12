@@ -1083,6 +1083,30 @@ footer h5 {
   position: relative;
 }
 
+.testimonials-best {
+  background-color: var(--cc-white-off);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--cc-bg-distinct-lighter),
+    var(--cc-bg-primary-lighter)
+  );
+}
+
+.testimonials-best__inner {
+  width: 60%;
+  border: 1px solid blue;
+}
+
+.testimonials-sticky {
+  flex: 5;
+  border: 1px solid red;
+}
+
+.testimonials-info {
+  flex: 3;
+  border: 1px solid red;
+}
+
 .student-info {
   align-items: center;
 }
