@@ -241,8 +241,17 @@
       </div>
     </div>
     <?php } else { ?>
-      <h2 class="evaluate-exam">Please <a href="<?php echo wp_login_url(); ?>">login</a> in order to take the evaluation exam!</h2>
-
+    <div class="main container-fluid">
+      <div class="pt-sm-5 pt-2" id="leveltest-section">
+        <div class="container pt-5 pb-5  mb-5">
+          <div class="row mt-5 mb-5 faq-section-intro">
+            <div class="col-lg-8 col-md-8 mb-5  mb-lg-0 d-lg-flex justify-content-between">
+               <h2 class="evaluate-exam">Please <a href="<?php echo wp_login_url(); ?>">login</a> in order to take the evaluation exam!</h2>
+            </div>
+         </div>
+       </div>
+      </div>
+    </div>
       <?php } ?>
   </div>
 </div>
