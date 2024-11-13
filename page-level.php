@@ -241,7 +241,8 @@
       </div>
     </div>
     <?php } else { ?>
-      <h1>You are not logged in!</h1>
+      <h2 class="evaluate-exam">Please <a href="<?php echo wp_login_url(); ?>">login</a> in order to take the evaluation exam!</h2>
+
       <?php } ?>
   </div>
 </div>
