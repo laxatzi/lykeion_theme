@@ -6,9 +6,10 @@
 ?>
 <!-- code here -->
   <main class="container-fluid" id="section-main" >
-    <div id="pricing-section" >
-      <div class="container py-3">
 
+  <div id="pricing-section" >
+  <div class="container py-3">
+ <?php if (is_user_logged_in()) { ?>
     <div class="main container-fluid">
       <div class="pt-sm-5 pt-2" id="leveltest-section">
         <div class="container pt-5 pb-5">
@@ -239,7 +240,11 @@
         </div>
       </div>
     </div>
+    <?php } else { ?>
+      <h1>You are not logged in!</h1>
+      <?php } ?>
   </div>
+</div>
 </main>
 <?php
     get_footer();
