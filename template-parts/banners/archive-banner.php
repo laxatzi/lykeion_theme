@@ -7,7 +7,7 @@
               <li class="separator">
                 <span class="vicon-double-left-arrow-black"></span>
               </li>
-              <li class="breadcrumb-item" aria-current="page"><?php the_archive_description(); ?></li>
+              <li class="breadcrumb-item" aria-current="page"><?php echo get_post_type()."s"; ?></li>
             </ol>
           </nav>
         </div>
