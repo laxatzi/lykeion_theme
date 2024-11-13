@@ -178,8 +178,7 @@ get_header();
         </div>
         <!-- Gallery -->
 
-        <div
-          id="about-info"
+        <div id="about-info"
           class="container text-sm-start text-center mt-sm-0 mt-5"
         >
           <div class="intro--about ps-0 mb-5">
@@ -296,7 +295,7 @@ get_header();
             while($homepage_courses->have_posts()) {
               $homepage_courses->the_post();
             ?>
-            <div class="card p-4">
+            <div class="card p-3 me-3">
               <div class="card-img-container">
                  <a href="<?php  echo get_the_permalink(); ?>">
                         <?php  echo get_the_post_thumbnail(null, array( 400, 500));  ?>
@@ -380,6 +379,11 @@ get_header();
       }
         wp_reset_postdata();
       ?>
+          </div>
+          <div class="read-more btn btn-lg col-lg-3 col-md-4 col-8 my-5" style="margin: 0 auto;">
+            <a href="<?php echo get_post_type_archive_link('course') ?>" class="link-btn d-flex">
+              View More Courses <span class="vicon-arrow--right"></span>
+            </a>
           </div>
         </div>
     </div>
@@ -816,6 +820,11 @@ get_header();
             wp_reset_postdata();
           ?>
         </div>
+          <div class="read-more btn btn-lg col-lg-3 col-md-4 col-8 my-5" style="margin: 0 auto;">
+            <a href="<?php echo get_post_type_archive_link('testimonial') ?>" class="link-btn d-flex">
+              View More Articles <span class="vicon-arrow--right"></span>
+            </a>
+          </div>
       </div>
 
       <div class="shapes">
