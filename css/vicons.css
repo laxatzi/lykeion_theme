@@ -1,13 +1,14 @@
 /* SVG icons in CSS */
 
-[class*="vicon-"] {
+/* [class*="vicon-"] {
   display: block;
-  max-width: 100%;
-}
+
+} */
 
 [class*="vicon-"] {
   content: "";
   display: block;
+  max-width: 100%;
   width: 1em;
   height: 1em;
   background-repeat: no-repeat;
